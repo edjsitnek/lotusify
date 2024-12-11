@@ -1,0 +1,42 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  margin-top: 3rem;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  flex: 1 1 auto;
+  height: 10vw;
+  max-height: 4rem;
+  aspect-ratio: 2 / 3;
+  margin: 0.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  background-color: gray;
+  transition: background-color 0.2s ease;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.key.correct {
+  background-color: green;
+}
+
+.key.incorrect {
+  background-color: red;
+}
+
+.key-large {
+  flex: 2 1 auto;
+  aspect-ratio: 1;
+  /* Larger width for Enter and Backspace */
+}
