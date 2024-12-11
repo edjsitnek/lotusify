@@ -7,7 +7,7 @@ export default function Keyboard() {
   const letterKeys = "QWERTYUIOPASDFGHJKLZXCVBNM".split("");
   const numChars = "1234567890!?&-'.()".split("");
 
-  // Fills in letter keys to keyboard rows according to slice start and end parameters
+  // Fills in keys to keyboard rows according to slice start and end parameters
   const fillKeys = (keys, start, end) => {
     return (
       keys.slice(start, end).map((key, i) => (
