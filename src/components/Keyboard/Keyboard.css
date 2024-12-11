@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90vw;
-  margin-top: 3rem;
 }
 
 .keyboard-row {
@@ -13,15 +11,14 @@
 }
 
 .key {
-  flex: 1 1 auto;
-  height: 10vw;
-  max-height: 4rem;
-  aspect-ratio: 2 / 3;
+  height: 3.8rem;
+  width: calc(10vw - 0.6rem);
+  max-width: 4rem;
   margin: 0.2rem;
   border-radius: 0.3rem;
   border: none;
   color: white;
-  background-color: gray;
+  background-color: rgb(80, 80, 80);
   transition: background-color 0.2s ease;
   font-size: 1.3em;
   font-weight: 500;
@@ -36,7 +33,6 @@
 }
 
 .key-large {
-  flex: 2 1 auto;
-  aspect-ratio: 1;
-  /* Larger width for Enter and Backspace */
+  width: calc(16vw - 0.65rem);
+  max-width: 6.3rem;
 }
