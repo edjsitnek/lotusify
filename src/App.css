@@ -4,6 +4,16 @@
   align-items: center;
 }
 
+.game-container .blanks {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin: 1rem 0;
+}
+
+.game-container .blanks span.revealed {
+  color: #007bff;
+}
+
 .header {
   font-size: 2em;
   margin-bottom: 3rem;
