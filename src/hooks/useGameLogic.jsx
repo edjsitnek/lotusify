@@ -4,6 +4,7 @@ export default function useGameLogic() {
   const [songs, setSongs] = useState([]);
   const [randomSong, setRandomSong] = useState(null);
   const [guessedLetters, setGuessedLetters] = useState([]);
+  const [keyStatuses, setKeyStatuses] = useState([]);
 
   useEffect(() => {
     fetch("/songs.json")
@@ -17,6 +18,7 @@ export default function useGameLogic() {
       const randomIndex = Math.floor(Math.random() * songs.length);
       setRandomSong(songs[randomIndex]);
       setGuessedLetters([]); // Reset guesses when new song is picked
+      setKeyStatuses([]); // Reset key statuses
     }
   };
 
@@ -26,6 +28,26 @@ export default function useGameLogic() {
       prevGuessed.includes(letter.toLowerCase()) ? prevGuessed : [...prevGuessed, letter.toLowerCase()]
     );
   };
+
+  // Update key statuses whenever guessedLetters or randomSong changes
+  useEffect(() => {
+    if (!randomSong) return;
+
+    const newKeyStatuses = { ...keyStatuses };
+
+    guessedLetters.forEach((letter) => {
+      const upperLetter = letter.toUpperCase();
+      if (randomSong.name.toUpperCase().includes(upperLetter)) {
+        newKeyStatuses[upperLetter] = 'correct';
+      } else {
+        newKeyStatuses[upperLetter] = 'incorrect';
+      }
+
+    });
+
+    setKeyStatuses(newKeyStatuses);
+
+  }, [guessedLetters, randomSong]);
 
   const renderBlanks = () => {
     if (!randomSong) return null;
@@ -46,5 +68,5 @@ export default function useGameLogic() {
     });
   };
 
-  return { pickRandomSong, randomSong, guessedLetters, handleGuess, renderBlanks };
+  return { pickRandomSong, randomSong, guessedLetters, handleGuess, renderBlanks, keyStatuses };
 }

@@ -22,4 +22,5 @@
 button {
   cursor: pointer;
   font-family: inherit;
+  margin: .2rem;
 }

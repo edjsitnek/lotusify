@@ -9,6 +9,7 @@ function App() {
     guessedLetters,
     handleGuess,
     renderBlanks,
+    keyStatuses
   } = useGameLogic();
 
   const handleKeyboardClick = (letter) => {
@@ -23,8 +24,13 @@ function App() {
           <button onClick={pickRandomSong}>Pick a Random Song</button>
           <div className="blanks">{renderBlanks()}</div>
           <p>{randomSong && randomSong.name}</p>
-          <p>Guesses: {guessedLetters.length}/10</p>
-          <Keyboard onKeyPress={handleKeyboardClick} />
+          <div>
+            Guesses: {guessedLetters.length}/13
+            <button>Guess Song</button>
+            <button>View Guess History</button>
+          </div>
+
+          <Keyboard onKeyPress={handleKeyboardClick} keyStatuses={keyStatuses} />
         </div>
         <div className="footer">
 
