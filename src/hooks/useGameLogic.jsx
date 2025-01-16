@@ -5,6 +5,7 @@ export default function useGameLogic() {
   const [randomSong, setRandomSong] = useState(null); // Random song which is the answer to the current game
   const [keyStatuses, setKeyStatuses] = useState([]); // Statuses for correct or incorrect guessed letter keys
   const [guessHistory, setGuessHistory] = useState([]); // History of all guesses in one game
+  const [gameOver, setGameOver] = useState(false); // Keep track of game over state
 
   // Load list of songs
   useEffect(() => {
@@ -21,11 +22,12 @@ export default function useGameLogic() {
       setRandomSong(songs[randomIndex]);
       setGuessHistory([]); // Reset guesses when new song is picked
       setKeyStatuses([]); // Reset key statuses
+      setGameOver(false); // Reset game over state
     }
   };
 
-  // Handle duplicate guesses
-  const handleDuplicates = (comparison, guessEntry, correct) => {
+  // Add guesses to history while handling duplicate guesses
+  const addToHistory = (comparison, guessEntry, correct) => {
     setGuessHistory((prevHistory) =>
       prevHistory.some((entry) => entry.guess === comparison) ? prevHistory : [...prevHistory, { guess: guessEntry, correct }]
     );
@@ -33,23 +35,39 @@ export default function useGameLogic() {
 
   // Handle single letter guesses
   const handleGuessLetter = (letter) => {
-    if (!randomSong) return;
+    if (gameOver || !randomSong) return;
 
     const correct = randomSong.name.toLowerCase().includes(letter.toLowerCase());
-    handleDuplicates(letter, letter, correct);
+    addToHistory(letter, letter, correct);
+
+    // Check if all of the blanks are filled for game over condition
+    const allFilled = randomSong.name.split("").every((char) => {
+      return (
+        char === " " ||
+        [...guessHistory, { guess: letter, correct }].some(
+          (entry) => entry.guess.toLowerCase() === char.toLowerCase() && entry.correct
+        )
+      );
+    });
+
+    if (allFilled || guessHistory.length + 1 >= 13) {
+      setGameOver(true);
+      if (allFilled) alert("You guessed the song title correctly!");
+    }
   };
 
   // Handle whole song title guesses
   const handleGuessSong = (songGuess) => {
-    if (!randomSong) return;
+    if (gameOver || !randomSong) return;
 
     const correct = songGuess.toLowerCase() === randomSong.name.toLowerCase();
-    handleDuplicates(songGuess.toLowerCase(), songGuess, correct);
+    addToHistory(songGuess.toLowerCase(), songGuess, correct);
 
-    if (correct) {
-      alert("You guessed the song title correctly!");
+    if (correct || guessHistory.length + 1 >= 13) {
+      setGameOver(true);
+      if (correct) alert("You guessed the song title correctly!");
     }
-  }
+  };
 
   // Update key statuses whenever guessHistory or randomSong changes
   useEffect(() => {
@@ -95,5 +113,5 @@ export default function useGameLogic() {
     });
   };
 
-  return { pickRandomSong, randomSong, handleGuessLetter, handleGuessSong, renderBlanks, keyStatuses, guessHistory };
+  return { pickRandomSong, randomSong, handleGuessLetter, handleGuessSong, renderBlanks, keyStatuses, guessHistory, gameOver };
 }

@@ -11,7 +11,8 @@ function App() {
     handleGuessSong,
     renderBlanks,
     keyStatuses,
-    guessHistory
+    guessHistory,
+    gameOver
   } = useGameLogic();
   const [showHistory, setShowHistory] = useState(false); // Track if show history modal is on the screen
   const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
@@ -35,6 +36,7 @@ function App() {
           <p>{randomSong && randomSong.name}</p>
           <div>
             Guesses: {guessHistory.length}/13
+            {gameOver && <p>Game Over! The correct song was: {randomSong?.name}</p>}
 
             <div className="guess-song">
               <input
