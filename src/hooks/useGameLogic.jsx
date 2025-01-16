@@ -24,16 +24,19 @@ export default function useGameLogic() {
     }
   };
 
+  // Handle duplicate guesses
+  const handleDuplicates = (comparison, guessEntry, correct) => {
+    setGuessHistory((prevHistory) =>
+      prevHistory.some((entry) => entry.guess === comparison) ? prevHistory : [...prevHistory, { guess: guessEntry, correct }]
+    );
+  }
+
   // Handle single letter guesses
   const handleGuessLetter = (letter) => {
     if (!randomSong) return;
 
     const correct = randomSong.name.toLowerCase().includes(letter.toLowerCase());
-
-    // Prevent duplicate letter guesses
-    setGuessHistory((prevHistory) =>
-      prevHistory.some((entry) => entry.guess === letter) ? prevHistory : [...prevHistory, { guess: letter, correct }]
-    );
+    handleDuplicates(letter, letter, correct);
   };
 
   // Handle whole song title guesses
@@ -41,8 +44,7 @@ export default function useGameLogic() {
     if (!randomSong) return;
 
     const correct = songGuess.toLowerCase() === randomSong.name.toLowerCase();
-
-    setGuessHistory((prevHistory) => [...prevHistory, { guess: songGuess, correct }]);
+    handleDuplicates(songGuess.toLowerCase(), songGuess, correct);
 
     if (correct) {
       alert("You guessed the song title correctly!");
