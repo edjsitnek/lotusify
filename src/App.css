@@ -1,11 +1,15 @@
 .game-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .game-container .blanks {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0.5rem;
   margin: 1rem 0;
 }
@@ -16,10 +20,16 @@
 
 .header {
   font-size: 2em;
-  margin-bottom: 3rem;
 }
 
 .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;

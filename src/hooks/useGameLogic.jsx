@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
-export default function useGameLogic() {
+export default function useGameLogic(setModalOpen) {
   const [songs, setSongs] = useState([]); // List of songs to pull the answer from
   const [randomSong, setRandomSong] = useState(null); // Random song which is the answer to the current game
   const [keyStatuses, setKeyStatuses] = useState([]); // Statuses for correct or incorrect guessed letter keys
   const [guessHistory, setGuessHistory] = useState([]); // History of all guesses in one game
   const [gameOver, setGameOver] = useState(false); // Keep track of game over state
+  const [isWin, setIsWin] = useState(false); // Track if the game over is a win or not
 
   // Load list of songs
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function useGameLogic() {
       setGuessHistory([]); // Reset guesses when new song is picked
       setKeyStatuses([]); // Reset key statuses
       setGameOver(false); // Reset game over state
+      setIsWin(false); // Reset win state
     }
   };
 
@@ -51,8 +53,9 @@ export default function useGameLogic() {
     });
 
     if (allFilled || guessHistory.length + 1 >= 13) {
+      if (allFilled) setIsWin(true);
       setGameOver(true);
-      if (allFilled) alert("You guessed the song title correctly!");
+      setModalOpen(true);
     }
   };
 
@@ -64,8 +67,9 @@ export default function useGameLogic() {
     addToHistory(songGuess.toLowerCase(), songGuess, correct);
 
     if (correct || guessHistory.length + 1 >= 13) {
+      if (correct) setIsWin(true);
       setGameOver(true);
-      if (correct) alert("You guessed the song title correctly!");
+      setModalOpen(true);
     }
   };
 
@@ -113,5 +117,5 @@ export default function useGameLogic() {
     });
   };
 
-  return { pickRandomSong, randomSong, handleGuessLetter, handleGuessSong, renderBlanks, keyStatuses, guessHistory, gameOver };
+  return { pickRandomSong, randomSong, handleGuessLetter, handleGuessSong, renderBlanks, keyStatuses, guessHistory, gameOver, isWin };
 }
