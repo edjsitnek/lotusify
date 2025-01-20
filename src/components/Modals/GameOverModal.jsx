@@ -1,4 +1,4 @@
-import './Modal.css'
+import './GameOverModal.css'
 
 // A modal that pops up when a song title is being guessed, history is being viewed, or game is over
 export default function GameOverModal({ isWin, numGuesses, solution, onClickX, onClickReset }) {
