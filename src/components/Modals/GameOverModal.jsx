@@ -1,6 +1,6 @@
 import './GameOverModal.css'
 
-// A modal that pops up when a song title is being guessed, history is being viewed, or game is over
+// A modal that pops up when game is over, with different content for a win or a loss
 export default function GameOverModal({ isWin, numGuesses, solution, onClickX, onClickReset }) {
   const handleModalContent = () => {
     if (isWin === true) { // Content if the game was won

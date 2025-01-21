@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useGameLogic(setModalOpen) {
+export default function useGameLogic(setGameOverModalOpen) {
   const [songs, setSongs] = useState([]); // List of songs to pull the answer from
   const [randomSong, setRandomSong] = useState(null); // Random song which is the answer to the current game
   const [keyStatuses, setKeyStatuses] = useState([]); // Statuses for correct or incorrect guessed letter keys
@@ -15,6 +15,13 @@ export default function useGameLogic(setModalOpen) {
       .then((data) => setSongs(data))
       .catch((error) => console.error("Error loading songs:", error));
   }, []);
+
+  // Automatically pick a random song on page load
+  useEffect(() => {
+    if (songs.length > 0) {
+      pickRandomSong();
+    }
+  }, [songs]); // Run when `songs` is loaded
 
   // Pick the song to be guessed from loaded song list
   const pickRandomSong = () => {
@@ -52,10 +59,10 @@ export default function useGameLogic(setModalOpen) {
       );
     });
 
-    if (allFilled || guessHistory.length + 1 >= 13) {
+    if (allFilled || guessHistory.length + 1 >= 12) {
       if (allFilled) setIsWin(true);
       setGameOver(true);
-      setModalOpen(true);
+      setGameOverModalOpen(true);
     }
   };
 
@@ -66,10 +73,10 @@ export default function useGameLogic(setModalOpen) {
     const correct = songGuess.toLowerCase() === randomSong.name.toLowerCase();
     addToHistory(songGuess.toLowerCase(), songGuess, correct);
 
-    if (correct || guessHistory.length + 1 >= 13) {
+    if (correct || guessHistory.length + 1 >= 12) {
       if (correct) setIsWin(true);
       setGameOver(true);
-      setModalOpen(true);
+      setGameOverModalOpen(true);
     }
   };
 

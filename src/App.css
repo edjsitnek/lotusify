@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -15,16 +14,20 @@
 }
 
 .game-container .blanks span.revealed {
-  color: #007bff;
+  color: var(--answer-blue);
 }
 
 .header {
+  padding-top: 1rem;
   font-size: 2em;
 }
 
 .body {
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
 }
@@ -34,4 +37,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
