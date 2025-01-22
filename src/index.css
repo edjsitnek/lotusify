@@ -12,13 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bg-color: 0, 3, 48;
-  --modal-bg: 0, 5, 71;
-  --back-modal-bg: 0, 1, 17;
-  --answer-blue: rgb(0, 123, 255);
-  --key-gray: rgb(80, 80, 80);
-  --correct-green: rgb(0, 118, 0);
-  --incorrect-red: rgb(172, 17, 14);
+  --bg-color: 0, 46, 51;
+  --modal-bg: rgb(1, 71, 79);
+  --back-modal-bg: rgba(0, 23, 26, 0.7);
+  --answer-blue: rgb(49, 141, 151);
+  --key-gray: rgb(70, 70, 70);
+  --correct: rgb(183, 177, 155);
+  --incorrect: rgb(195, 24, 41);
 }
 
 * {

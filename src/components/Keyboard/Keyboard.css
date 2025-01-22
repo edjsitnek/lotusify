@@ -25,11 +25,11 @@
 }
 
 .key.correct {
-  background-color: var(--correct-green);
+  background-color: var(--correct);
 }
 
 .key.incorrect {
-  background-color: var(--incorrect-red);
+  background-color: var(--incorrect);
 }
 
 .key-large {

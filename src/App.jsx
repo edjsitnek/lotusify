@@ -2,13 +2,16 @@ import './App.css'
 import Keyboard from './components/Keyboard/Keyboard'
 import GameOverModal from './components/Modals/GameOverModal';
 import HistoryModal from './components/Modals/HistoryModal';
+import SongGuessModal from './components/Modals/SongGuessModal';
 import useGameLogic from './hooks/useGameLogic'
 import { useState } from 'react';
 
 function App() {
   const [showHistory, setShowHistory] = useState(false); // Track if show history modal is on the screen
+  const [showSongGuess, setShowSongGuess] = useState(false); // Track if song guess modal is on the screen
   const [gameOverModalOpen, setGameOverModalOpen] = useState(false); // Track if modal is open
-  const [historyButtonText, setHistoryButtonText] = useState("View Guess History")
+  const [historyButtonText, setHistoryButtonText] = useState("View History")
+  const [guessButtonText, setGuessButtonText] = useState("Guess Song")
   const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
 
   const {
@@ -42,7 +45,17 @@ function App() {
       setHistoryButtonText("Close History")
     }
     else {
-      setHistoryButtonText("View Guess History")
+      setHistoryButtonText("View History")
+    }
+  }
+
+  const handleGuessSongButton = () => {
+    setShowSongGuess(!showSongGuess)
+    if (!showSongGuess) {
+      setGuessButtonText("Return")
+    }
+    else {
+      setGuessButtonText("Guess Song")
     }
   }
 
@@ -52,11 +65,24 @@ function App() {
         <div className="header">Lotusify</div>
 
         <div className="body">
-
           <div className="blanks">{renderBlanks()}</div>
           {showHistory && (
             <div>
-              <HistoryModal guessHistory={guessHistory} onClickX={handleHistoryButton} />
+              <HistoryModal
+                guessHistory={guessHistory}
+                onClickX={handleHistoryButton}
+              />
+            </div>
+          )}
+          {showSongGuess && (
+            <div>
+              <SongGuessModal
+                randomSong={randomSong}
+                songGuess={songGuess}
+                setSongGuess={setSongGuess}
+                handleGuessSongSubmit={handleGuessSongSubmit}
+                onClickX={handleGuessSongButton}
+              />
             </div>
           )}
         </div>
@@ -64,23 +90,8 @@ function App() {
         <div className="footer">
           <div>
             Guesses: {guessHistory.length}/12
-
-            <div className="guess-song">
-              <input
-                type="text"
-                value={songGuess}
-                name="songGuessInput"
-                onChange={(e) => setSongGuess(e.target.value)}
-                // placeholder="Enter full song title"
-                placeholder={randomSong && randomSong.name}
-              />
-              <button onClick={handleGuessSongSubmit}>
-                Guess Song
-              </button>
-            </div>
-
-            <button onClick={() => { handleHistoryButton() }}>{historyButtonText}</button>
-
+            <button onClick={() => handleGuessSongButton()}>{guessButtonText}</button>
+            <button onClick={() => handleHistoryButton()}>{historyButtonText}</button>
           </div>
 
           <Keyboard onKeyPress={handleKeyboardClick} keyStatuses={keyStatuses} />

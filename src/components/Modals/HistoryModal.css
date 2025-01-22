@@ -1,33 +1,33 @@
-  .history-modal-background {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(var(--bg-color), 0.9);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.history-modal-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--bg-color), 0.9);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .history-modal-content table {
-    border-collapse: collapse;
-    min-width: 40vw;
-    max-height: 40vh;
-    font-size: 0.9rem;
-    text-align: center;
-  }
+.history-modal-content table {
+  border-collapse: collapse;
+  min-width: 40vw;
+  max-height: 40vh;
+  font-size: 0.9rem;
+  text-align: center;
+}
 
-  .history-modal-content thead th,
-  .history-modal-content tbody td {
-    border: 2px solid gray;
-    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-  }
+.history-modal-content thead th,
+.history-modal-content tbody td {
+  border: 2px solid gray;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+}
 
-  .history-modal-content .correct {
-    color: var(--correct-green);
-  }
+.history-modal-content .correct {
+  color: var(--correct);
+}
 
-  .history-modal-content .incorrect {
-    color: var(--incorrect-red);
-  }
+.history-modal-content .incorrect {
+  color: var(--incorrect);
+}

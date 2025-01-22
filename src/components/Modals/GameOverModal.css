@@ -1,7 +1,7 @@
 .modal-background {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(var(--back-modal-bg), 0.7);
+  background-color: var(--back-modal-bg);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
   max-width: 95%;
   height: 60%;
   border-radius: 0.5rem;
-  background-color: rgb(var(--modal-bg));
+  background-color: var(--modal-bg);
   box-shadow: rgba(0, 0, 0, 0.7) 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;

@@ -21,7 +21,7 @@ export default function useGameLogic(setGameOverModalOpen) {
     if (songs.length > 0) {
       pickRandomSong();
     }
-  }, [songs]); // Run when `songs` is loaded
+  }, [songs]); // Run when songs file is loaded
 
   // Pick the song to be guessed from loaded song list
   const pickRandomSong = () => {
