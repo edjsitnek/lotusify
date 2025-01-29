@@ -5,7 +5,7 @@ import './Keyboard.css'
 export default function Keyboard({ onKeyPress, keyStatuses }) {
   const [showNumKeys, setShowNumKeys] = useState(false); // Switch between letter and number/special character keyboards
   const letterKeys = "QWERTYUIOPASDFGHJKLZXCVBNM".split("");
-  const numChars = "1234567890!?&-'.()".split("");
+  const numChars = "1234567890".split("");
 
   // Fills in keys to keyboard rows according to slice start and end parameters
   const fillKeys = (keys, start, end) => {
@@ -42,13 +42,13 @@ export default function Keyboard({ onKeyPress, keyStatuses }) {
             </button>
           </div>
         </>
-      ) : ( // Keyboard display with numbers and special characters
+      ) : ( // Keyboard display with number keys
         <>
           <div className="keyboard-row">
-            {fillKeys(numChars, 0, 10)}
+            {fillKeys(numChars, 0, 5)}
           </div>
           <div className="keyboard-row">
-            {fillKeys(numChars, 10)}
+            {fillKeys(numChars, 5)}
           </div>
           <div className="keyboard-row">
             <button className="key key-large" onClick={() => setShowNumKeys(false)} >

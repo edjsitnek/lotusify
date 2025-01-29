@@ -14,7 +14,7 @@
 }
 
 .game-container .blanks span.revealed {
-  color: var(--answer-blue);
+  color: rgb(var(--answer-blue));
 }
 
 .header {

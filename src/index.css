@@ -15,7 +15,7 @@
   --bg-color: 0, 46, 51;
   --modal-bg: rgb(1, 71, 79);
   --back-modal-bg: rgba(0, 23, 26, 0.7);
-  --answer-blue: rgb(49, 141, 151);
+  --answer-blue: 49, 141, 151;
   --key-gray: rgb(70, 70, 70);
   --correct: rgb(183, 177, 155);
   --incorrect: rgb(195, 24, 41);
@@ -31,4 +31,8 @@ button {
   cursor: pointer;
   font-family: inherit;
   margin: .2rem;
+}
+
+::selection {
+  color: rgba(255, 255, 255, 1)
 }

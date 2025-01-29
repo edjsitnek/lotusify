@@ -59,6 +59,7 @@ export default function useGameLogic(setGameOverModalOpen) {
       );
     });
 
+    // Check if game is over
     if (allFilled || guessHistory.length + 1 >= 12) {
       if (allFilled) setIsWin(true);
       setGameOver(true);
@@ -67,12 +68,14 @@ export default function useGameLogic(setGameOverModalOpen) {
   };
 
   // Handle whole song title guesses
-  const handleGuessSong = (songGuess) => {
+  const handleGuessSong = (songGuessArray) => {
     if (gameOver || !randomSong) return;
 
+    const songGuess = songGuessArray.join(""); // Convert array to string
     const correct = songGuess.toLowerCase() === randomSong.name.toLowerCase();
     addToHistory(songGuess.toLowerCase(), songGuess, correct);
 
+    // Check if game is over
     if (correct || guessHistory.length + 1 >= 12) {
       if (correct) setIsWin(true);
       setGameOver(true);
@@ -83,7 +86,6 @@ export default function useGameLogic(setGameOverModalOpen) {
   // Update key statuses whenever guessHistory or randomSong changes
   useEffect(() => {
     if (!randomSong) return;
-
     const newKeyStatuses = { ...keyStatuses };
 
     // Filter for single character guesses and update letter key colors
@@ -96,11 +98,8 @@ export default function useGameLogic(setGameOverModalOpen) {
         } else {
           newKeyStatuses[upperLetter] = 'incorrect';
         }
-
       });
-
     setKeyStatuses(newKeyStatuses);
-
   }, [guessHistory, randomSong]);
 
   const renderBlanks = () => {

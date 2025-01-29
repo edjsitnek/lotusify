@@ -4,14 +4,14 @@ import GameOverModal from './components/Modals/GameOverModal';
 import HistoryModal from './components/Modals/HistoryModal';
 import SongGuessModal from './components/Modals/SongGuessModal';
 import useGameLogic from './hooks/useGameLogic'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [showHistory, setShowHistory] = useState(false); // Track if show history modal is on the screen
   const [showSongGuess, setShowSongGuess] = useState(false); // Track if song guess modal is on the screen
   const [gameOverModalOpen, setGameOverModalOpen] = useState(false); // Track if modal is open
-  const [historyButtonText, setHistoryButtonText] = useState("View History")
-  const [guessButtonText, setGuessButtonText] = useState("Guess Song")
+  const [historyButtonText, setHistoryButtonText] = useState("View History") // Change button text for history modal
+  const [guessButtonText, setGuessButtonText] = useState("Guess Song") // Change button text for song guess modal
   const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
 
   const {
@@ -26,19 +26,29 @@ function App() {
     isWin
   } = useGameLogic(setGameOverModalOpen);
 
+  // Initialize songGuess with blanks, if applicable
+  useEffect(() => {
+    if (randomSong) {
+      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : "")));
+    }
+  }, [randomSong]);
+
+  // Handle keyboard clicks
   const handleKeyboardClick = (letter) => {
     if (!showHistory) {
       handleGuessLetter(letter);
     }
   };
 
+  // Handle song title guesses
   const handleGuessSongSubmit = () => {
     if (!showHistory) {
-      handleGuessSong(songGuess);
-      setSongGuess("") // Clear input after submission
+      handleGuessSong(songGuess, setSongGuess);
+      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : ""))) // Clear input after submission
     }
   }
 
+  // Toggle history modal and change button text
   const handleHistoryButton = () => {
     setShowHistory(!showHistory)
     if (!showHistory) {
@@ -49,6 +59,7 @@ function App() {
     }
   }
 
+  // Toggle song guess modal and change button text
   const handleGuessSongButton = () => {
     setShowSongGuess(!showSongGuess)
     if (!showSongGuess) {
@@ -80,6 +91,7 @@ function App() {
                 randomSong={randomSong}
                 songGuess={songGuess}
                 setSongGuess={setSongGuess}
+                guessHistory={guessHistory}
                 handleGuessSongSubmit={handleGuessSongSubmit}
                 onClickX={handleGuessSongButton}
               />
