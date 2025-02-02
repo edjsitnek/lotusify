@@ -1,7 +1,7 @@
 import './HistoryModal.css'
 
 // A modal that displays guess history and pops up when the "View Guess History" button is pressed
-export default function HistoryModal({ guessHistory, onClickX }) {
+export default function HistoryModal({ guessHistory, onClickX, isOnTop }) {
   const exitModal = () => {
     onClickX(false);
   }
@@ -21,7 +21,7 @@ export default function HistoryModal({ guessHistory, onClickX }) {
   }
 
   return (
-    <div className="history-modal-background" onClick={exitModal}>
+    <div className="history-modal-background" onClick={exitModal} style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="history-modal-content" onClick={e => e.stopPropagation()}>
         <table>
           <thead>

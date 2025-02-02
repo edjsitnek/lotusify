@@ -4,11 +4,14 @@ import GameOverModal from './components/Modals/GameOverModal';
 import HistoryModal from './components/Modals/HistoryModal';
 import SongGuessModal from './components/Modals/SongGuessModal';
 import useGameLogic from './hooks/useGameLogic'
+import useKeyboard from './hooks/useKeyboard';
 import { useState, useEffect } from 'react';
 
 function App() {
+  const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode
   const [showHistory, setShowHistory] = useState(false); // Track if show history modal is on the screen
   const [showSongGuess, setShowSongGuess] = useState(false); // Track if song guess modal is on the screen
+  const [modalOrder, setModalOrder] = useState([]); // Track modal stacking order
   const [gameOverModalOpen, setGameOverModalOpen] = useState(false); // Track if modal is open
   const [historyButtonText, setHistoryButtonText] = useState("View History") // Change button text for history modal
   const [guessButtonText, setGuessButtonText] = useState("Guess Song") // Change button text for song guess modal
@@ -26,6 +29,14 @@ function App() {
     isWin
   } = useGameLogic(setGameOverModalOpen);
 
+  // Handle song title guesses
+  const handleGuessSongSubmit = () => {
+    if (!gameOver) {
+      handleGuessSong(songGuess, setSongGuess);
+      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : ""))) // Reset input after submission
+    }
+  }
+
   // Initialize songGuess with blanks, if applicable
   useEffect(() => {
     if (randomSong) {
@@ -33,28 +44,43 @@ function App() {
     }
   }, [randomSong]);
 
-  // Handle keyboard clicks
-  const handleKeyboardClick = (letter) => {
+  const {
+    handleBackspace,
+    handleKeyDown,
+  } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSongSubmit);
+
+
+  // useEffect(() => {
+  //   console.log("gameMode updated:", gameMode);
+  // }, [gameMode]);
+
+  // Handle onscreen keyboard clicks 
+  const handleOnscreenKeyboard = (key) => {
     if (!showHistory) {
-      handleGuessLetter(letter);
+      if (gameMode === "letter") {
+        handleGuessLetter(key);
+      }
+      else if (gameMode === "song") {
+        const firstEmptyIndex = songGuess.findIndex((char) => !char);
+        if (firstEmptyIndex !== -1) {
+          const updatedGuess = [...songGuess];
+          updatedGuess[firstEmptyIndex] = key.toUpperCase();
+          setSongGuess(updatedGuess);
+        }
+        if (key === "BACKSPACE") handleBackspace()
+      }
     }
   };
-
-  // Handle song title guesses
-  const handleGuessSongSubmit = () => {
-    if (!showHistory) {
-      handleGuessSong(songGuess, setSongGuess);
-      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : ""))) // Clear input after submission
-    }
-  }
 
   // Toggle history modal and change button text
   const handleHistoryButton = () => {
     setShowHistory(!showHistory)
     if (!showHistory) {
+      openModal("history");
       setHistoryButtonText("Close History")
     }
     else {
+      closeModal("history");
       setHistoryButtonText("View History")
     }
   }
@@ -64,11 +90,31 @@ function App() {
     setShowSongGuess(!showSongGuess)
     if (!showSongGuess) {
       setGuessButtonText("Return")
+      setGameMode("song")
+      openModal("songGuess");
     }
     else {
       setGuessButtonText("Guess Song")
+      closeModal("songGuess");
+      setGameMode("letter")
     }
   }
+
+  // Handle game over modal close
+  const handleGameOverModalClose = () => {
+    setGameOverModalOpen(!gameOverModalOpen);
+    handleGuessSongButton();
+  }
+
+  // Open modals based on order
+  const openModal = (modalName) => {
+    setModalOrder((prevOrder) => [...prevOrder.filter((m) => m !== modalName), modalName]);
+  };
+
+  // Close modals based on order
+  const closeModal = (modalName) => {
+    setModalOrder((prevOrder) => prevOrder.filter((m) => m !== modalName));
+  };
 
   return (
     <>
@@ -77,23 +123,25 @@ function App() {
 
         <div className="body">
           <div className="blanks">{renderBlanks()}</div>
-          {showHistory && (
+          {showHistory && modalOrder.includes("history") && (
             <div>
               <HistoryModal
                 guessHistory={guessHistory}
                 onClickX={handleHistoryButton}
+                isOnTop={modalOrder[modalOrder.length - 1] === "history"}
               />
             </div>
           )}
-          {showSongGuess && (
+          {showSongGuess && !gameOver && modalOrder.includes("songGuess") && (
             <div>
               <SongGuessModal
                 randomSong={randomSong}
                 songGuess={songGuess}
                 setSongGuess={setSongGuess}
                 guessHistory={guessHistory}
+                handleKeyDown={handleKeyDown}
                 handleGuessSongSubmit={handleGuessSongSubmit}
-                onClickX={handleGuessSongButton}
+                isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
               />
             </div>
           )}
@@ -102,11 +150,17 @@ function App() {
         <div className="footer">
           <div>
             Guesses: {guessHistory.length}/12
-            <button onClick={() => handleGuessSongButton()}>{guessButtonText}</button>
+            {!gameOver && (
+              <button onClick={() => handleGuessSongButton()}>{guessButtonText}</button>
+            )}
             <button onClick={() => handleHistoryButton()}>{historyButtonText}</button>
           </div>
 
-          <Keyboard onKeyPress={handleKeyboardClick} keyStatuses={keyStatuses} />
+          <Keyboard
+            onKeyPress={handleOnscreenKeyboard}
+            keyStatuses={keyStatuses}
+            handleBackspace={handleBackspace}
+          />
         </div>
         {gameOver && (
           gameOverModalOpen ? (
@@ -114,7 +168,7 @@ function App() {
               isWin={isWin}
               numGuesses={guessHistory.length}
               solution={randomSong.name}
-              onClickX={setGameOverModalOpen}
+              onClickX={handleGameOverModalClose}
               onClickReset={pickRandomSong}
             />
           ) : (

@@ -2,7 +2,7 @@ import './SongGuessModal.css'
 import { useEffect } from 'react';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
-export default function SongGuessModal({ randomSong, songGuess, setSongGuess, guessHistory, handleGuessSongSubmit, onClickX }) {
+export default function SongGuessModal({ randomSong, songGuess, setSongGuess, guessHistory, handleKeyDown, handleGuessSongSubmit, isOnTop }) {
   // Focus on the first blank when the modal opens
   useEffect(() => {
     if (randomSong) {
@@ -11,15 +11,10 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
     }
   }, [randomSong]);
 
-  useEffect(() => {
-    console.log("songGuess updated:", songGuess);
-  }, [songGuess]);
+  // useEffect(() => {
+  //   console.log("songGuess updated:", songGuess);
+  // }, [songGuess]);
 
-
-  // Close the modal
-  const exitModal = () => {
-    onClickX(false);
-  }
 
   // Handle input change for each blank
   const handleInputChange = (value, index) => {
@@ -40,33 +35,6 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
     }
     const nextInput = document.querySelector(`input:nth-child(${nextIndex + 1})`);
     nextInput?.focus();
-  };
-
-  // Handle backspace key press
-  const handleKeyDown = (e, index) => {
-    if (e.key === "Backspace") {
-      e.preventDefault();
-
-      const updatedGuess = [...songGuess];
-
-      if (updatedGuess[index]) {
-        // First backspace: clear the current input
-        updatedGuess[index] = "";
-        setSongGuess(updatedGuess);
-      } else if (index > 0) {
-        // Second backspace: move focus to the previous blank and clear
-        let prevIndex = index - 1;
-        while (randomSong.name[prevIndex] === " " && prevIndex >= 0) {
-          prevIndex--;
-        }
-
-        updatedGuess[prevIndex] = ""; // Clear previous input
-        setSongGuess(updatedGuess);
-
-        const prevInput = document.querySelector(`input:nth-child(${prevIndex + 1})`);
-        prevInput?.focus();
-      }
-    }
   };
 
   // Render interactive blanks for song title guess
@@ -104,7 +72,7 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
   };
 
   return (
-    <div className="song-guess-modal-background" onClick={exitModal}>
+    <div className="song-guess-modal-background" style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="song-guess-modal-content" onClick={e => e.stopPropagation()}>
         {renderInteractiveBlanks()}
         <button onClick={handleGuessSongSubmit}>
