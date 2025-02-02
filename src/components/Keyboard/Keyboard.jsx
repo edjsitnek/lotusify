@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Keyboard.css'
 
 // An on-screen keyboard for typing guesses
-export default function Keyboard({ onKeyPress, keyStatuses }) {
+export default function Keyboard({ onKeyPress, keyStatuses, handleBackspace }) {
   const [showNumKeys, setShowNumKeys] = useState(false); // Switch between letter and number/special character keyboards
   const letterKeys = "QWERTYUIOPASDFGHJKLZXCVBNM".split("");
   const numChars = "1234567890".split("");
@@ -54,7 +54,7 @@ export default function Keyboard({ onKeyPress, keyStatuses }) {
             <button className="key key-large" onClick={() => setShowNumKeys(false)} >
               ABC
             </button>
-            <button className="key key-large">
+            <button className="key key-large" onClick={() => handleBackspace()}>
               ⌫
             </button>
           </div>
