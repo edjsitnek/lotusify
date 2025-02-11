@@ -1,0 +1,38 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  height: 3.8rem;
+  width: calc(10vw - 0.6rem);
+  max-width: 4rem;
+  margin: 0.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  background-color: var(--key-gray);
+  transition: background-color 0.2s ease;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.key.correct {
+  background-color: var(--correct);
+}
+
+.key.incorrect {
+  background-color: var(--incorrect);
+}
+
+.key-large {
+  width: calc(16vw - 0.65rem);
+  max-width: 6.3rem;
+}
