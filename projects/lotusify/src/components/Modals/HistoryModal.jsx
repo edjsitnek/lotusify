@@ -9,14 +9,10 @@ export default function HistoryModal({ guessHistory, onClickX, isOnTop }) {
   // Set content and class of result row to change text/color according to result
   const handleResult = (entry) => {
     if (entry.correct) {
-      return (
-        <td className="correct">Correct</td>
-      )
+      return <td className="correct">Correct</td>
     }
     else {
-      return (
-        <td className="incorrect">Incorrect</td>
-      )
+      return <td className="incorrect">Incorrect</td>
     }
   }
 

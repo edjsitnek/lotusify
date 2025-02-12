@@ -1,5 +1,4 @@
-
-export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSongSubmit) {
+export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal) {
   // Handle the backspace action for physical and onscreen keyboard
   const handleBackspace = (index) => {
     const updatedGuess = [...songGuess];
@@ -34,7 +33,7 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
         handleBackspace(index);
       }
       else if (e.key === "Enter") {
-        handleGuessSongSubmit();
+        handleGuessSong();
         const firstInput = document.querySelector(".interactive-blanks input:not([disabled])");
         firstInput?.focus();
       }
@@ -65,5 +64,23 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
     }
   };
 
-  return { handleBackspace, handleKeyDown }
+  // Handle onscreen keyboard clicks 
+  const handleOnscreenKeyboard = (key) => {
+    if (!showHistoryModal) {
+      if (gameMode === "letter") {
+        handleGuessLetter(key);
+      }
+      else if (gameMode === "song") {
+        const firstEmptyIndex = songGuess.findIndex((char) => !char);
+        if (firstEmptyIndex !== -1) {
+          const updatedGuess = [...songGuess];
+          updatedGuess[firstEmptyIndex] = key.toUpperCase();
+          setSongGuess(updatedGuess);
+        }
+        if (key === "BACKSPACE") handleBackspace()
+      }
+    }
+  };
+
+  return { handleBackspace, handleKeyDown, handleOnscreenKeyboard }
 }

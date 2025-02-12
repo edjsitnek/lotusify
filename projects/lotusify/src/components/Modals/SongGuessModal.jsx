@@ -2,7 +2,7 @@ import './SongGuessModal.css'
 import { useEffect } from 'react';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
-export default function SongGuessModal({ randomSong, songGuess, setSongGuess, guessHistory, handleKeyDown, handleGuessSongSubmit, isOnTop }) {
+export default function SongGuessModal({ randomSong, songGuess, setSongGuess, guessHistory, handleKeyDown, handleGuessSong, isOnTop }) {
   // Focus on the first blank when the modal opens
   useEffect(() => {
     if (randomSong) {
@@ -11,20 +11,13 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
     }
   }, [randomSong]);
 
-  // useEffect(() => {
-  //   console.log("songGuess updated:", songGuess);
-  // }, [songGuess]);
-
-
   // Handle input change for each blank
   const handleInputChange = (value, index) => {
     if (!/^[a-zA-Z0-9]*$/.test(value)) return; // Prevent non-alphanumeric input
 
     // Update song guess state
     const updatedGuess = [...songGuess];
-
     if (updatedGuess[index] === " ") return;
-
     updatedGuess[index] = value.toUpperCase();
     setSongGuess(updatedGuess);
 
@@ -75,7 +68,7 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
     <div className="song-guess-modal-background" style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="song-guess-modal-content" onClick={e => e.stopPropagation()}>
         {renderInteractiveBlanks()}
-        <button onClick={handleGuessSongSubmit}>
+        <button onClick={handleGuessSong}>
           Guess Song
         </button>
       </div>
