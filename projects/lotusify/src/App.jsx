@@ -31,9 +31,11 @@ function App() {
   } = useGameLogic(setShowGameOverModal);
 
   const {
+    activeIndex,
+    setActiveIndex,
     handleBackspace,
     handleKeyDown,
-    handleOnscreenKeyboard
+    handleKeyPress
   } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal);
 
   // Toggle song guess modal and change button text
@@ -110,8 +112,11 @@ function App() {
                 setSongGuess={setSongGuess}
                 guessHistory={guessHistory}
                 handleKeyDown={handleKeyDown}
+                handleKeyPress={handleKeyPress}
                 handleGuessSong={handleGuessSong}
                 isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
               />
             </div>
           )}
@@ -123,10 +128,15 @@ function App() {
             {!gameOver && (
               <button onClick={() => handleGuessSongButton()}>{guessButtonText}</button>
             )}
-            <button onClick={() => handleHistoryButton()}>{historyButtonText}</button>
+            <button
+              onClick={() => handleHistoryButton()}
+              onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
+            >
+              {historyButtonText}
+            </button>
           </div>
           <Keyboard
-            onKeyPress={handleOnscreenKeyboard}
+            onKeyPress={handleKeyPress}
             keyStatuses={keyStatuses}
             handleBackspace={handleBackspace}
           />

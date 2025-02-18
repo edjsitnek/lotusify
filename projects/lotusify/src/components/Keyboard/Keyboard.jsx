@@ -15,6 +15,7 @@ export default function Keyboard({ onKeyPress, keyStatuses, handleBackspace }) {
           key={i}
           className={`key ${keyStatuses[key] || ''}`} // Gets the key status or returns empty string
           onClick={() => onKeyPress(key)}
+          onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
         >
           {key}
         </button>
@@ -37,7 +38,7 @@ export default function Keyboard({ onKeyPress, keyStatuses, handleBackspace }) {
               123*
             </button>
             {fillKeys(letterKeys, 19)}
-            <button className="key key-large">
+            <button className="key key-large" onClick={handleBackspace}>
               ⌫
             </button>
           </div>
@@ -54,7 +55,7 @@ export default function Keyboard({ onKeyPress, keyStatuses, handleBackspace }) {
             <button className="key key-large" onClick={() => setShowNumKeys(false)} >
               ABC
             </button>
-            <button className="key key-large" onClick={() => handleBackspace()}>
+            <button className="key key-large" onClick={handleBackspace}>
               ⌫
             </button>
           </div>

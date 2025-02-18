@@ -52,3 +52,7 @@
   background-color: transparent;
   border: none;
 }
+
+.active-input {
+  background-color: rgba(var(--answer-blue), 0.4);
+}

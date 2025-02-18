@@ -31,6 +31,25 @@ export default function useGameLogic(setShowGameOverModal) {
     }
   }, [randomSong]);
 
+  // Update key statuses whenever guessHistory or randomSong changes
+  useEffect(() => {
+    if (!randomSong) return;
+    const newKeyStatuses = { ...keyStatuses };
+
+    // Filter for single character guesses and update letter key colors
+    guessHistory
+      .filter((entry) => entry.guess.length === 1)
+      .forEach((entry) => {
+        const upperLetter = entry.guess.toUpperCase();
+        if (randomSong.name.toUpperCase().includes(upperLetter)) {
+          newKeyStatuses[upperLetter] = 'correct';
+        } else {
+          newKeyStatuses[upperLetter] = 'incorrect';
+        }
+      });
+    setKeyStatuses(newKeyStatuses);
+  }, [guessHistory, randomSong]);
+
   // Pick the song to be guessed from loaded song list
   const pickRandomSong = () => {
     if (songs.length > 0) {
@@ -91,25 +110,6 @@ export default function useGameLogic(setShowGameOverModal) {
       setShowGameOverModal(true);
     }
   };
-
-  // Update key statuses whenever guessHistory or randomSong changes
-  useEffect(() => {
-    if (!randomSong) return;
-    const newKeyStatuses = { ...keyStatuses };
-
-    // Filter for single character guesses and update letter key colors
-    guessHistory
-      .filter((entry) => entry.guess.length === 1)
-      .forEach((entry) => {
-        const upperLetter = entry.guess.toUpperCase();
-        if (randomSong.name.toUpperCase().includes(upperLetter)) {
-          newKeyStatuses[upperLetter] = 'correct';
-        } else {
-          newKeyStatuses[upperLetter] = 'incorrect';
-        }
-      });
-    setKeyStatuses(newKeyStatuses);
-  }, [guessHistory, randomSong]);
 
   const renderBlanks = () => {
     if (!randomSong) return null;
