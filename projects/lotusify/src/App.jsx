@@ -35,8 +35,15 @@ function App() {
     setActiveIndex,
     handleBackspace,
     handleKeyDown,
-    handleKeyPress
+    handleKeyClick
   } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal);
+
+  // Refocus game container for physical keyboard letter guesses after modal closes
+  const refocusGameContainer = () => {
+    setTimeout(() => {
+      document.querySelector(".game-container")?.focus();
+    }, 0);
+  };
 
   // Toggle song guess modal and change button text
   const handleGuessSongButton = () => {
@@ -50,6 +57,7 @@ function App() {
       setGuessButtonText("Guess Song")
       setGameMode("letter")
       closeModal("songGuess");
+      refocusGameContainer();
     }
   }
 
@@ -91,7 +99,7 @@ function App() {
 
   return (
     <>
-      <div className="game-container">
+      <div className="game-container" onKeyDown={handleKeyDown} tabIndex={0}>
         <div className="header">Lotusify</div>
         <div className="body">
           <div className="blanks">{renderBlanks()}</div>
@@ -112,7 +120,7 @@ function App() {
                 setSongGuess={setSongGuess}
                 guessHistory={guessHistory}
                 handleKeyDown={handleKeyDown}
-                handleKeyPress={handleKeyPress}
+                handleKeyClick={handleKeyClick}
                 handleGuessSong={handleGuessSong}
                 isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
                 activeIndex={activeIndex}
@@ -126,7 +134,12 @@ function App() {
           <div>
             Guesses: {guessHistory.length}/12
             {!gameOver && (
-              <button onClick={() => handleGuessSongButton()}>{guessButtonText}</button>
+              <button
+                onClick={() => handleGuessSongButton()}
+                onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
+              >
+                {guessButtonText}
+              </button>
             )}
             <button
               onClick={() => handleHistoryButton()}
@@ -136,7 +149,7 @@ function App() {
             </button>
           </div>
           <Keyboard
-            onKeyPress={handleKeyPress}
+            onKeyClick={handleKeyClick}
             keyStatuses={keyStatuses}
             handleBackspace={handleBackspace}
           />

@@ -1,7 +1,7 @@
 import './SongGuessModal.css'
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
-export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyPress, handleGuessSong, isOnTop, activeIndex, setActiveIndex }) {
+export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyClick, handleGuessSong, isOnTop, activeIndex, setActiveIndex }) {
   // Reset active index when the guess song button is pressed
   const handleGuessButton = () => {
     handleGuessSong();
@@ -35,7 +35,7 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
               value={guessedLetter || ""} // Show guessed letters
               placeholder={!isSpace ? placeholder : ""} // Faded placeholder for correctly guessed blanks
               onFocus={() => setActiveIndex(index)} // Highlight value
-              onChange={(e) => handleKeyPress(e.target.value)}
+              onChange={(e) => handleKeyClick(e.target.value)}
               onKeyDown={(e) => handleKeyDown(e)}
             />
           );

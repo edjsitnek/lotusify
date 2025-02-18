@@ -17,6 +17,10 @@
   color: rgb(var(--answer-blue));
 }
 
+.game-container:focus {
+  outline: none;
+}
+
 .header {
   padding-top: 1rem;
   font-size: 2em;

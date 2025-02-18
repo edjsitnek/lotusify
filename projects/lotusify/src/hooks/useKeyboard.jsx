@@ -70,43 +70,47 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
     }
   }
 
-  // Handle backspace, enter, left arrow, and right arrow key presses
+  // Handle physical keyboard input
   const handleKeyDown = (e) => {
-    if (gameMode === "letter") {
-      handleGuessLetter(e.key);
-    }
-    else if (gameMode === "song") {
-      if (e.key === "Backspace") {
-        e.preventDefault();
-        handleBackspace();
-      }
-      else if (e.key === "Enter") {
-        handleGuessSong();
-        setActiveIndex(0);
-      }
-      else if (/^[a-zA-Z0-9]$/.test(e.key)) {  // If a letter or number is pressed
-        e.preventDefault();
-        handleKeyPress(e.key);
-      }
-      else if (e.key === "ArrowLeft") {
-        let prevIndex = activeIndex - 1;
-        while (prevIndex >= 0 && randomSong.name[prevIndex] === " ") {
-          prevIndex--; // Skip spaces
+    if (!showHistoryModal) {
+      if (gameMode === "letter") {
+        if (/^[a-zA-Z0-9]$/.test(e.key)) {
+          handleGuessLetter(e.key);
         }
-        setActiveIndex(Math.max(0, prevIndex)); // Prevent negative index
       }
-      else if (e.key === "ArrowRight") {
-        let nextIndex = activeIndex + 1;
-        while (nextIndex < songGuess.length && randomSong.name[nextIndex] === " ") {
-          nextIndex++; // Skip spaces
+      else if (gameMode === "song") {
+        if (e.key === "Backspace") {
+          e.preventDefault();
+          handleBackspace();
         }
-        setActiveIndex(Math.min(songGuess.length - 1, nextIndex)); // Prevent out-of-bounds index
+        else if (e.key === "Enter") {
+          handleGuessSong();
+          setActiveIndex(0);
+        }
+        else if (/^[a-zA-Z0-9]$/.test(e.key)) {  // If a letter or number is pressed
+          e.preventDefault();
+          handleInputChange(e.key);
+        }
+        else if (e.key === "ArrowLeft") {
+          let prevIndex = activeIndex - 1;
+          while (prevIndex >= 0 && randomSong.name[prevIndex] === " ") {
+            prevIndex--; // Skip spaces
+          }
+          setActiveIndex(Math.max(0, prevIndex)); // Prevent negative index
+        }
+        else if (e.key === "ArrowRight") {
+          let nextIndex = activeIndex + 1;
+          while (nextIndex < songGuess.length && randomSong.name[nextIndex] === " ") {
+            nextIndex++; // Skip spaces
+          }
+          setActiveIndex(Math.min(songGuess.length - 1, nextIndex)); // Prevent out-of-bounds index
+        }
       }
     }
   };
 
-  // Handle onscreen and physical keyboard interaction 
-  const handleKeyPress = (key) => {
+  // Handle onscreen keyboard input
+  const handleKeyClick = (key) => {
     if (!showHistoryModal) {
       if (gameMode === "letter") {
         handleGuessLetter(key);
@@ -117,5 +121,5 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
     }
   };
 
-  return { activeIndex, setActiveIndex, handleBackspace, handleKeyDown, handleKeyPress }
+  return { activeIndex, setActiveIndex, handleBackspace, handleKeyDown, handleKeyClick }
 }
