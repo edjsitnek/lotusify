@@ -35,7 +35,8 @@ function App() {
     setActiveIndex,
     handleBackspace,
     handleKeyDown,
-    handleKeyClick
+    handleKeyClick,
+    handleTypedLetterGuess
   } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal);
 
   // Refocus game container for physical keyboard letter guesses after modal closes
@@ -99,7 +100,7 @@ function App() {
 
   return (
     <>
-      <div className="game-container" onKeyDown={handleKeyDown} tabIndex={0}>
+      <div className="game-container" onKeyDown={handleTypedLetterGuess} tabIndex={0}>
         <div className="header">Lotusify</div>
         <div className="body">
           <div className="blanks">{renderBlanks()}</div>

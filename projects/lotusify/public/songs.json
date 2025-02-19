@@ -70,5 +70,13 @@
     "artist": "Lotus",
     "year": 2005,
     "isCover": false
+  },
+  {
+    "name": "Anti-Gravity",
+    "album": "Eat the Light",
+    "albumArtwork": null,
+    "artist": "Lotus",
+    "year": 2016,
+    "isCover": false
   }
 ]

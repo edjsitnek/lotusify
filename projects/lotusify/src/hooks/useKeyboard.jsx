@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { isPunctuation } from "../utils/isPunctuation";
 
 export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal) {
   const [activeIndex, setActiveIndex] = useState(0); // Track the active input index for song guesses
@@ -39,7 +40,7 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
 
     // Automatically move to the next blank if valid input, skipping spaces
     let nextIndex = activeIndex + 1;
-    while (randomSong.name[nextIndex] === " " && nextIndex < randomSong.name.length) {
+    while (randomSong.name[nextIndex] === " " || isPunctuation(randomSong.name[nextIndex]) && nextIndex < randomSong.name.length) {
       nextIndex++;
     }
     if (nextIndex < songGuess.length) {
@@ -58,7 +59,7 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
     } else {
       // Second backspace: move focus to the previous blank and clear
       let prevIndex = activeIndex - 1;
-      while (randomSong.name[prevIndex] === " " && prevIndex >= 0) {
+      while (randomSong.name[prevIndex] === " " || isPunctuation(randomSong.name[prevIndex]) && prevIndex >= 0) {
         prevIndex--;
       }
 
@@ -70,15 +71,21 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
     }
   }
 
-  // Handle physical keyboard input
-  const handleKeyDown = (e) => {
+  // Handle physical keyboard input for letter guesses
+  const handleTypedLetterGuess = (e) => {
     if (!showHistoryModal) {
       if (gameMode === "letter") {
         if (/^[a-zA-Z0-9]$/.test(e.key)) {
-          handleGuessLetter(e.key);
+          handleGuessLetter(e.key.toUpperCase());
         }
       }
-      else if (gameMode === "song") {
+    }
+  }
+
+  // Handle physical keyboard input for song guesses
+  const handleKeyDown = (e) => {
+    if (!showHistoryModal) {
+      if (gameMode === "song") {
         if (e.key === "Backspace") {
           e.preventDefault();
           handleBackspace();
@@ -93,14 +100,14 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
         }
         else if (e.key === "ArrowLeft") {
           let prevIndex = activeIndex - 1;
-          while (prevIndex >= 0 && randomSong.name[prevIndex] === " ") {
+          while (prevIndex >= 0 && randomSong.name[prevIndex] === " " || isPunctuation(randomSong.name[prevIndex])) {
             prevIndex--; // Skip spaces
           }
           setActiveIndex(Math.max(0, prevIndex)); // Prevent negative index
         }
         else if (e.key === "ArrowRight") {
           let nextIndex = activeIndex + 1;
-          while (nextIndex < songGuess.length && randomSong.name[nextIndex] === " ") {
+          while (nextIndex < songGuess.length && randomSong.name[nextIndex] === " " || isPunctuation(randomSong.name[nextIndex])) {
             nextIndex++; // Skip spaces
           }
           setActiveIndex(Math.min(songGuess.length - 1, nextIndex)); // Prevent out-of-bounds index
@@ -121,5 +128,5 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
     }
   };
 
-  return { activeIndex, setActiveIndex, handleBackspace, handleKeyDown, handleKeyClick }
+  return { activeIndex, setActiveIndex, handleBackspace, handleKeyDown, handleKeyClick, handleTypedLetterGuess }
 }

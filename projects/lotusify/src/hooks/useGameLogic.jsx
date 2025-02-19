@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { isPunctuation } from "../utils/isPunctuation";
 
 export default function useGameLogic(setShowGameOverModal) {
   const [songs, setSongs] = useState([]); // List of songs to pull the answer from
@@ -27,7 +28,7 @@ export default function useGameLogic(setShowGameOverModal) {
   // Initialize songGuess with blanks, if applicable
   useEffect(() => {
     if (randomSong) {
-      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : "")));
+      setSongGuess(randomSong.name.split("").map((char) => (/[a-zA-Z0-9]/.test(char) ? "" : char)));
     }
   }, [randomSong]);
 
@@ -79,7 +80,7 @@ export default function useGameLogic(setShowGameOverModal) {
     // Check if all of the blanks are filled for game over condition
     const allFilled = randomSong.name.split("").every((char) => {
       return (
-        char === " " ||
+        char === " " || isPunctuation(char) ||
         [...guessHistory, { guess: letter, correct }].some(
           (entry) => entry.guess.toLowerCase() === char.toLowerCase() && entry.correct
         )
@@ -101,7 +102,7 @@ export default function useGameLogic(setShowGameOverModal) {
     const joinedSongGuess = songGuess.join(""); // Convert songGuess array to string
     const correct = joinedSongGuess.toLowerCase() === randomSong.name.toLowerCase();
     addToHistory(joinedSongGuess.toLowerCase(), joinedSongGuess, correct);
-    setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : ""))) // Reset input after submission
+    setSongGuess(randomSong.name.split("").map((char) => (/[a-zA-Z0-9]/.test(char) ? "" : char))) // Reset input after submission
 
     // Check if game is over
     if (correct || guessHistory.length + 1 >= 12) {
@@ -115,17 +116,18 @@ export default function useGameLogic(setShowGameOverModal) {
     if (!randomSong) return null;
 
     return randomSong.name.split("").map((char, index) => {
+      const isSpace = char === " ";
       // Check if the char has been guessed
       const isGuessed = guessHistory.some(
         (entry) => entry.guess.toLowerCase() === char.toLowerCase() && entry.correct
       );
-      // If char is a space, display a space
-      // If char has been guessed, display the char
-      // If char has not been guessed, display underscore
-      const displayChar = char === " " ? " " : isGuessed ? char : "_";
+
+      // Auto-populate spaces & punctuation, otherwise show guessed letters or blanks
+      const displayChar = isSpace || isPunctuation(char) ? char : isGuessed ? char : "_";
+      const className = isGuessed || isPunctuation(char) ? "revealed punctuation" : "";
 
       return (
-        <span key={index} className={isGuessed ? "revealed" : ""}>
+        <span key={index} className={className}>
           {displayChar}
         </span>
       );

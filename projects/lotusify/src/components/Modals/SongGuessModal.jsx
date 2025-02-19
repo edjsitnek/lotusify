@@ -1,4 +1,5 @@
 import './SongGuessModal.css'
+import { isPunctuation as checkPunctuation } from '../../utils/isPunctuation';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
 export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyClick, handleGuessSong, isOnTop, activeIndex, setActiveIndex }) {
@@ -16,6 +17,7 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
       <div className="interactive-blanks">
         {randomSong.name.split("").map((char, index) => {
           const isSpace = char === " ";
+          const isPunctuation = checkPunctuation(char);
           const guessedLetter = songGuess[index];
           const correctGuesses = guessHistory.filter(
             (entry) => entry.correct && entry.guess.toLowerCase() === char.toLowerCase()
@@ -27,13 +29,17 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
               data-index={index}
               id={index}
               key={index}
-              className={`${isSpace ? "space" : "interactive-blank"} ${activeIndex === index ? "active-input" : ""}`}
+              className={`
+                ${isSpace ? "space" : "interactive-blank"}
+                ${isPunctuation ? "punctuation" : "interactive-blank"} 
+                ${activeIndex === index ? "active-input" : ""}
+                `}
               type="text"
               maxLength={1}
-              disabled={isSpace} // Disable input for spaces
+              disabled={isSpace || isPunctuation} // Disable input for spaces
               autoComplete="off"
               value={guessedLetter || ""} // Show guessed letters
-              placeholder={!isSpace ? placeholder : ""} // Faded placeholder for correctly guessed blanks
+              placeholder={!isSpace && !isPunctuation ? placeholder : ""} // Faded placeholder for correctly guessed blanks
               onFocus={() => setActiveIndex(index)} // Highlight value
               onChange={(e) => handleKeyClick(e.target.value)}
               onKeyDown={(e) => handleKeyDown(e)}

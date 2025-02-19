@@ -43,3 +43,7 @@
   align-items: center;
   padding-bottom: 1rem;
 }
+
+.punctuation {
+  color: var(--correct-letter-color);
+}
