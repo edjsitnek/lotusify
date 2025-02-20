@@ -1,69 +1,128 @@
+import { useState, useEffect } from "react";
+import { isPunctuation } from "../utils/isPunctuation";
 
-export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSongSubmit) {
+export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal) {
+  const [activeIndex, setActiveIndex] = useState(0); // Track the active input index for song guesses
+
+  // Refocus on active input whenever it changes
+  useEffect(() => {
+    const activeInput = document.querySelector(`input[data-index="${activeIndex}"]`);
+    if (gameMode === "song") {
+      if (activeInput) {
+        activeInput.classList.add("active-input"); // Use dynamic class on active input so the color doesn't blink when refocusing
+        activeInput.focus();
+      }
+    }
+  }, [activeIndex, gameMode]);
+
+  // Refocus on the active input when clicking back on the game container
+  const handleClickBackOnGame = (e) => {
+    if (gameMode === "song" && !e.target.closest("button, .modal")) {
+      setTimeout(() => {
+        const activeInput = document.querySelector(`input[data-index="${activeIndex}"]`);
+        activeInput?.focus();
+      }, 0);
+    }
+  };
+
+  // Handle input change for each blank for a song title guess
+  const handleInputChange = (value) => {
+    if (!/^[a-zA-Z0-9]*$/.test(value)) return; // Prevent non-alphanumeric input
+
+    // Update song guess state
+    const updatedGuess = [...songGuess];
+    updatedGuess[activeIndex] = value.toUpperCase();
+    setSongGuess(updatedGuess);
+
+    // Automatically move to the next blank if valid input, skipping spaces and punctuation
+    let nextIndex = activeIndex + 1;
+    while (randomSong.name[nextIndex] === " " || isPunctuation(randomSong.name[nextIndex]) && nextIndex < randomSong.name.length) {
+      nextIndex++;
+    }
+    if (nextIndex < songGuess.length) {
+      setActiveIndex(nextIndex);
+    }
+  };
+
   // Handle the backspace action for physical and onscreen keyboard
-  const handleBackspace = (index) => {
+  const handleBackspace = () => {
     const updatedGuess = [...songGuess];
 
-    if (updatedGuess[index]) {
+    if (updatedGuess[activeIndex]) {
       // First backspace: clear the current input
-      updatedGuess[index] = "";
+      updatedGuess[activeIndex] = "";
       setSongGuess(updatedGuess);
-    } else if (index > 0) {
+    } else {
       // Second backspace: move focus to the previous blank and clear
-      let prevIndex = index - 1;
-      while (randomSong.name[prevIndex] === " " && prevIndex >= 0) {
+      let prevIndex = activeIndex - 1;
+      while (randomSong.name[prevIndex] === " " || isPunctuation(randomSong.name[prevIndex]) && prevIndex >= 0) {
         prevIndex--;
       }
 
-      updatedGuess[prevIndex] = ""; // Clear previous input
-      setSongGuess(updatedGuess);
-
-      const prevInput = document.querySelector(`input:nth-child(${prevIndex + 1})`);
-      prevInput?.focus();
+      if (prevIndex >= 0) {
+        updatedGuess[prevIndex] = ""; // Clear previous input
+        setSongGuess(updatedGuess);
+        setActiveIndex(prevIndex); // Move focus back
+      }
     }
   }
 
-  // Handle backspace, enter, left arrow, and right arrow key presses
-  const handleKeyDown = (e, index) => {
-    if (gameMode === "letter") {
-      handleGuessLetter(e.key);
+  // Handle physical keyboard input for letter guesses
+  const handleTypedLetterGuess = (e) => {
+    if (!showHistoryModal) {
+      if (gameMode === "letter") {
+        if (/^[a-zA-Z0-9]$/.test(e.key)) {
+          handleGuessLetter(e.key.toUpperCase());
+        }
+      }
     }
-    else if (gameMode === "song") {
-      if (e.key === "Backspace") {
-        e.preventDefault();
-        handleBackspace(index);
-      }
-      else if (e.key === "Enter") {
-        handleGuessSongSubmit();
-        const firstInput = document.querySelector(".interactive-blanks input:not([disabled])");
-        firstInput?.focus();
-      }
-      else if (e.key === "ArrowLeft") {
-        let prevIndex = index - 1;
-        while (randomSong.name[prevIndex] === " " && prevIndex >= 0) {
-          prevIndex--;
-        }
+  }
 
-        setTimeout(() => {
-          const prevInput = document.querySelector(`input:nth-child(${prevIndex + 1})`);
-          prevInput?.focus();
-          prevInput?.select();
-        }, 0);
-      }
-      else if (e.key === "ArrowRight") {
-        let nextIndex = index + 1;
-        while (randomSong.name[nextIndex] === " " && nextIndex < randomSong.name.length) {
-          nextIndex++;
+  // Handle physical keyboard input for song guesses
+  const handleKeyDown = (e) => {
+    if (!showHistoryModal) {
+      if (gameMode === "song") {
+        if (e.key === "Backspace") {
+          e.preventDefault();
+          handleBackspace();
         }
-
-        setTimeout(() => {
-          const nextInput = document.querySelector(`input:nth-child(${nextIndex + 1})`);
-          nextInput?.focus();
-          nextInput?.select();
-        }, 0);
+        else if (e.key === "Enter") {
+          handleGuessSong();
+          setActiveIndex(0);
+        }
+        else if (/^[a-zA-Z0-9]$/.test(e.key)) {  // If a letter or number is pressed
+          e.preventDefault();
+          handleInputChange(e.key);
+        }
+        else if (e.key === "ArrowLeft") {
+          let prevIndex = activeIndex - 1;
+          while (prevIndex >= 0 && randomSong.name[prevIndex] === " " || isPunctuation(randomSong.name[prevIndex])) {
+            prevIndex--; // Skip spaces and punctuation
+          }
+          setActiveIndex(Math.max(0, prevIndex)); // Prevent negative index
+        }
+        else if (e.key === "ArrowRight") {
+          let nextIndex = activeIndex + 1;
+          while (nextIndex < songGuess.length && randomSong.name[nextIndex] === " " || isPunctuation(randomSong.name[nextIndex])) {
+            nextIndex++; // Skip spaces and punctuation
+          }
+          setActiveIndex(Math.min(songGuess.length - 1, nextIndex)); // Prevent out-of-bounds index
+        }
       }
     }
   };
 
-  return { handleBackspace, handleKeyDown }
+  // Handle onscreen keyboard input
+  const handleKeyClick = (key) => {
+    if (!showHistoryModal) {
+      if (gameMode === "letter") {
+        handleGuessLetter(key);
+      }
+      else if (gameMode === "song") {
+        handleInputChange(key);
+      }
+    }
+  };
+
+  return { activeIndex, setActiveIndex, handleBackspace, handleKeyDown, handleKeyClick, handleTypedLetterGuess, handleClickBackOnGame }
 }

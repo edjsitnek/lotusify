@@ -26,8 +26,10 @@
 
 .history-modal-content .correct {
   color: var(--correct);
+  font-weight: bold;
 }
 
 .history-modal-content .incorrect {
   color: var(--incorrect);
+  font-weight: bold;
 }

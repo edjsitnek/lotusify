@@ -46,9 +46,14 @@
   color: rgba(255, 255, 255, 0.2);
 }
 
-.space {
+.space,
+.punctuation {
   width: 1.5rem;
   text-align: center;
   background-color: transparent;
   border: none;
+}
+
+.active-input {
+  background-color: rgba(var(--answer-blue), 0.4);
 }

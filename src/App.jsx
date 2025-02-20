@@ -5,21 +5,22 @@ import HistoryModal from './components/Modals/HistoryModal';
 import SongGuessModal from './components/Modals/SongGuessModal';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode
-  const [showHistory, setShowHistory] = useState(false); // Track if show history modal is on the screen
-  const [showSongGuess, setShowSongGuess] = useState(false); // Track if song guess modal is on the screen
+  const [showHistoryModal, setShowHistoryModal] = useState(false); // Track if show history modal is on the screen
+  const [showSongGuessModal, setShowSongGuessModal] = useState(false); // Track if song guess modal is on the screen
+  const [showGameOverModal, setShowGameOverModal] = useState(false); // Track if game over modal is on the screen
   const [modalOrder, setModalOrder] = useState([]); // Track modal stacking order
-  const [gameOverModalOpen, setGameOverModalOpen] = useState(false); // Track if modal is open
   const [historyButtonText, setHistoryButtonText] = useState("View History") // Change button text for history modal
   const [guessButtonText, setGuessButtonText] = useState("Guess Song") // Change button text for song guess modal
-  const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
 
   const {
     pickRandomSong,
     randomSong,
+    songGuess,
+    setSongGuess,
     handleGuessLetter,
     handleGuessSong,
     renderBlanks,
@@ -27,55 +28,45 @@ function App() {
     guessHistory,
     gameOver,
     isWin
-  } = useGameLogic(setGameOverModalOpen);
+  } = useGameLogic(setShowGameOverModal);
 
-  // Handle song title guesses
-  const handleGuessSongSubmit = () => {
-    if (!gameOver) {
-      handleGuessSong(songGuess, setSongGuess);
-      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : ""))) // Reset input after submission
+  const {
+    activeIndex,
+    setActiveIndex,
+    handleBackspace,
+    handleKeyDown,
+    handleKeyClick,
+    handleTypedLetterGuess,
+    handleClickBackOnGame
+  } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal);
+
+  // Refocus game container for physical keyboard letter guesses after modal closes
+  const refocusGameContainer = () => {
+    setTimeout(() => {
+      document.querySelector(".game-container")?.focus();
+    }, 0);
+  };
+
+  // Toggle song guess modal and change button text
+  const handleGuessSongButton = () => {
+    setShowSongGuessModal(!showSongGuessModal)
+    if (!showSongGuessModal) {
+      setGuessButtonText("Return")
+      setGameMode("song")
+      openModal("songGuess");
+    }
+    else {
+      setGuessButtonText("Guess Song")
+      setGameMode("letter")
+      closeModal("songGuess");
+      refocusGameContainer();
     }
   }
 
-  // Initialize songGuess with blanks, if applicable
-  useEffect(() => {
-    if (randomSong) {
-      setSongGuess(randomSong.name.split("").map((char) => (char === " " ? " " : "")));
-    }
-  }, [randomSong]);
-
-  const {
-    handleBackspace,
-    handleKeyDown,
-  } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSongSubmit);
-
-
-  // useEffect(() => {
-  //   console.log("gameMode updated:", gameMode);
-  // }, [gameMode]);
-
-  // Handle onscreen keyboard clicks 
-  const handleOnscreenKeyboard = (key) => {
-    if (!showHistory) {
-      if (gameMode === "letter") {
-        handleGuessLetter(key);
-      }
-      else if (gameMode === "song") {
-        const firstEmptyIndex = songGuess.findIndex((char) => !char);
-        if (firstEmptyIndex !== -1) {
-          const updatedGuess = [...songGuess];
-          updatedGuess[firstEmptyIndex] = key.toUpperCase();
-          setSongGuess(updatedGuess);
-        }
-        if (key === "BACKSPACE") handleBackspace()
-      }
-    }
-  };
-
   // Toggle history modal and change button text
   const handleHistoryButton = () => {
-    setShowHistory(!showHistory)
-    if (!showHistory) {
+    setShowHistoryModal(!showHistoryModal)
+    if (!showHistoryModal) {
       openModal("history");
       setHistoryButtonText("Close History")
     }
@@ -85,24 +76,9 @@ function App() {
     }
   }
 
-  // Toggle song guess modal and change button text
-  const handleGuessSongButton = () => {
-    setShowSongGuess(!showSongGuess)
-    if (!showSongGuess) {
-      setGuessButtonText("Return")
-      setGameMode("song")
-      openModal("songGuess");
-    }
-    else {
-      setGuessButtonText("Guess Song")
-      closeModal("songGuess");
-      setGameMode("letter")
-    }
-  }
-
   // Handle game over modal close
   const handleGameOverModalClose = () => {
-    setGameOverModalOpen(!gameOverModalOpen);
+    setShowGameOverModal(!showGameOverModal);
     handleGuessSongButton();
   }
 
@@ -116,14 +92,20 @@ function App() {
     setModalOrder((prevOrder) => prevOrder.filter((m) => m !== modalName));
   };
 
+  // Reset game state and modals on new game
+  const onReset = () => {
+    pickRandomSong();
+    if (showSongGuessModal) handleGuessSongButton(); // Keep song guess modal from reopening on new game
+    if (showHistoryModal) handleHistoryButton(); // Keep history modal from reopening on new game
+  }
+
   return (
     <>
-      <div className="game-container">
+      <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
         <div className="header">Lotusify</div>
-
         <div className="body">
           <div className="blanks">{renderBlanks()}</div>
-          {showHistory && modalOrder.includes("history") && (
+          {showHistoryModal && modalOrder.includes("history") && (
             <div>
               <HistoryModal
                 guessHistory={guessHistory}
@@ -132,7 +114,7 @@ function App() {
               />
             </div>
           )}
-          {showSongGuess && !gameOver && modalOrder.includes("songGuess") && (
+          {showSongGuessModal && !gameOver && modalOrder.includes("songGuess") && (
             <div>
               <SongGuessModal
                 randomSong={randomSong}
@@ -140,8 +122,11 @@ function App() {
                 setSongGuess={setSongGuess}
                 guessHistory={guessHistory}
                 handleKeyDown={handleKeyDown}
-                handleGuessSongSubmit={handleGuessSongSubmit}
+                handleKeyClick={handleKeyClick}
+                handleGuessSong={handleGuessSong}
                 isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
               />
             </div>
           )}
@@ -151,28 +136,38 @@ function App() {
           <div>
             Guesses: {guessHistory.length}/12
             {!gameOver && (
-              <button onClick={() => handleGuessSongButton()}>{guessButtonText}</button>
+              <button
+                onClick={() => handleGuessSongButton()}
+                onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
+              >
+                {guessButtonText}
+              </button>
             )}
-            <button onClick={() => handleHistoryButton()}>{historyButtonText}</button>
+            <button
+              onClick={() => handleHistoryButton()}
+              onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
+            >
+              {historyButtonText}
+            </button>
           </div>
-
           <Keyboard
-            onKeyPress={handleOnscreenKeyboard}
+            onKeyClick={handleKeyClick}
             keyStatuses={keyStatuses}
             handleBackspace={handleBackspace}
           />
         </div>
+
         {gameOver && (
-          gameOverModalOpen ? (
+          showGameOverModal ? (
             <GameOverModal
               isWin={isWin}
               numGuesses={guessHistory.length}
               solution={randomSong.name}
               onClickX={handleGameOverModalClose}
-              onClickReset={pickRandomSong}
+              onClickReset={onReset}
             />
           ) : (
-            <button onClick={pickRandomSong}>Pick a Random Song</button>
+            <button onClick={onReset}>Pick a Random Song</button>
           )
         )}
       </div>

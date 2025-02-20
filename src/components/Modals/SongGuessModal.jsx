@@ -1,41 +1,13 @@
 import './SongGuessModal.css'
-import { useEffect } from 'react';
+import { isPunctuation as checkPunctuation } from '../../utils/isPunctuation';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
-export default function SongGuessModal({ randomSong, songGuess, setSongGuess, guessHistory, handleKeyDown, handleGuessSongSubmit, isOnTop }) {
-  // Focus on the first blank when the modal opens
-  useEffect(() => {
-    if (randomSong) {
-      const firstInput = document.querySelector(".interactive-blanks input:not([disabled])");
-      firstInput?.focus();
-    }
-  }, [randomSong]);
-
-  // useEffect(() => {
-  //   console.log("songGuess updated:", songGuess);
-  // }, [songGuess]);
-
-
-  // Handle input change for each blank
-  const handleInputChange = (value, index) => {
-    if (!/^[a-zA-Z0-9]*$/.test(value)) return; // Prevent non-alphanumeric input
-
-    // Update song guess state
-    const updatedGuess = [...songGuess];
-
-    if (updatedGuess[index] === " ") return;
-
-    updatedGuess[index] = value.toUpperCase();
-    setSongGuess(updatedGuess);
-
-    // Automatically move to the next blank if valid input, skipping spaces
-    let nextIndex = index + 1;
-    while (randomSong.name[nextIndex] === " " && nextIndex < randomSong.name.length) {
-      nextIndex++;
-    }
-    const nextInput = document.querySelector(`input:nth-child(${nextIndex + 1})`);
-    nextInput?.focus();
-  };
+export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyClick, handleGuessSong, isOnTop, activeIndex, setActiveIndex }) {
+  // Reset active index when the guess song button is pressed
+  const handleGuessButton = () => {
+    handleGuessSong();
+    setActiveIndex(0);
+  }
 
   // Render interactive blanks for song title guess
   const renderInteractiveBlanks = () => {
@@ -45,6 +17,7 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
       <div className="interactive-blanks">
         {randomSong.name.split("").map((char, index) => {
           const isSpace = char === " ";
+          const isPunctuation = checkPunctuation(char);
           const guessedLetter = songGuess[index];
           const correctGuesses = guessHistory.filter(
             (entry) => entry.correct && entry.guess.toLowerCase() === char.toLowerCase()
@@ -53,17 +26,24 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
 
           return (
             <input
+              data-index={index}
               id={index}
               key={index}
-              className={isSpace ? "space" : "interactive-blank"}
+              className={`
+                ${isSpace ? "space" : "interactive-blank"}
+                ${isPunctuation ? "punctuation" : "interactive-blank"} 
+                ${activeIndex === index ? "active-input" : ""}
+                `}
               type="text"
               maxLength={1}
-              disabled={isSpace} // Disable input for spaces
+              disabled={isSpace || isPunctuation} // Disable input for spaces and punctuation
+              autoComplete="off"
+              readOnly
               value={guessedLetter || ""} // Show guessed letters
-              placeholder={!isSpace ? placeholder : ""} // Faded placeholder for correctly guessed blanks
-              onFocus={(e) => e.target.select()} // Highlight value
-              onChange={(e) => handleInputChange(e.target.value, index)}
-              onKeyDown={(e) => handleKeyDown(e, index)}
+              placeholder={!isSpace && !isPunctuation ? placeholder : ""} // Faded placeholder for correctly guessed blanks
+              onFocus={() => setActiveIndex(index)} // Highlight value
+              onChange={(e) => handleKeyClick(e.target.value)}
+              onKeyDown={(e) => handleKeyDown(e)}
             />
           );
         })}
@@ -75,9 +55,7 @@ export default function SongGuessModal({ randomSong, songGuess, setSongGuess, gu
     <div className="song-guess-modal-background" style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="song-guess-modal-content" onClick={e => e.stopPropagation()}>
         {renderInteractiveBlanks()}
-        <button onClick={handleGuessSongSubmit}>
-          Guess Song
-        </button>
+        <button onClick={handleGuessButton}>Guess Song</button>
       </div>
     </div >
   )

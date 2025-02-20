@@ -70,5 +70,21 @@
     "artist": "Lotus",
     "year": 2005,
     "isCover": false
+  },
+  {
+    "name": "Anti-Gravity",
+    "album": "Eat the Light",
+    "albumArtwork": null,
+    "artist": "Lotus",
+    "year": 2016,
+    "isCover": false
+  },
+  {
+    "name": "I've Been a Fool (Toy Guns)",
+    "album": "Eat the Light",
+    "albumArtwork": null,
+    "artist": "Lotus",
+    "year": 2016,
+    "isCover": false
   }
 ]
