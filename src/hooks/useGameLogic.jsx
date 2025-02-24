@@ -2,6 +2,12 @@ import { useState, useEffect } from "react";
 import { isPunctuation } from "../utils/isPunctuation";
 
 export default function useGameLogic(setShowGameOverModal) {
+  const initialHints = [
+    { slot: "Hint 1", title: "", value: "", unlocked: false, revealed: false },
+    { slot: "Hint 2", title: "", value: "", unlocked: false, revealed: false },
+    { slot: "Hint 3", title: "", value: "", unlocked: false, revealed: false }
+  ]
+
   const [songs, setSongs] = useState([]); // List of songs to pull the answer from
   const [randomSong, setRandomSong] = useState(null); // Random song which is the answer to the current game
   const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
@@ -9,6 +15,8 @@ export default function useGameLogic(setShowGameOverModal) {
   const [keyStatuses, setKeyStatuses] = useState([]); // Statuses for correct or incorrect guessed letter keys
   const [gameOver, setGameOver] = useState(false); // Keep track of game over state
   const [isWin, setIsWin] = useState(false); // Track if the game over is a win or not
+  const [hints, setHints] = useState(initialHints); // List of hints to display
+  const [showHints, setShowHints] = useState(false); // Track if hints are shown
 
   // Load list of songs
   useEffect(() => {
@@ -60,6 +68,8 @@ export default function useGameLogic(setShowGameOverModal) {
       setKeyStatuses([]); // Reset key statuses
       setGameOver(false); // Reset game over state
       setIsWin(false); // Reset win state
+      setHints(initialHints); // Reset hints
+      setShowHints(false); // Reset show hints
     }
   };
 
@@ -145,6 +155,10 @@ export default function useGameLogic(setShowGameOverModal) {
     keyStatuses,
     guessHistory,
     gameOver,
-    isWin
+    isWin,
+    hints,
+    setHints,
+    showHints,
+    setShowHints
   };
 }

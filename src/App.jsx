@@ -3,6 +3,7 @@ import Keyboard from './components/Keyboard/Keyboard'
 import GameOverModal from './components/Modals/GameOverModal';
 import HistoryModal from './components/Modals/HistoryModal';
 import SongGuessModal from './components/Modals/SongGuessModal';
+import HintPanel from './components/HintPanel/HintPanel';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
 import { useState } from 'react';
@@ -27,7 +28,11 @@ function App() {
     keyStatuses,
     guessHistory,
     gameOver,
-    isWin
+    isWin,
+    hints,
+    setHints,
+    showHints,
+    setShowHints
   } = useGameLogic(setShowGameOverModal);
 
   const {
@@ -130,6 +135,14 @@ function App() {
               />
             </div>
           )}
+          <HintPanel
+            randomSong={randomSong}
+            guessHistory={guessHistory}
+            hints={hints}
+            setHints={setHints}
+            showHints={showHints}
+            setShowHints={setShowHints}
+          />
         </div>
 
         <div className="footer">

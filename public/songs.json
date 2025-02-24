@@ -2,89 +2,97 @@
   {
     "name": "Suitcases",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Livingston Storm",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Spiritualize",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Plant Your Root",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Travel",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Greet the Mind",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Ball of Energy",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Jump Off",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
+    "artist": "Lotus",
     "isCover": false
   },
   {
     "name": "Colorado",
     "album": "Nomad",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/nomad.jpg",
     "year": 2005,
-    "isCover": false
-  },
-  {
-    "name": "Anti-Gravity",
-    "album": "Eat the Light",
-    "albumArtwork": null,
     "artist": "Lotus",
-    "year": 2016,
     "isCover": false
   },
   {
     "name": "I've Been a Fool (Toy Guns)",
     "album": "Eat the Light",
-    "albumArtwork": null,
-    "artist": "Lotus",
+    "albumArt": "/album-art/eat-the-light.jpg",
     "year": 2016,
+    "artist": "Lotus",
+    "isCover": false
+  },
+  {
+    "name": "Anti-Gravity",
+    "album": "Eat the Light",
+    "albumArt": "/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "artist": "Lotus",
+    "isCover": false
+  },
+  {
+    "name": "When Our Nerves No Longer Twitch",
+    "album": "Eat the Light",
+    "albumArt": "/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "artist": "Lotus",
     "isCover": false
   }
 ]

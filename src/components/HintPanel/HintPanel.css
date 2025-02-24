@@ -1,0 +1,38 @@
+.hints-container {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.hints-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.hints-table th,
+.hints-table td {
+  padding: 0.2rem;
+  width: 33.33%;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+.hints-table button {
+  background: rgb(var(--answer-blue));
+  color: white;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.hints-table button:hover {
+  background: var(--modal-bg);
+}
+
+.album-cover {
+  width: 5rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
