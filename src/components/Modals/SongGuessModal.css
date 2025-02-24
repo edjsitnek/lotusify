@@ -13,10 +13,12 @@
 .song-guess-modal-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .song-guess-modal-content button {
   margin-top: 0;
+  width: 10rem;
 }
 
 .interactive-blanks {

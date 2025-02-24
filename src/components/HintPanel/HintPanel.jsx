@@ -1,7 +1,9 @@
 import './HintPanel.css';
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function HintPanel({ randomSong, guessHistory, hints, setHints, showHints, setShowHints }) {
+  const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
+
   // Update hints based on guess history
   useEffect(() => {
     if (!randomSong) return;
@@ -45,6 +47,14 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
     setHints(updatedHints);
   };
 
+  const handleImageClick = (imageSrc) => {
+    setEnlargedImage(imageSrc);
+  };
+
+  const closeEnlargedImage = () => {
+    setEnlargedImage(null);
+  };
+
   return (
     <div className="hints-container">
       <button className="hint-toggle" onClick={() => setShowHints(!showHints)}>
@@ -67,7 +77,12 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
                   {hint.unlocked ? (
                     hint.revealed ? (
                       hint.title === "Album Art" ? (
-                        <img src={hint.value} alt={`${randomSong.album} Album Art`} className="album-cover" />
+                        <img
+                          src={hint.value}
+                          alt={`${randomSong.album} Album Art`}
+                          className="album-cover"
+                          onClick={() => handleImageClick(hint.value)}
+                        />
                       ) : (
                         <span>{hint.value}</span>
                       )
@@ -82,6 +97,12 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
             </tr>
           </tbody>
         </table>
+      )}
+
+      {enlargedImage && (
+        <div className="image-overlay" onClick={closeEnlargedImage}>
+          <img src={enlargedImage} alt={`Enlarged ${randomSong.album} Album Art`} className="enlarged-album-art" />
+        </div>
       )}
     </div>
   )
