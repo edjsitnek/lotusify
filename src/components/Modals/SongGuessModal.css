@@ -17,7 +17,7 @@
 }
 
 .song-guess-modal-content button {
-  margin-top: 0;
+  margin-top: 1rem;
   width: 10rem;
 }
 
@@ -25,6 +25,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.word-group {
+  display: flex;
+  flex-wrap: nowrap;
   gap: 0.1rem;
 }
 
@@ -34,7 +40,6 @@
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #ccc;
   font-size: calc(4vw + 0.5rem);
-  margin: 1rem 0;
 }
 
 .interactive-blank:focus {

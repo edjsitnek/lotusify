@@ -28,40 +28,53 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
   const renderInteractiveBlanks = () => {
     if (!randomSong) return null;
 
+    let charCount = {}; // Track occurrences of each character so index is not duplicated on repeated characters
+
     return (
       <div className="interactive-blanks">
-        {randomSong.name.split("").map((char, index) => {
-          const isSpace = char === " ";
-          const isPunctuation = checkPunctuation(char);
-          const guessedLetter = songGuess[index];
-          const correctGuesses = guessHistory.filter(
-            (entry) => entry.correct && entry.guess.toLowerCase() === char.toLowerCase()
-          );
-          const placeholder = correctGuesses.length > 0 ? char.toUpperCase() : "";
+        {randomSong.name.split(" ").map((word, wordIndex) => (
+          <div className="word-group" key={wordIndex}>
+            {[...word].map((char) => {
+              if (!charCount[char]) {
+                charCount[char] = 0;
+              }
 
-          return (
-            <input
-              data-index={index}
-              id={index}
-              key={index}
-              className={`
-                ${isSpace ? "space" : "interactive-blank"}
-                ${isPunctuation ? "punctuation" : "interactive-blank"} 
-                ${activeIndex === index ? "active-input" : ""}
-                `}
-              type="text"
-              maxLength={1}
-              disabled={isSpace || isPunctuation} // Disable input for spaces and punctuation
-              autoComplete="off"
-              readOnly
-              value={guessedLetter || ""} // Show guessed letters
-              placeholder={!isSpace && !isPunctuation ? placeholder : ""} // Faded placeholder for correctly guessed blanks
-              onFocus={() => setActiveIndex(index)} // Highlight value
-              onChange={(e) => handleKeyClick(e.target.value)}
-              onKeyDown={(e) => handleKeyDown(e)}
-            />
-          );
-        })}
+              // Find correct global index by tracking per-character occurrences
+              const globalIndex = [...randomSong.name].reduce((indexArray, currentChar, index) => {
+                if (currentChar === char) indexArray.push(index);
+                return indexArray;
+              }, [])[charCount[char]]; // Get the Nth occurrence of a character
+
+              charCount[char]++; // Increment count for next occurrences
+
+              const isPunctuation = checkPunctuation(char);
+              const guessedLetter = songGuess[globalIndex];
+              const correctGuesses = guessHistory.filter(
+                (entry) => entry.correct && entry.guess.toLowerCase() === char.toLowerCase()
+              );
+              const placeholder = correctGuesses.length > 0 ? char.toUpperCase() : "";
+
+              return (
+                <input
+                  data-index={globalIndex}
+                  id={globalIndex}
+                  key={globalIndex}
+                  className={`interactive-blank ${isPunctuation ? "punctuation" : ""} ${activeIndex === globalIndex ? "active-input" : ""}`}
+                  type="text"
+                  maxLength={1}
+                  disabled={isPunctuation} // Punctuation stays visible but uneditable
+                  autoComplete="off"
+                  readOnly
+                  value={guessedLetter || ""}
+                  placeholder={!isPunctuation ? placeholder || "" : ""}
+                  onFocus={() => setActiveIndex(globalIndex)}
+                  onChange={(e) => handleKeyClick(e.target.value)}
+                  onKeyDown={(e) => handleKeyDown(e)}
+                />
+              );
+            })}
+          </div>
+        ))}
       </div>
     );
   };
