@@ -2,7 +2,7 @@
   {
     "name": "Suitcases",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -10,7 +10,7 @@
   {
     "name": "Livingston Storm",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -18,7 +18,7 @@
   {
     "name": "Spiritualize",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -26,7 +26,7 @@
   {
     "name": "Plant Your Root",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -34,7 +34,7 @@
   {
     "name": "Travel",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -42,7 +42,7 @@
   {
     "name": "Greet the Mind",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -50,7 +50,7 @@
   {
     "name": "Ball of Energy",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -58,7 +58,7 @@
   {
     "name": "Jump Off",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -66,7 +66,7 @@
   {
     "name": "Colorado",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "artist": "Lotus",
     "isCover": false
@@ -74,7 +74,7 @@
   {
     "name": "I've Been a Fool (Toy Guns)",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "artist": "Lotus",
     "isCover": false
@@ -82,7 +82,7 @@
   {
     "name": "Anti-Gravity",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "artist": "Lotus",
     "isCover": false
@@ -90,7 +90,7 @@
   {
     "name": "When Our Nerves No Longer Twitch",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "artist": "Lotus",
     "isCover": false

@@ -107,7 +107,7 @@ function App() {
   return (
     <>
       <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
-        <div className="header">Lotusify</div>
+        <div className="header"><img src="/assets/lotusifylogo.png" alt="Lotusify Logo" className="logo" /></div>
         <div className="body">
           <div className="blanks">{renderBlanks()}</div>
           {showHistoryModal && modalOrder.includes("history") && (
