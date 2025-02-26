@@ -109,7 +109,9 @@ function App() {
       <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
         <div className="header"><img src="/assets/lotusifylogo.png" alt="Lotusify Logo" className="logo" /></div>
         <div className="body">
-          <div className="blanks">{renderBlanks()}</div>
+          <div className="letter-guess-container">
+            <div className="blanks">{!showSongGuessModal && renderBlanks()}</div>
+          </div>
           {showHistoryModal && modalOrder.includes("history") && (
             <HistoryModal
               guessHistory={guessHistory}
@@ -132,8 +134,6 @@ function App() {
               isSongGuessOpen={showSongGuessModal}
             />
           )}
-        </div>
-        <div className="hint-panel">
           <HintPanel
             randomSong={randomSong}
             guessHistory={guessHistory}
