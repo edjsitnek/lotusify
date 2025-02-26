@@ -88,7 +88,13 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
         }
         else if (e.key === "Enter") {
           handleGuessSong();
-          setActiveIndex(0);
+          let firstValidIndex = 0;
+          // Skip leading punctuation at the start of the song title
+          while (firstValidIndex < randomSong.name.length && isPunctuation(randomSong.name[firstValidIndex])) {
+            firstValidIndex++;
+          }
+
+          setActiveIndex(firstValidIndex); // Set focus to first valid letter
         }
         else if (/^[a-zA-Z0-9]$/.test(e.key)) {  // If a letter or number is pressed
           e.preventDefault();
@@ -96,17 +102,21 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
         }
         else if (e.key === "ArrowLeft") {
           let prevIndex = activeIndex - 1;
-          while (prevIndex >= 0 && randomSong.name[prevIndex] === " " || isPunctuation(randomSong.name[prevIndex])) {
+          while (prevIndex >= 0 && (randomSong.name[prevIndex] === " " || isPunctuation(randomSong.name[prevIndex]))) {
             prevIndex--; // Skip spaces and punctuation
           }
-          setActiveIndex(Math.max(0, prevIndex)); // Prevent negative index
+          const firstValidIndex = randomSong.name.split("").findIndex(char => !isPunctuation(char));
+          setActiveIndex(Math.max(firstValidIndex, prevIndex));
         }
         else if (e.key === "ArrowRight") {
           let nextIndex = activeIndex + 1;
-          while (nextIndex < songGuess.length && randomSong.name[nextIndex] === " " || isPunctuation(randomSong.name[nextIndex])) {
+          while (nextIndex < songGuess.length && (randomSong.name[nextIndex] === " " || isPunctuation(randomSong.name[nextIndex]))) {
             nextIndex++; // Skip spaces and punctuation
           }
-          setActiveIndex(Math.min(songGuess.length - 1, nextIndex)); // Prevent out-of-bounds index
+          // Prevent going past the last non-punctuation character
+          if (nextIndex < songGuess.length && !isPunctuation(randomSong.name[nextIndex])) {
+            setActiveIndex(nextIndex);
+          }
         }
       }
     }

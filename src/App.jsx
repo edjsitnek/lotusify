@@ -111,29 +111,25 @@ function App() {
         <div className="body">
           <div className="blanks">{renderBlanks()}</div>
           {showHistoryModal && modalOrder.includes("history") && (
-            <div>
-              <HistoryModal
-                guessHistory={guessHistory}
-                onClickX={handleHistoryButton}
-                isOnTop={modalOrder[modalOrder.length - 1] === "history"}
-              />
-            </div>
+            <HistoryModal
+              guessHistory={guessHistory}
+              onClickX={handleHistoryButton}
+              isOnTop={modalOrder[modalOrder.length - 1] === "history"}
+            />
           )}
           {showSongGuessModal && !gameOver && modalOrder.includes("songGuess") && (
-            <div>
-              <SongGuessModal
-                randomSong={randomSong}
-                songGuess={songGuess}
-                setSongGuess={setSongGuess}
-                guessHistory={guessHistory}
-                handleKeyDown={handleKeyDown}
-                handleKeyClick={handleKeyClick}
-                handleGuessSong={handleGuessSong}
-                isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
-                activeIndex={activeIndex}
-                setActiveIndex={setActiveIndex}
-              />
-            </div>
+            <SongGuessModal
+              randomSong={randomSong}
+              songGuess={songGuess}
+              setSongGuess={setSongGuess}
+              guessHistory={guessHistory}
+              handleKeyDown={handleKeyDown}
+              handleKeyClick={handleKeyClick}
+              handleGuessSong={handleGuessSong}
+              isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+            />
           )}
           <HintPanel
             randomSong={randomSong}

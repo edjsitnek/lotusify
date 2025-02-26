@@ -1,12 +1,27 @@
 import './SongGuessModal.css'
 import { isPunctuation as checkPunctuation } from '../../utils/isPunctuation';
+import { useEffect } from 'react';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
 export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyClick, handleGuessSong, isOnTop, activeIndex, setActiveIndex }) {
+  const findFirstValidIndex = () => {
+    let firstValidIndex = 0;
+    // Skip leading punctuation at the start of the song title
+    while (firstValidIndex < randomSong.name.length && checkPunctuation(randomSong.name[firstValidIndex])) {
+      firstValidIndex++;
+    }
+
+    setActiveIndex(firstValidIndex); // Set focus to first valid letter
+  }
+
+  useEffect(() => {
+    findFirstValidIndex();
+  }, [randomSong]);
+
   // Reset active index when the guess song button is pressed
   const handleGuessButton = () => {
     handleGuessSong();
-    setActiveIndex(0);
+    findFirstValidIndex();
   }
 
   // Render interactive blanks for song title guess
