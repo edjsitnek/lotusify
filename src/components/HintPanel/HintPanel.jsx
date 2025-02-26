@@ -57,7 +57,7 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
 
   return (
     <div className="hints-container">
-      <button className="hint-toggle" onClick={() => setShowHints(!showHints)}>
+      <button className={`${showHints ? "active-button" : ""}`} onClick={() => setShowHints(!showHints)}>
         {showHints ? "Hide Hints" : `View Hints (${hints.filter(h => h.unlocked).length})`}
       </button>
 

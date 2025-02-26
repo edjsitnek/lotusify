@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 90%;
 }
 
 .song-guess-modal-content button {
@@ -25,7 +26,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .word-group {

@@ -129,8 +129,11 @@ function App() {
               isOnTop={modalOrder[modalOrder.length - 1] === "songGuess"}
               activeIndex={activeIndex}
               setActiveIndex={setActiveIndex}
+              isSongGuessOpen={showSongGuessModal}
             />
           )}
+        </div>
+        <div className="hint-panel">
           <HintPanel
             randomSong={randomSong}
             guessHistory={guessHistory}
@@ -140,12 +143,12 @@ function App() {
             setShowHints={setShowHints}
           />
         </div>
-
         <div className="footer">
           <div>
             Guesses: {guessHistory.length}/12
             {!gameOver && (
               <button
+                className={`${showSongGuessModal ? "active-button" : ""}`}
                 onClick={() => handleGuessSongButton()}
                 onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
               >
@@ -153,6 +156,7 @@ function App() {
               </button>
             )}
             <button
+              className={`${showHistoryModal ? "active-button" : ""}`}
               onClick={() => handleHistoryButton()}
               onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
             >

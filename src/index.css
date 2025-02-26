@@ -34,6 +34,13 @@ button {
   padding: .2rem .2rem;
 }
 
+.active-button {
+  background-color: var(--incorrect);
+  border: 2px solid var(--incorrect);
+  border-radius: .2rem;
+  outline: none;
+}
+
 ::selection {
   color: rgba(255, 255, 255, 1)
 }
