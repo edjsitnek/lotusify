@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function HintPanel({ randomSong, guessHistory, hints, setHints, showHints, setShowHints }) {
   const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
 
-  // Update hints based on guess history
+  // Update hints based on guess history with different hints for live only or studio songs
   useEffect(() => {
     if (!randomSong) return;
 
@@ -14,7 +14,7 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
       updatedHints[0] = {
         ...updatedHints[0],
         title: "Studio release or live only?",
-        value: randomSong.album === null ? "Live Only" : "Studio Release",
+        value: randomSong.liveOnly === true ? "Live Only" : "Studio Release",
         unlocked: true
       };
     }
@@ -22,23 +22,43 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
     if (guessHistory.length >= 6) {
       updatedHints[1] = {
         ...updatedHints[1],
-        title: randomSong.album === null ? "Year First Played" : "Year Released",
+        title: randomSong.liveOnly === true ? "Year First Played" : "Year Released",
         value: randomSong.year,
         unlocked: true
       };
     }
 
     if (guessHistory.length >= 9) {
-      updatedHints[2] = {
-        ...updatedHints[2],
-        title: randomSong.album === null ? "Placeholder" : "Album Art",
-        value: randomSong.album === null ? "To Be Decided" : randomSong.albumArt,
-        unlocked: true
-      };
+      updatedHints[2] = thirdHint(updatedHints);
     }
 
     setHints(updatedHints);
   }, [guessHistory]);
+
+  // Generate third hint based on song properties
+  const thirdHint = (updatedHints) => {
+    let hintTitle = "";
+    let hintValue = "";
+    if (randomSong.liveOnly === false) {
+      hintTitle = "Album Art";
+      hintValue = randomSong.albumArt;
+    }
+    else if (randomSong.liveOnly === true && randomSong.album) {
+      hintTitle = "Appears On"
+      hintValue = randomSong.albumArt;
+    }
+    else if (randomSong.liveOnly === true && !randomSong.album) {
+      hintTitle = "Times Played";
+      hintValue = "TBD";
+    }
+
+    return {
+      ...updatedHints[2],
+      title: hintTitle,
+      value: hintValue,
+      unlocked: true
+    }
+  }
 
   // Reveal hint when unlocked
   const revealHint = (index) => {
@@ -76,7 +96,7 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
                 <td key={index}>
                   {hint.unlocked ? (
                     hint.revealed ? (
-                      hint.title === "Album Art" ? (
+                      hint.title === "Album Art" || hint.title === "Appears On" ? (
                         <img
                           src={hint.value}
                           alt={`${randomSong.album} Album Art`}

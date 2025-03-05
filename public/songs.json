@@ -1,98 +1,1306 @@
 [
   {
+    "name": "L'immueble",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sunrain",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Intro to a Cell",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Continuum",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "In the Bliss",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Umbilical Moonrise",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 1998,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Flower Sermon",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Crescent",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Nematode",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Caywood",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Umbilical Moonset",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
     "name": "Suitcases",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Livingston Storm",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Spiritualize",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Plant Your Root",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Travel",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Greet the Mind",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Ball of Energy",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Jump Off",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Colorado",
     "album": "Nomad",
     "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Tip of the Tongue",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Kesey Seed",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bubonic Tonic",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "When H Binds to O",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Long Legged Stumble",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Drunken Giraffe",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Epidemic",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Blue Giant",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cirrus",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sprout to Vine",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Wax",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2005,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Wooly Mammoth",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Slow Cookin'",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Through the Mirror",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2007,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Mikesnack",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "It's All Clear to Me Now",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Behind Midwest Storefronts",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Age of Inexperience",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Hammerstrike",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bellwether",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Modicum",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Invincibility of Youth",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "One Last Hurrah",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Alkaline",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Turquoise",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Disappear in a Blood-Red Sky",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Simian",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Scrapple",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Grayrigg",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Monochrome",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Marisol",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "72 Hrs Awake",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Vancouver Island",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cain & Abel",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Golden Ghost",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Blacklight Sunflare",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bush Pilot",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Dowrn",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "The Surf",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "In an Outline",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Molluskunk",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Harps",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Lou Carcohl",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Evergreenary",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Orchids",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Destroyer",
+    "album": "Destroyer",
+    "albumArt": "/assets/album-art/destroyer.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Ridalin",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/ridalin.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Break Build Burn",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Massif",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "What Did I Do Wrong",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Uffi",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Middle Road",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Kodiak",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cutinuo",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Ashcon",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Neon Tubes",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cannon in the Heavens",
+    "album": "Monks",
+    "albumArt": "/assets/album-art/monks.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cloud 9",
+    "album": "Monks",
+    "albumArt": "/assets/album-art/monks.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Malabarista",
+    "album": "Malabarista",
+    "albumArt": "/assets/album-art/malabarista.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Let Me In",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Gilded Age",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "I Want It ALl (To Give It Away)",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "The Oaks",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Out of Focus",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sunset of the Giant Dipper",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Basin to Benin",
+    "album": "Basin to Benin/Tarot",
+    "albumArt": "/assets/album-art/basin-to-benin-tarot.jpg",
+    "year": 2015,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Tarot",
+    "album": "Basin to Benin/Tarot",
+    "albumArt": "/assets/album-art/basin-to-benin-tarot.jpg",
+    "year": 2015,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Fearless",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "I've Been a Fool (Toy Guns)",
     "album": "Eat the Light",
     "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Eats the Light",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Move Too Fast",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sleep When We Are Dead",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "White Light Fadeaway",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "Anti-Gravity",
     "album": "Eat the Light",
     "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Suntan",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
   },
   {
     "name": "When Our Nerves No Longer Twitch",
     "album": "Eat the Light",
     "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
-    "artist": "Lotus",
-    "isCover": false
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sodium Vapor",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Debris",
+    "album": "86 Revolutions",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
+    "year": 2013,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Expired Slang",
+    "album": "86 Revolutions",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "The Opus",
+    "album": "86 Revolutions",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
+    "year": 1999,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cold Facts",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Gasoline",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bug Love",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "MacGuffin",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Aquamarine",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Stranger Danger",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cosmosis",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Faceblind",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Forgotten Name",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Fortune Favors",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Giffard's Airship",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "December Sun",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Cloak & Dagger",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Celluloid Swagger",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Gunk",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Jiggle",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Pachyderm",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Milk & Honey",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "And Yet They Fight",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Leave a Little Room for Jesus",
+    "album": "Leave a Little Room for Jesus",
+    "albumArt": "/assets/album-art/leave-a-little-room-for-jesus.jpg",
+    "year": 2019,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Catacombs",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Turtlehead",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Free Swim",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sepia Rainbow",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "One-Eyed Jones",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bjorn Gets a Haircut",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Straight Blade",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Earl of Grey",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Snake Island",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Land of the Lush",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Journey to Saturn",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Citrus",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Phantom Tooth",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Year of the Jaguar",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Condor",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Fields of Mint",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Drifting Away from Shore",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Moss Shoes",
+    "album": "Live Underground",
+    "albumArt": "/assets/album-art/live-underground.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Shimmer and Out",
+    "album": "Live Underground",
+    "albumArt": "/assets/album-art/live-underground.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Spaghetti",
+    "album": "Live Underground",
+    "albumArt": "/assets/album-art/live-underground.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Desert Blooms",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Pluck",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Tar Pits",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Pacific Glow",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Time Dilates",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Entangled",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Transfixed",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Golden Ratio",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Desert Recedes",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Arupa",
+    "album": "Live in Steel City",
+    "albumArt": "/assets/album-art/live-in-steel-city.jpg",
+    "year": 2004,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "How Do I Come Down",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Splinter",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Watching the Distant Storm",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "On My Block",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Reed",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Can You Hear the Sound",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Electric Orange",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bamboo Forest",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Glass",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "In the Shadow of the Mountain",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Goodnight Supermoon",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Wavvvves",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2024,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "128",
+    "album": null,
+    "albumArt": null,
+    "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": null
   }
 ]
