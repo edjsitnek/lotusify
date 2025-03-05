@@ -19,6 +19,22 @@
   max-width: 8rem;
 }
 
+.instructions-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.75rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
 .body {
   position: relative;
   width: 100%;

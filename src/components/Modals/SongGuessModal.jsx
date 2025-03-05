@@ -15,7 +15,12 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
   }
 
   useEffect(() => {
-    findFirstValidIndex();
+    if (!randomSong) return;
+
+    // If activeIndex is already valid, keep it. Otherwise, set to first valid index
+    if (activeIndex === null || activeIndex < 0 || activeIndex >= randomSong.name.length || checkPunctuation(randomSong.name[activeIndex])) {
+      findFirstValidIndex();
+    }
   }, [randomSong]);
 
   // Reset active index when the guess song button is pressed
