@@ -1,3 +1,4 @@
+import '../Modal.css'
 import './GameOverModal.css'
 
 // A modal that pops up when game is over, with different content for a win or a loss
@@ -45,9 +46,9 @@ export default function GameOverModal({ isWin, numGuesses, solution, onClickX, o
 
   return (
     // Clicking on the background will close modal
-    <div className="modal-background" onClick={exitModal}>
-      <div className="modal-container" onClick={e => e.stopPropagation()}>
-        <div className="modal-close">
+    <div className="gameover modal-background" onClick={exitModal}>
+      <div className="gameover modal-container" onClick={e => e.stopPropagation()}>
+        <div className="gameover modal-header">
           <button onClick={exitModal}>X</button>
         </div>
         {handleModalContent()}

@@ -1,19 +1,21 @@
 import './App.css'
 import Keyboard from './components/Keyboard/Keyboard'
-import GameOverModal from './components/Modals/GameOverModal';
-import HistoryModal from './components/Modals/HistoryModal';
-import SongGuessModal from './components/Modals/SongGuessModal';
-import InstructionsModal from './components/Modals/InstructionsModal';
+import GameOverModal from './components/Modals/GameOverModal/GameOverModal';
+import HistoryModal from './components/Modals/HistoryModal/HistoryModal';
+import SongGuessModal from './components/Modals/SongGuessModal/SongGuessModal';
+import InstructionsModal from './components/Modals/InstructionsModal/InstructionsModal';
+import StatisticsModal from './components/Modals/StatisticsModal/StatisticsModal';
 import HintPanel from './components/HintPanel/HintPanel';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode
   const [showHistoryModal, setShowHistoryModal] = useState(false); // Track if show history modal is on the screen
   const [showSongGuessModal, setShowSongGuessModal] = useState(false); // Track if song guess modal is on the screen
   const [showInstructionsModal, setShowInstructionsModal] = useState(false); // Track if instructions modal is on the screen
+  const [showStatisticsModal, setShowStatisticsModal] = useState(false); // Track if statistics modal is on the screen
   const [showGameOverModal, setShowGameOverModal] = useState(false); // Track if game over modal is on the screen
   const [modalOrder, setModalOrder] = useState([]); // Track modal stacking order
   const [historyButtonText, setHistoryButtonText] = useState("View History") // Change button text for history modal
@@ -111,12 +113,20 @@ function App() {
       <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
         <div className="header">
           <img src="/assets/lotusifylogo.png" alt="Lotusify Logo" className="logo" />
-          <button
-            className="instructions-button"
-            onClick={() => setShowInstructionsModal(!showInstructionsModal)}
-          >
-            🛈
-          </button>
+          <div className="header-buttons">
+            <button
+              className="corner-button stats-button"
+              onClick={() => setShowStatisticsModal(!showStatisticsModal)}
+            >
+              <img src="/assets/statsicon.png" alt="Statistics Icon" />
+            </button>
+            <button
+              className="corner-button instructions-button"
+              onClick={() => setShowInstructionsModal(!showInstructionsModal)}
+            >
+              <img src="/assets/infoicon.png" alt="Instructions Icon" />
+            </button>
+          </div>
         </div>
         <div className="body">
           <div className="letter-guess-container">
@@ -179,6 +189,10 @@ function App() {
             handleBackspace={handleBackspace}
           />
         </div>
+
+        {showStatisticsModal && (
+          <StatisticsModal onClickX={() => setShowStatisticsModal(!showStatisticsModal)} />
+        )}
 
         {showInstructionsModal && (
           <InstructionsModal onClickX={() => setShowInstructionsModal(!showInstructionsModal)} />

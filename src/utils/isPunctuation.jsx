@@ -1,3 +1,3 @@
 export const isPunctuation = (value) => {
-  return (/[!?&',.\-\(\)]/.test(value));
+  return /[!?&',.\-\(\)]/.test(value);
 }

@@ -1,3 +1,5 @@
+/* Base modal styles. Used for StatisticsModal, InstructionsModal, and GameOverModal. */
+
 .modal-background {
   width: 100vw;
   height: 100vh;
@@ -11,7 +13,6 @@
 .modal-container {
   min-width: 50%;
   max-width: 95%;
-  height: 60%;
   border-radius: 0.5rem;
   background-color: var(--modal-bg);
   box-shadow: rgba(0, 0, 0, 0.7) 1rem 1rem 1rem;
@@ -43,14 +44,49 @@
   align-items: center;
 }
 
-.modal-close {
+.modal-header {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 1rem;
 }
 
-.modal-close button {
+.modal-header button {
+  position: absolute;
+  right: 0;
+  top: 0;
   background-color: transparent;
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  color: white;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+}
+
+.stats ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats li {
+  width: 25%;
+  margin: 1rem;
+}
+
+.statNum {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.statName {
+  text-align: center;
+  font-size: 1rem;
 }

@@ -1,5 +1,5 @@
 import './SongGuessModal.css'
-import { isPunctuation as checkPunctuation } from '../../utils/isPunctuation';
+import { isPunctuation as checkPunctuation } from '../../../utils/isPunctuation';
 import { useEffect } from 'react';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed

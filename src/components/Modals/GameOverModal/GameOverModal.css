@@ -1,0 +1,15 @@
+/* Base styles in ../Modals.css */
+
+.gameover.modal-container {
+  height: 60%;
+}
+
+.gameover.modal-container .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.gameover.modal-container .body {
+  font-size: 1.7rem;
+}
