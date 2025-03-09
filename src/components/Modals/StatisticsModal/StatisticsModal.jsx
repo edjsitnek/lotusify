@@ -1,27 +1,45 @@
 import '../Modal.css'
 import './StatisticsModal.css'
+import { useState } from 'react';
 
 // A modal containing game instructions that pops up when the info button is pressed
-export default function StatisticsModal({ onClickX }) {
+export default function StatisticsModal({ stats, resetStats, onClickX }) {
+  const [resetButtonClicked, setResetButtonClicked] = useState(false);
+
+  // Display game stats
   const handleModalContent = () => {
     return (
       <div className="stats">
         <ul>
           <li>
-            <div className="statNum">X</div>
+            <div className="statNum">{stats.gamesPlayed}</div>
             <div className="statName">Played</div>
           </li>
           <li>
-            <div className="statNum">X</div>
+            <div className="statNum">{stats.winPercentage}</div>
             <div className="statName">Win%</div>
           </li>
           <li>
-            <div className="statNum">X</div>
-            <div className="statName">Average Attempts</div>
+            <div className="statNum">{stats.averageGuesses}</div>
+            <div className="statName">Average Guesses</div>
           </li>
         </ul>
       </div>
     )
+  }
+
+  // Display reset button and secondary confirmation buttons
+  const handleResetButton = () => {
+    if (!resetButtonClicked) {
+      return <button className="reset-button active-button" onClick={() => setResetButtonClicked(true)}>Reset Stats</button>
+    } else {
+      return (
+        <>
+          <button className="reset-button active-button" onClick={resetStats}>Are you sure? (This cannot be undone)</button>
+          <button className="cancel-button" onClick={() => setResetButtonClicked(false)}>Cancel</button>
+        </>
+      )
+    }
   }
 
   const exitModal = () => {
@@ -40,7 +58,7 @@ export default function StatisticsModal({ onClickX }) {
         </div>
         {handleModalContent()}
         <div className="footer">
-          <button className="reset-button active-button">Reset Stats</button>
+          {handleResetButton()}
         </div>
       </div>
     </div>

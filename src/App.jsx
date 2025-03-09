@@ -36,7 +36,9 @@ function App() {
     hints,
     setHints,
     showHints,
-    setShowHints
+    setShowHints,
+    stats,
+    resetStats
   } = useGameLogic(setShowGameOverModal);
 
   const {
@@ -191,7 +193,11 @@ function App() {
         </div>
 
         {showStatisticsModal && (
-          <StatisticsModal onClickX={() => setShowStatisticsModal(!showStatisticsModal)} />
+          <StatisticsModal
+            stats={stats}
+            resetStats={resetStats}
+            onClickX={() => setShowStatisticsModal(!showStatisticsModal)}
+          />
         )}
 
         {showInstructionsModal && (

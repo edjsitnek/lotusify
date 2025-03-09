@@ -8,6 +8,19 @@ export default function useGameLogic(setShowGameOverModal) {
     { slot: "Hint 3", title: "", value: "", unlocked: false, revealed: false }
   ]
 
+  const defaultStats = {
+    gamesPlayed: 0,
+    gamesWon: 0,
+    winPercentage: 0,
+    totalGuesses: 0,
+    averageGuesses: 0
+  };
+
+  const initializeStats = () => {
+    const savedStats = localStorage.getItem('stats');
+    return savedStats ? JSON.parse(savedStats) : defaultStats;
+  }
+
   const [songs, setSongs] = useState([]); // List of songs to pull the answer from
   const [randomSong, setRandomSong] = useState(null); // Random song which is the answer to the current game
   const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
@@ -17,6 +30,7 @@ export default function useGameLogic(setShowGameOverModal) {
   const [isWin, setIsWin] = useState(false); // Track if the game over is a win or not
   const [hints, setHints] = useState(initialHints); // List of hints to display
   const [showHints, setShowHints] = useState(false); // Track if hints are shown
+  const [stats, setStats] = useState(initializeStats); // Track statistics of previous games played
 
   // Load list of songs
   useEffect(() => {
@@ -59,6 +73,11 @@ export default function useGameLogic(setShowGameOverModal) {
     setKeyStatuses(newKeyStatuses);
   }, [guessHistory, randomSong]);
 
+  // Update local storage whenever stats change
+  useEffect(() => {
+    localStorage.setItem('stats', JSON.stringify(stats));
+  }, [stats])
+
   // Pick the song to be guessed from loaded song list
   const pickRandomSong = () => {
     if (songs.length > 0) {
@@ -99,7 +118,11 @@ export default function useGameLogic(setShowGameOverModal) {
 
     // Check if game is over
     if (allFilled || guessHistory.length + 1 >= 12) {
-      if (allFilled) setIsWin(true);
+      if (allFilled) {
+        setIsWin(true);
+        handleStatistics(true);
+      } else handleStatistics(false);
+
       setGameOver(true);
       setShowGameOverModal(true);
     }
@@ -116,12 +139,53 @@ export default function useGameLogic(setShowGameOverModal) {
 
     // Check if game is over
     if (correct || guessHistory.length + 1 >= 12) {
-      if (correct) setIsWin(true);
+      if (correct) {
+        setIsWin(true);
+        handleStatistics(true);
+      } else handleStatistics(false);
+
       setGameOver(true);
       setShowGameOverModal(true);
     }
   };
 
+  // Update statistics for games played, games won, total guesses, average guesses, and win percentage
+  const handleStatistics = (isWin) => {
+    setStats((prevStats) => {
+      const updatedStats = { ...prevStats };
+
+      // Increment games played
+      updatedStats.gamesPlayed += 1;
+
+      if (isWin) {
+        // Increment games won
+        updatedStats.gamesWon += 1;
+
+        // Add guesses to total guesses
+        updatedStats.totalGuesses += guessHistory.length + 1;
+
+        // Calculate average guesses
+        updatedStats.averageGuesses = (
+          updatedStats.totalGuesses / updatedStats.gamesWon
+        ).toFixed(2); // Round to 2 decimal places
+      }
+
+      // Update win percentage
+      updatedStats.winPercentage = Math.round(
+        (updatedStats.gamesWon / updatedStats.gamesPlayed) * 100
+      );
+
+      return updatedStats;
+    })
+  }
+
+  // Reset stats when "Reset Stats" button is clicked
+  const resetStats = () => {
+    localStorage.clear();
+    setStats(defaultStats);
+  }
+
+  // Render blanks for letter guess mode
   const renderBlanks = () => {
     if (!randomSong) return null;
 
@@ -159,6 +223,8 @@ export default function useGameLogic(setShowGameOverModal) {
     hints,
     setHints,
     showHints,
-    setShowHints
+    setShowHints,
+    stats,
+    resetStats
   };
 }
