@@ -1,3 +1,4 @@
+import '../Modals/Modal.css'
 import './HintPanel.css';
 import { useState, useEffect } from "react";
 
@@ -67,10 +68,12 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
     setHints(updatedHints);
   };
 
+  // Enlarge album art on click
   const handleImageClick = (imageSrc) => {
     setEnlargedImage(imageSrc);
   };
 
+  // Close enlarged album art
   const closeEnlargedImage = () => {
     setEnlargedImage(null);
   };

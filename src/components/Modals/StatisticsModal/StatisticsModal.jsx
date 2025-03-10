@@ -7,7 +7,7 @@ export default function StatisticsModal({ stats, resetStats, onClickX }) {
   const [resetButtonClicked, setResetButtonClicked] = useState(false);
 
   // Display game stats
-  const handleModalContent = () => {
+  const displayStats = () => {
     return (
       <div className="stats">
         <ul>
@@ -56,7 +56,7 @@ export default function StatisticsModal({ stats, resetStats, onClickX }) {
           </div>
           <button onClick={exitModal}>X</button>
         </div>
-        {handleModalContent()}
+        {displayStats()}
         <div className="footer">
           {handleResetButton()}
         </div>

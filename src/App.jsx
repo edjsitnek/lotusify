@@ -132,7 +132,7 @@ function App() {
         </div>
         <div className="body">
           <div className="letter-guess-container">
-            <div className="blanks">{!showSongGuessModal && renderBlanks()}</div>
+            <div className="blanks">{renderBlanks()}</div>
           </div>
           {showHistoryModal && modalOrder.includes("history") && (
             <HistoryModal
@@ -156,14 +156,24 @@ function App() {
               isSongGuessOpen={showSongGuessModal}
             />
           )}
-          <HintPanel
-            randomSong={randomSong}
-            guessHistory={guessHistory}
-            hints={hints}
-            setHints={setHints}
-            showHints={showHints}
-            setShowHints={setShowHints}
-          />
+          {!gameOver &&
+            <HintPanel
+              randomSong={randomSong}
+              guessHistory={guessHistory}
+              hints={hints}
+              setHints={setHints}
+              showHints={showHints}
+              setShowHints={setShowHints}
+            />}
+          {gameOver && (
+            <button
+              className="summary-button"
+              onClick={() => setShowGameOverModal(!showGameOverModal)}
+              onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
+            >
+              View Summary
+            </button>
+          )}
         </div>
         <div className="footer">
           <div>
@@ -209,7 +219,8 @@ function App() {
             <GameOverModal
               isWin={isWin}
               numGuesses={guessHistory.length}
-              solution={randomSong.name}
+              randomSong={randomSong}
+              stats={stats}
               onClickX={handleGameOverModalClose}
               onClickReset={onReset}
             />

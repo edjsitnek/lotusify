@@ -944,7 +944,7 @@
     "timesPlayed": null
   },
   {
-    "name": "And Yet They Fight",
+    "name": "...And Yet They Fight",
     "album": "Frames Per Second",
     "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
@@ -1195,7 +1195,7 @@
     "name": "Arupa",
     "album": "Live in Steel City",
     "albumArt": "/assets/album-art/live-in-steel-city.jpg",
-    "year": 2004,
+    "year": 2024,
     "liveOnly": true,
     "timesPlayed": null
   },
