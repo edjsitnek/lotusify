@@ -776,6 +776,38 @@
     "timesPlayed": null
   },
   {
+    "name": "For the Summertime",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Old Cassette",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bulletproof",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
+    "name": "Gimme Your Love",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": null
+  },
+  {
     "name": "Debris",
     "album": "86 Revolutions",
     "albumArt": "/assets/album-art/86-revolutions.jpg",
@@ -1300,6 +1332,246 @@
     "album": null,
     "albumArt": null,
     "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "And I Don't",
+    "album": null,
+    "albumArt": null,
+    "year": 2024,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Blender",
+    "album": null,
+    "albumArt": null,
+    "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Bootless",
+    "album": null,
+    "albumArt": null,
+    "year": 2007,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Comptroller",
+    "album": null,
+    "albumArt": null,
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Contagion",
+    "album": null,
+    "albumArt": null,
+    "year": 2005,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Dark Brown Earth",
+    "album": null,
+    "albumArt": null,
+    "year": 2004,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Did Fatt",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Dirt Underfoot",
+    "album": null,
+    "albumArt": null,
+    "year": 2024,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Floating Amidst",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Footwork",
+    "album": null,
+    "albumArt": null,
+    "year": 2024,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Futureworld",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Juggernaut",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Kalea",
+    "album": null,
+    "albumArt": null,
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Karo",
+    "album": null,
+    "albumArt": null,
+    "year": 2023,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Lead Pipe",
+    "album": null,
+    "albumArt": null,
+    "year": 2010,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Lucid Awakening",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "My Own Personal 3-Letter Word",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Nri",
+    "album": null,
+    "albumArt": null,
+    "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Opo",
+    "album": null,
+    "albumArt": null,
+    "year": 2004,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Philly Hit",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Resonance Experiments",
+    "album": null,
+    "albumArt": null,
+    "year": 2024,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Seen From Out Here",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sid",
+    "album": null,
+    "albumArt": null,
+    "year": 1999,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Sift",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Soma",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Space in Between",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Spiraling Line of Light",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Street Tough",
+    "album": null,
+    "albumArt": null,
+    "year": 2024,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Suspended Reason",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": null
+  },
+  {
+    "name": "Urbn Xplr",
+    "album": null,
+    "albumArt": null,
+    "year": 2024,
     "liveOnly": true,
     "timesPlayed": null
   }
