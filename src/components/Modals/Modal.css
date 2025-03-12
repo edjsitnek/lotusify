@@ -92,6 +92,12 @@
   font-size: 1rem;
 }
 
+/* Keep tables and divs from showing focus visibly  */
+table,
+div:focus-visible {
+  outline: none;
+}
+
 .album-cover {
   width: 50%;
   max-width: 15rem;

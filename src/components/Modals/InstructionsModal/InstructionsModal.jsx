@@ -1,8 +1,15 @@
 import '../Modal.css'
 import './InstructionsModal.css'
+import { focusOnNewContent } from '../../../utils/focusOnNewContent';
+import { useRef } from 'react';
 
 // A modal containing game instructions that pops up when the info button is pressed
-export default function InstructionsModal({ onClickX }) {
+export default function InstructionsModal({ showInstructionsModal, isOnTop, onClickX }) {
+  // Focus on modal content when opened
+  const newContentRef = useRef(null);
+  focusOnNewContent(showInstructionsModal, newContentRef);
+
+  // Display game instructions
   const handleModalContent = () => {
     return (
       <div className="body">
@@ -30,13 +37,13 @@ export default function InstructionsModal({ onClickX }) {
 
   return (
     // Clicking on the background will close modal
-    <div className="instructions modal-background" onClick={exitModal}>
+    <div className="instructions modal-background" onClick={exitModal} style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="instructions modal-container" onClick={e => e.stopPropagation()}>
         <div className="instructions modal-header">
-          <div className="title">
+          <div className="title" ref={newContentRef} tabIndex="-1">
             <h1>Lotusify Instructions</h1>
           </div>
-          <button onClick={exitModal}>X</button>
+          <button aria-label="Close instructions modal" onClick={exitModal}>X</button>
         </div>
         {handleModalContent()}
       </div>

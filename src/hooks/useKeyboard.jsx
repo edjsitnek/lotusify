@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { isPunctuation } from "../utils/isPunctuation";
 
-export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal) {
+export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, anyModalOpen) {
   const [activeIndex, setActiveIndex] = useState(0); // Track the active input index for song guesses
 
   // Refocus on active input whenever it changes
@@ -69,7 +69,7 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
 
   // Handle physical keyboard input for letter guesses
   const handleTypedLetterGuess = (e) => {
-    if (!showHistoryModal) {
+    if (!anyModalOpen) {
       if (gameMode === "letter") {
         if (/^[a-zA-Z0-9]$/.test(e.key)) {
           handleGuessLetter(e.key.toUpperCase());
@@ -80,7 +80,7 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
 
   // Handle physical keyboard input for song guesses
   const handleKeyDown = (e) => {
-    if (!showHistoryModal) {
+    if (!anyModalOpen) {
       if (gameMode === "song") {
         if (e.key === "Backspace") {
           e.preventDefault();
@@ -124,7 +124,7 @@ export default function useKeyboard(randomSong, songGuess, setSongGuess, gameMod
 
   // Handle onscreen keyboard input
   const handleKeyClick = (key) => {
-    if (!showHistoryModal) {
+    if (!anyModalOpen) {
       if (gameMode === "letter") {
         handleGuessLetter(key);
       }

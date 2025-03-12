@@ -1,13 +1,18 @@
 import '../Modal.css'
 import './GameOverModal.css'
-import { useState } from 'react'
+import { focusOnNewContent } from '../../../utils/focusOnNewContent';
+import { useState, useRef } from 'react'
 
 // A modal that pops up when game is over, with different content for a win or a loss
-export default function GameOverModal({ isWin, numGuesses, randomSong, stats, onClickX, onClickReset }) {
+export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, onClickX, onClickReset }) {
   const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
 
+  // Focus on modal content when opened
+  const newContentRef = useRef(null);
+  focusOnNewContent(showGameOverModal, newContentRef);
+
   // Display song info
-  const handleSongInfo = () => {
+  const displaySongInfo = () => {
     if (randomSong.liveOnly === false) {
       return (
         <>
@@ -83,20 +88,19 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, on
     if (isWin === true) { // Content if the game was won
       return (
         <>
-          <div className="gameover modal-header title">
+          <div className="gameover modal-header title" ref={newContentRef} tabIndex="-1">
             {(numGuesses === 1) ? (
               <p>You got it in 1 guess!</p>
             ) : (
               <p>You got it in {numGuesses} guesses!</p>
             )}
-            <button onClick={exitModal}>X</button>
+            <button aria-label="Close summary modal" onClick={exitModal}>X</button>
           </div>
           <div className="body">
-            {handleSongInfo()}
+            {displaySongInfo()}
           </div>
           <hr />
           <div className="footer">
-
             {displayStats()}
             <button onClick={onClickReset} className="resetButton">Start New Game</button>
           </div>
@@ -106,14 +110,16 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, on
     if (isWin === false) { // Content if the game was lost
       return (
         <>
-          <div className="title">
-            <h1>Game Over!</h1>
-            <button onClick={exitModal}>X</button>
+          <div className="gameover modal-header title" ref={newContentRef} tabIndex="-1">
+            <p>Game Over!</p>
+            <button aria-label="Close summary modal" onClick={exitModal}>X</button>
           </div>
           <div className="body">
-            <p>The correct song was {randomSong.name}</p>
+            {displaySongInfo()}
           </div>
+          <hr />
           <div className="footer">
+            {displayStats()}
             <button onClick={onClickReset} className="resetButton">Start New Game</button>
           </div>
         </>

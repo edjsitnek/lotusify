@@ -1,10 +1,15 @@
 import '../Modal.css'
 import './StatisticsModal.css'
-import { useState } from 'react';
+import { focusOnNewContent } from '../../../utils/focusOnNewContent';
+import { useState, useRef } from 'react';
 
 // A modal containing game instructions that pops up when the info button is pressed
-export default function StatisticsModal({ stats, resetStats, onClickX }) {
+export default function StatisticsModal({ stats, resetStats, showStatisticsModal, isOnTop, onClickX }) {
   const [resetButtonClicked, setResetButtonClicked] = useState(false);
+
+  // Focus on modal content when opened
+  const newContentRef = useRef(null);
+  focusOnNewContent(showStatisticsModal, newContentRef);
 
   // Display game stats
   const displayStats = () => {
@@ -48,13 +53,13 @@ export default function StatisticsModal({ stats, resetStats, onClickX }) {
 
   return (
     // Clicking on the background will close modal
-    <div className="statistics modal-background" onClick={exitModal}>
+    <div className="statistics modal-background" onClick={exitModal} style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="statistics modal-container" onClick={e => e.stopPropagation()}>
         <div className="statistics modal-header">
-          <div className="title">
+          <div className="title" ref={newContentRef} tabIndex="-1">
             <h1>Game Stats</h1>
           </div>
-          <button onClick={exitModal}>X</button>
+          <button aria-label="Close statistics modal" onClick={exitModal}>X</button>
         </div>
         {displayStats()}
         <div className="footer">

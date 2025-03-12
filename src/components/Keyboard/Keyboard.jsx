@@ -14,6 +14,7 @@ export default function Keyboard({ onKeyClick, keyStatuses, handleBackspace }) {
         <button
           key={i}
           className={`key ${keyStatuses[key] || ''}`} // Gets the key status or returns empty string
+          aria-label={key}
           onClick={() => onKeyClick(key)}
           onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
         >
@@ -23,10 +24,11 @@ export default function Keyboard({ onKeyClick, keyStatuses, handleBackspace }) {
     )
   };
 
-  const fillLargeKeys = (onClick, content) => {
+  const fillLargeKeys = (onClick, content, ariaLabel) => {
     return (
       <button
         className="key key-large"
+        aria-label={ariaLabel}
         onClick={onClick}
         onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
       >
@@ -46,9 +48,9 @@ export default function Keyboard({ onKeyClick, keyStatuses, handleBackspace }) {
             {fillKeys(letterKeys, 10, 19)}
           </div>
           <div className="keyboard-row">
-            {fillLargeKeys(() => setShowNumKeys(true), "123")}
+            {fillLargeKeys(() => setShowNumKeys(true), "123", "Switch to number keys")}
             {fillKeys(letterKeys, 19)}
-            {fillLargeKeys(handleBackspace, "⌫")}
+            {fillLargeKeys(handleBackspace, "⌫", "Backspace")}
           </div>
         </>
       ) : ( // Keyboard display with number keys
@@ -60,8 +62,8 @@ export default function Keyboard({ onKeyClick, keyStatuses, handleBackspace }) {
             {fillKeys(numKeys, 5)}
           </div>
           <div className="keyboard-row">
-            {fillLargeKeys(() => setShowNumKeys(false), "ABC")}
-            {fillLargeKeys(handleBackspace, "⌫")}
+            {fillLargeKeys(() => setShowNumKeys(false), "ABC", "Switch to letter keys")}
+            {fillLargeKeys(handleBackspace, "⌫", "Backspace")}
           </div>
         </>
       )}

@@ -40,7 +40,3 @@ button {
   border-radius: .2rem;
   outline: none;
 }
-
-::selection {
-  color: rgba(255, 255, 255, 1)
-}

@@ -8,7 +8,7 @@ import StatisticsModal from './components/Modals/StatisticsModal/StatisticsModal
 import HintPanel from './components/HintPanel/HintPanel';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode
@@ -17,6 +17,7 @@ function App() {
   const [showInstructionsModal, setShowInstructionsModal] = useState(false); // Track if instructions modal is on the screen
   const [showStatisticsModal, setShowStatisticsModal] = useState(false); // Track if statistics modal is on the screen
   const [showGameOverModal, setShowGameOverModal] = useState(false); // Track if game over modal is on the screen
+  const [anyModalOpen, setAnyModalOpen] = useState(false); // Track if any modal is open
   const [modalOrder, setModalOrder] = useState([]); // Track modal stacking order
   const [historyButtonText, setHistoryButtonText] = useState("View History") // Change button text for history modal
   const [guessButtonText, setGuessButtonText] = useState("Guess Song") // Change button text for song guess modal
@@ -49,7 +50,17 @@ function App() {
     handleKeyClick,
     handleTypedLetterGuess,
     handleClickBackOnGame
-  } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, showHistoryModal);
+  } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, anyModalOpen);
+
+  // Keep track of if any informational modal is open to prevent game input
+  useEffect(() => {
+    if (showHistoryModal || showInstructionsModal || showStatisticsModal) {
+      setAnyModalOpen(true);
+    }
+    else {
+      setAnyModalOpen(false);
+    }
+  }, [showHistoryModal, showSongGuessModal, showInstructionsModal, showStatisticsModal, showGameOverModal]);
 
   // Refocus game container for physical keyboard letter guesses after modal closes
   const refocusGameContainer = () => {
@@ -65,6 +76,7 @@ function App() {
       setGuessButtonText("Return")
       setGameMode("song")
       openModal("songGuess");
+      if (showHistoryModal) handleHistoryButton(); // Keep history modal from interfering with song guess modal
     }
     else {
       setGuessButtonText("Guess Song")
@@ -84,6 +96,28 @@ function App() {
     else {
       closeModal("history");
       setHistoryButtonText("View History")
+    }
+  }
+
+  // Toggle statistics modal
+  const handleStatsButton = () => {
+    setShowStatisticsModal(!showStatisticsModal);
+    if (!showStatisticsModal) {
+      openModal("statistics");
+    }
+    else {
+      closeModal("statistics");
+    }
+  }
+
+  // Toggle instructions modal
+  const handleInfoButton = () => {
+    setShowInstructionsModal(!showInstructionsModal);
+    if (!showInstructionsModal) {
+      openModal("instructions");
+    }
+    else {
+      closeModal("instructions");
     }
   }
 
@@ -113,24 +147,26 @@ function App() {
   return (
     <>
       <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
-        <div className="header">
-          <img src="/assets/lotusifylogo.png" alt="Lotusify Logo" className="logo" />
+        <header className="header">
+          <img src="/assets/lotusifyLogo.png" alt="Lotusify Logo" className="logo" />
           <div className="header-buttons">
             <button
               className="corner-button stats-button"
-              onClick={() => setShowStatisticsModal(!showStatisticsModal)}
+              aria-label="Statistics"
+              onClick={() => handleStatsButton()}
             >
-              <img src="/assets/statsicon.png" alt="Statistics Icon" />
+              <img src="/assets/statsIcon.png" alt="Statistics Icon" />
             </button>
             <button
               className="corner-button instructions-button"
-              onClick={() => setShowInstructionsModal(!showInstructionsModal)}
+              aria-label="Instructions"
+              onClick={() => handleInfoButton()}
             >
-              <img src="/assets/infoicon.png" alt="Instructions Icon" />
+              <img src="/assets/infoIcon.png" alt="Instructions Icon" />
             </button>
           </div>
-        </div>
-        <div className="body">
+        </header>
+        <main className="body">
           <div className="letter-guess-container">
             <div className="blanks">{renderBlanks()}</div>
           </div>
@@ -156,7 +192,7 @@ function App() {
               isSongGuessOpen={showSongGuessModal}
             />
           )}
-          {!gameOver &&
+          {!gameOver && !showSongGuessModal &&
             <HintPanel
               randomSong={randomSong}
               guessHistory={guessHistory}
@@ -174,8 +210,8 @@ function App() {
               View Summary
             </button>
           )}
-        </div>
-        <div className="footer">
+        </main>
+        <footer className="footer">
           <div>
             Guesses: {guessHistory.length}/12
             {!gameOver && (
@@ -200,20 +236,24 @@ function App() {
             keyStatuses={keyStatuses}
             handleBackspace={handleBackspace}
           />
-        </div>
+        </footer>
 
         {showStatisticsModal && (
           <StatisticsModal
             stats={stats}
             resetStats={resetStats}
+            showStatisticsModal={showStatisticsModal}
+            isOnTop={modalOrder[modalOrder.length - 1] === "statistics"}
             onClickX={() => setShowStatisticsModal(!showStatisticsModal)}
           />
         )}
-
         {showInstructionsModal && (
-          <InstructionsModal onClickX={() => setShowInstructionsModal(!showInstructionsModal)} />
+          <InstructionsModal
+            showInstructionsModal={showInstructionsModal}
+            isOnTop={modalOrder[modalOrder.length - 1] === "instructions"}
+            onClickX={() => setShowInstructionsModal(!showInstructionsModal)}
+          />
         )}
-
         {gameOver && (
           showGameOverModal ? (
             <GameOverModal
@@ -221,6 +261,7 @@ function App() {
               numGuesses={guessHistory.length}
               randomSong={randomSong}
               stats={stats}
+              showGameOverModal={showGameOverModal}
               onClickX={handleGameOverModalClose}
               onClickReset={onReset}
             />
