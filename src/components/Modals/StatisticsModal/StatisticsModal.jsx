@@ -4,8 +4,8 @@ import { focusOnNewContent } from '../../../utils/focusOnNewContent';
 import { useState, useRef } from 'react';
 
 // A modal containing game instructions that pops up when the info button is pressed
-export default function StatisticsModal({ stats, resetStats, showStatisticsModal, isOnTop, onClickX }) {
-  const [resetButtonClicked, setResetButtonClicked] = useState(false);
+export default function StatisticsModal({ stats, resetStats, showStatisticsModal, lastFocusedElement, isOnTop, onClickX }) {
+  const [resetButtonClicked, setResetButtonClicked] = useState(false); // Track if reset button is clicked to toggle confirmation button
 
   // Focus on modal content when opened
   const newContentRef = useRef(null);
@@ -49,6 +49,7 @@ export default function StatisticsModal({ stats, resetStats, showStatisticsModal
 
   const exitModal = () => {
     onClickX(false);
+    lastFocusedElement.current?.focus(); // Focus on stats icon again when modal closes for accessibility
   }
 
   return (

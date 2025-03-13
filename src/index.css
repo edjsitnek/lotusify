@@ -38,5 +38,4 @@ button {
   background-color: var(--incorrect);
   border: 2px solid var(--incorrect);
   border-radius: .2rem;
-  outline: none;
 }

@@ -8,7 +8,7 @@ import StatisticsModal from './components/Modals/StatisticsModal/StatisticsModal
 import HintPanel from './components/HintPanel/HintPanel';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 function App() {
   const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode
@@ -21,6 +21,9 @@ function App() {
   const [modalOrder, setModalOrder] = useState([]); // Track modal stacking order
   const [historyButtonText, setHistoryButtonText] = useState("View History") // Change button text for history modal
   const [guessButtonText, setGuessButtonText] = useState("Guess Song") // Change button text for song guess modal
+
+  const lastFocusedElement = useRef(null); // Used as a reference element to refocus on when modal is closed for accessibility
+  const summaryButtonRef = useRef(null); // Used to focus on the summary button after the game over modal is closed
 
   const {
     pickRandomSong,
@@ -52,7 +55,7 @@ function App() {
     handleClickBackOnGame
   } = useKeyboard(randomSong, songGuess, setSongGuess, gameMode, handleGuessLetter, handleGuessSong, anyModalOpen);
 
-  // Keep track of if any informational modal is open to prevent game input
+  // Keep track of if any obstructing modal is open to prevent game input
   useEffect(() => {
     if (showHistoryModal || showInstructionsModal || showStatisticsModal) {
       setAnyModalOpen(true);
@@ -101,6 +104,7 @@ function App() {
 
   // Toggle statistics modal
   const handleStatsButton = () => {
+    lastFocusedElement.current = document.activeElement; // Store the last focused element
     setShowStatisticsModal(!showStatisticsModal);
     if (!showStatisticsModal) {
       openModal("statistics");
@@ -112,6 +116,7 @@ function App() {
 
   // Toggle instructions modal
   const handleInfoButton = () => {
+    lastFocusedElement.current = document.activeElement; // Store the last focused element
     setShowInstructionsModal(!showInstructionsModal);
     if (!showInstructionsModal) {
       openModal("instructions");
@@ -119,6 +124,11 @@ function App() {
     else {
       closeModal("instructions");
     }
+  }
+
+  // Toggle summary/game over modal
+  const handleSummaryButton = () => {
+    setShowGameOverModal(!showGameOverModal)
   }
 
   // Handle game over modal close
@@ -204,7 +214,8 @@ function App() {
           {gameOver && (
             <button
               className="summary-button"
-              onClick={() => setShowGameOverModal(!showGameOverModal)}
+              ref={summaryButtonRef}
+              onClick={() => handleSummaryButton()}
               onMouseDown={(e) => e.preventDefault()} // Prevents focus on mousedown
             >
               View Summary
@@ -243,6 +254,7 @@ function App() {
             stats={stats}
             resetStats={resetStats}
             showStatisticsModal={showStatisticsModal}
+            lastFocusedElement={lastFocusedElement}
             isOnTop={modalOrder[modalOrder.length - 1] === "statistics"}
             onClickX={() => setShowStatisticsModal(!showStatisticsModal)}
           />
@@ -250,6 +262,7 @@ function App() {
         {showInstructionsModal && (
           <InstructionsModal
             showInstructionsModal={showInstructionsModal}
+            lastFocusedElement={lastFocusedElement}
             isOnTop={modalOrder[modalOrder.length - 1] === "instructions"}
             onClickX={() => setShowInstructionsModal(!showInstructionsModal)}
           />
@@ -262,6 +275,8 @@ function App() {
               randomSong={randomSong}
               stats={stats}
               showGameOverModal={showGameOverModal}
+              lastFocusedElement={lastFocusedElement}
+              summaryButtonRef={summaryButtonRef}
               onClickX={handleGameOverModalClose}
               onClickReset={onReset}
             />

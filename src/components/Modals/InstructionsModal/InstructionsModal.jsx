@@ -4,7 +4,7 @@ import { focusOnNewContent } from '../../../utils/focusOnNewContent';
 import { useRef } from 'react';
 
 // A modal containing game instructions that pops up when the info button is pressed
-export default function InstructionsModal({ showInstructionsModal, isOnTop, onClickX }) {
+export default function InstructionsModal({ showInstructionsModal, lastFocusedElement, isOnTop, onClickX }) {
   // Focus on modal content when opened
   const newContentRef = useRef(null);
   focusOnNewContent(showInstructionsModal, newContentRef);
@@ -33,6 +33,7 @@ export default function InstructionsModal({ showInstructionsModal, isOnTop, onCl
 
   const exitModal = () => {
     onClickX(false);
+    lastFocusedElement.current?.focus(); // Focus on instruction icon again when modal closes for accessibility
   }
 
   return (

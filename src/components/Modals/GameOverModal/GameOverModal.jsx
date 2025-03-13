@@ -4,7 +4,7 @@ import { focusOnNewContent } from '../../../utils/focusOnNewContent';
 import { useState, useRef } from 'react'
 
 // A modal that pops up when game is over, with different content for a win or a loss
-export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, onClickX, onClickReset }) {
+export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, lastFocusedElement, summaryButtonRef, onClickX, onClickReset }) {
   const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
 
   // Focus on modal content when opened
@@ -88,7 +88,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
     if (isWin === true) { // Content if the game was won
       return (
         <>
-          <div className="gameover modal-header title" ref={newContentRef} tabIndex="-1">
+          <div className="gameover modal-header title" ref={newContentRef} tabIndex="-1" aria-live="assertive">
             {(numGuesses === 1) ? (
               <p>You got it in 1 guess!</p>
             ) : (
@@ -110,7 +110,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
     if (isWin === false) { // Content if the game was lost
       return (
         <>
-          <div className="gameover modal-header title" ref={newContentRef} tabIndex="-1">
+          <div className="gameover modal-header title" ref={newContentRef} tabIndex="-1" aria-live="assertive">
             <p>Game Over!</p>
             <button aria-label="Close summary modal" onClick={exitModal}>X</button>
           </div>
@@ -140,6 +140,16 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
   // Close modal
   const exitModal = () => {
     onClickX(false);
+    // If lastFocusedElement exists, return focus normally
+    if (lastFocusedElement.current) {
+      lastFocusedElement.current.focus();
+    }
+    // If lastFocusedElement is null, focus on "View Summary" button
+    else {
+      setTimeout(() => {
+        summaryButtonRef.current?.focus();
+      }, 0);
+    }
   }
 
   return (
