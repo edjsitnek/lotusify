@@ -25,7 +25,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
               className="album-cover"
               onClick={() => handleImageClick(randomSong.albumArt)}
             />
-            <p><span className="label">Times Played: </span>{randomSong.timesPlayed}</p>
+            <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
           </div>
 
         </>
@@ -43,7 +43,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
               onClick={() => handleImageClick(randomSong.albumArt)}
             />
             <p><span className="label">First played: </span>{randomSong.year}</p>
-            <p><span className="label">Times Played: </span>{randomSong.timesPlayed}</p>
+            <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
           </div>
         </>
       )
@@ -54,7 +54,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <div className="song-info">
             <p><span className="label">Song: </span>{randomSong.name}</p>
             <p><span className="label">First Played: </span>{randomSong.year}</p>
-            <p><span className="label">Times Played: </span>{randomSong.timesPlayed}</p>
+            <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
           </div>
         </>
       )
