@@ -2,7 +2,7 @@
   {
     "name": "L'immueble",
     "album": "Vibes",
-    "albumArt": "/album-art/vibes.jpg",
+    "albumArt": "/assets/album-art/vibes.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 167,
@@ -14,7 +14,7 @@
   {
     "name": "Sunrain",
     "album": "Vibes",
-    "albumArt": "/album-art/vibes.jpg",
+    "albumArt": "/assets/album-art/vibes.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 409,
@@ -26,7 +26,7 @@
   {
     "name": "Intro to a Cell",
     "album": "Vibes",
-    "albumArt": "/album-art/vibes.jpg",
+    "albumArt": "/assets/album-art/vibes.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 380,
@@ -38,7 +38,7 @@
   {
     "name": "Continuum",
     "album": "Vibes",
-    "albumArt": "/album-art/vibes.jpg",
+    "albumArt": "/assets/album-art/vibes.jpg",
     "year": 2002,
     "liveOnly": true,
     "timesPlayed": 12,
@@ -50,7 +50,7 @@
   {
     "name": "In the Bliss",
     "album": "Vibes",
-    "albumArt": "/album-art/vibes.jpg",
+    "albumArt": "/assets/album-art/vibes.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 40,
@@ -62,7 +62,7 @@
   {
     "name": "Umbilical Moonrise",
     "album": "Germination",
-    "albumArt": "/album-art/germination.jpg",
+    "albumArt": "/assets/album-art/germination.jpg",
     "year": 1998,
     "liveOnly": true,
     "timesPlayed": 235,
@@ -74,7 +74,7 @@
   {
     "name": "Flower Sermon",
     "album": "Germination",
-    "albumArt": "/album-art/germination.jpg",
+    "albumArt": "/assets/album-art/germination.jpg",
     "year": 2002,
     "liveOnly": true,
     "timesPlayed": 466,
@@ -86,7 +86,7 @@
   {
     "name": "Crescent",
     "album": "Germination",
-    "albumArt": "/album-art/germination.jpg",
+    "albumArt": "/assets/album-art/germination.jpg",
     "year": 2003,
     "liveOnly": true,
     "timesPlayed": 2,
@@ -98,7 +98,7 @@
   {
     "name": "Nematode",
     "album": "Germination",
-    "albumArt": "/album-art/germination.jpg",
+    "albumArt": "/assets/album-art/germination.jpg",
     "year": 2002,
     "liveOnly": true,
     "timesPlayed": 366,
@@ -110,7 +110,7 @@
   {
     "name": "Caywood",
     "album": "Germination",
-    "albumArt": "/album-art/germination.jpg",
+    "albumArt": "/assets/album-art/germination.jpg",
     "year": 2002,
     "liveOnly": true,
     "timesPlayed": 143,
@@ -122,7 +122,7 @@
   {
     "name": "Umbilical Moonset",
     "album": "Germination",
-    "albumArt": "/album-art/germination.jpg",
+    "albumArt": "/assets/album-art/germination.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 182,
@@ -134,7 +134,7 @@
   {
     "name": "Suitcases",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 403,
@@ -146,7 +146,7 @@
   {
     "name": "Livingston Storm",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 353,
@@ -158,7 +158,7 @@
   {
     "name": "Spiritualize",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 485,
@@ -170,7 +170,7 @@
   {
     "name": "Plant Your Root",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 302,
@@ -182,7 +182,7 @@
   {
     "name": "Travel",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 178,
@@ -194,7 +194,7 @@
   {
     "name": "Greet the Mind",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 454,
@@ -206,7 +206,7 @@
   {
     "name": "Ball of Energy",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 65,
@@ -218,7 +218,7 @@
   {
     "name": "Jump Off",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 406,
@@ -230,7 +230,7 @@
   {
     "name": "Colorado",
     "album": "Nomad",
-    "albumArt": "/album-art/nomad.jpg",
+    "albumArt": "/assets/album-art/nomad.jpg",
     "year": 2005,
     "liveOnly": false,
     "timesPlayed": 45,
@@ -242,7 +242,7 @@
   {
     "name": "Tip of the Tongue",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 350,
@@ -254,7 +254,7 @@
   {
     "name": "Kesey Seed",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 153,
@@ -266,7 +266,7 @@
   {
     "name": "Bubonic Tonic",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 331,
@@ -278,7 +278,7 @@
   {
     "name": "When H Binds to O",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 84,
@@ -290,7 +290,7 @@
   {
     "name": "Long Legged Stumble",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -302,7 +302,7 @@
   {
     "name": "Drunken Giraffe",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 24,
@@ -314,7 +314,7 @@
   {
     "name": "Epidemic",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 25,
@@ -326,7 +326,7 @@
   {
     "name": "Blue Giant",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 139,
@@ -338,7 +338,7 @@
   {
     "name": "Cirrus",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -350,7 +350,7 @@
   {
     "name": "Sprout to Vine",
     "album": "The Strength of Weak Ties",
-    "albumArt": "/album-art/the-strength-of-weak-ties.jpg",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
     "year": 2006,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -362,7 +362,7 @@
   {
     "name": "Wax",
     "album": "Escaping Sargasso Sea",
-    "albumArt": "/album-art/escaping-sargasso-sea.jpg",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
     "year": 2005,
     "liveOnly": true,
     "timesPlayed": 403,
@@ -374,7 +374,7 @@
   {
     "name": "Wooly Mammoth",
     "album": "Escaping Sargasso Sea",
-    "albumArt": "/album-art/escaping-sargasso-sea.jpg",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
     "year": 2006,
     "liveOnly": true,
     "timesPlayed": 149,
@@ -386,7 +386,7 @@
   {
     "name": "Slow Cookin'",
     "album": "Escaping Sargasso Sea",
-    "albumArt": "/album-art/escaping-sargasso-sea.jpg",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
     "year": 2003,
     "liveOnly": true,
     "timesPlayed": 189,
@@ -398,7 +398,7 @@
   {
     "name": "Through the Mirror",
     "album": "Escaping Sargasso Sea",
-    "albumArt": "/album-art/escaping-sargasso-sea.jpg",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
     "year": 2007,
     "liveOnly": true,
     "timesPlayed": 26,
@@ -410,7 +410,7 @@
   {
     "name": "Mikesnack",
     "album": "Escaping Sargasso Sea",
-    "albumArt": "/album-art/escaping-sargasso-sea.jpg",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
     "year": 2003,
     "liveOnly": true,
     "timesPlayed": 204,
@@ -422,7 +422,7 @@
   {
     "name": "It's All Clear to Me Now",
     "album": "Escaping Sargasso Sea",
-    "albumArt": "/album-art/escaping-sargasso-sea.jpg",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 370,
@@ -434,7 +434,7 @@
   {
     "name": "Behind Midwest Storefronts",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 201,
@@ -446,7 +446,7 @@
   {
     "name": "Age of Inexperience",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 225,
@@ -458,7 +458,7 @@
   {
     "name": "Hammerstrike",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 309,
@@ -470,7 +470,7 @@
   {
     "name": "Bellwether",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 292,
@@ -482,7 +482,7 @@
   {
     "name": "Modicum",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 48,
@@ -494,7 +494,7 @@
   {
     "name": "Invincibility of Youth",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 93,
@@ -506,7 +506,7 @@
   {
     "name": "One Last Hurrah",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 88,
@@ -518,7 +518,7 @@
   {
     "name": "Alkaline",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 47,
@@ -530,7 +530,7 @@
   {
     "name": "Turquoise",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 89,
@@ -542,7 +542,7 @@
   {
     "name": "Disappear in a Blood-Red Sky",
     "album": "Hammerstrike",
-    "albumArt": "/album-art/hammerstrike.jpg",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
     "year": 2008,
     "liveOnly": false,
     "timesPlayed": 98,
@@ -554,7 +554,7 @@
   {
     "name": "Simian",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 57,
@@ -566,7 +566,7 @@
   {
     "name": "Scrapple",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 109,
@@ -578,7 +578,7 @@
   {
     "name": "Grayrigg",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 135,
@@ -590,7 +590,7 @@
   {
     "name": "Monochrome",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 10,
@@ -602,7 +602,7 @@
   {
     "name": "Marisol",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 143,
@@ -614,7 +614,7 @@
   {
     "name": "72 Hrs Awake",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 87,
@@ -626,7 +626,7 @@
   {
     "name": "Vancouver Island",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 11,
@@ -638,7 +638,7 @@
   {
     "name": "Cain & Abel",
     "album": "Oil On Glass / Feather On Wood",
-    "albumArt": "/album-art/oil-on-glass-feather-on-wood.jpg",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
     "year": 2009,
     "liveOnly": false,
     "timesPlayed": 38,
@@ -650,7 +650,7 @@
   {
     "name": "Golden Ghost",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 185,
@@ -662,7 +662,7 @@
   {
     "name": "Blacklight Sunflare",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 184,
@@ -674,7 +674,7 @@
   {
     "name": "Bush Pilot",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 186,
@@ -686,7 +686,7 @@
   {
     "name": "Dowrn",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 141,
@@ -698,7 +698,7 @@
   {
     "name": "The Surf",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 122,
@@ -710,7 +710,7 @@
   {
     "name": "In an Outline",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 137,
@@ -722,7 +722,7 @@
   {
     "name": "Molluskunk",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 60,
@@ -734,7 +734,7 @@
   {
     "name": "Harps",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 128,
@@ -746,7 +746,7 @@
   {
     "name": "Lou Carcohl",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 50,
@@ -758,7 +758,7 @@
   {
     "name": "Evergreenary",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -770,7 +770,7 @@
   {
     "name": "Orchids",
     "album": "Lotus",
-    "albumArt": "/album-art/lotus.jpg",
+    "albumArt": "/assets/album-art/lotus.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 10,
@@ -782,7 +782,7 @@
   {
     "name": "Destroyer",
     "album": "Destroyer",
-    "albumArt": "/album-art/destroyer.jpg",
+    "albumArt": "/assets/album-art/destroyer.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 118,
@@ -794,7 +794,7 @@
   {
     "name": "Ridalin",
     "album": "Lotus",
-    "albumArt": "/album-art/ridalin.jpg",
+    "albumArt": "/assets/album-art/ridalin.jpg",
     "year": 2011,
     "liveOnly": false,
     "timesPlayed": 4,
@@ -806,7 +806,7 @@
   {
     "name": "Break Build Burn",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 77,
@@ -818,7 +818,7 @@
   {
     "name": "Massif",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 82,
@@ -830,7 +830,7 @@
   {
     "name": "What Did I Do Wrong",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 112,
@@ -842,7 +842,7 @@
   {
     "name": "Uffi",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 53,
@@ -854,7 +854,7 @@
   {
     "name": "Middle Road",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 155,
@@ -866,7 +866,7 @@
   {
     "name": "Kodiak",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 84,
@@ -878,7 +878,7 @@
   {
     "name": "Cutinuo",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 18,
@@ -890,7 +890,7 @@
   {
     "name": "Ashcon",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 60,
@@ -902,7 +902,7 @@
   {
     "name": "Neon Tubes",
     "album": "Build",
-    "albumArt": "/album-art/build.jpg",
+    "albumArt": "/assets/album-art/build.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 104,
@@ -914,7 +914,7 @@
   {
     "name": "Cannon in the Heavens",
     "album": "Monks",
-    "albumArt": "/album-art/monks.jpg",
+    "albumArt": "/assets/album-art/monks.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 39,
@@ -926,7 +926,7 @@
   {
     "name": "Cloud 9",
     "album": "Monks",
-    "albumArt": "/album-art/monks.jpg",
+    "albumArt": "/assets/album-art/monks.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 23,
@@ -938,7 +938,7 @@
   {
     "name": "Malabarista",
     "album": "Malabarista",
-    "albumArt": "/album-art/malabarista.jpg",
+    "albumArt": "/assets/album-art/malabarista.jpg",
     "year": 2013,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -950,7 +950,7 @@
   {
     "name": "Let Me In",
     "album": "Gilded Age",
-    "albumArt": "/album-art/gilded-age.jpg",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
     "year": 2014,
     "liveOnly": false,
     "timesPlayed": 18,
@@ -962,7 +962,7 @@
   {
     "name": "Gilded Age",
     "album": "Gilded Age",
-    "albumArt": "/album-art/gilded-age.jpg",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
     "year": 2014,
     "liveOnly": false,
     "timesPlayed": 126,
@@ -974,7 +974,7 @@
   {
     "name": "I Want It All (To Give It Away)",
     "album": "Gilded Age",
-    "albumArt": "/album-art/gilded-age.jpg",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
     "year": 2014,
     "liveOnly": false,
     "timesPlayed": 2,
@@ -986,7 +986,7 @@
   {
     "name": "The Oaks",
     "album": "Gilded Age",
-    "albumArt": "/album-art/gilded-age.jpg",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
     "year": 2014,
     "liveOnly": false,
     "timesPlayed": 50,
@@ -998,7 +998,7 @@
   {
     "name": "Out of Focus",
     "album": "Gilded Age",
-    "albumArt": "/album-art/gilded-age.jpg",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
     "year": 2014,
     "liveOnly": false,
     "timesPlayed": 1,
@@ -1010,7 +1010,7 @@
   {
     "name": "Sunset of the Giant Dipper",
     "album": "Gilded Age",
-    "albumArt": "/album-art/gilded-age.jpg",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
     "year": 2014,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -1022,7 +1022,7 @@
   {
     "name": "Basin to Benin",
     "album": "Basin to Benin/Tarot",
-    "albumArt": "/album-art/basin-to-benin-tarot.jpg",
+    "albumArt": "/assets/album-art/basin-to-benin-tarot.jpg",
     "year": 2015,
     "liveOnly": false,
     "timesPlayed": 34,
@@ -1034,7 +1034,7 @@
   {
     "name": "Tarot",
     "album": "Basin to Benin/Tarot",
-    "albumArt": "/album-art/basin-to-benin-tarot.jpg",
+    "albumArt": "/assets/album-art/basin-to-benin-tarot.jpg",
     "year": 2015,
     "liveOnly": false,
     "timesPlayed": 27,
@@ -1046,7 +1046,7 @@
   {
     "name": "Fearless",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -1058,7 +1058,7 @@
   {
     "name": "I've Been a Fool (Toy Guns)",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 22,
@@ -1070,7 +1070,7 @@
   {
     "name": "Eats the Light",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 93,
@@ -1082,7 +1082,7 @@
   {
     "name": "Move Too Fast",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 36,
@@ -1094,7 +1094,7 @@
   {
     "name": "Sleep When We Are Dead",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 19,
@@ -1106,7 +1106,7 @@
   {
     "name": "White Light Fadeaway",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 20,
@@ -1118,7 +1118,7 @@
   {
     "name": "Anti-Gravity",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 37,
@@ -1130,7 +1130,7 @@
   {
     "name": "Suntan",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 7,
@@ -1142,7 +1142,7 @@
   {
     "name": "When Our Nerves No Longer Twitch",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 15,
@@ -1154,7 +1154,7 @@
   {
     "name": "Sodium Vapor",
     "album": "Eat the Light",
-    "albumArt": "/album-art/eat-the-light.jpg",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
     "year": 2016,
     "liveOnly": false,
     "timesPlayed": 33,
@@ -1166,7 +1166,7 @@
   {
     "name": "For the Summertime",
     "album": "Drink the Light",
-    "albumArt": "/album-art/drink-the-light.jpg",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
     "year": 2017,
     "liveOnly": false,
     "timesPlayed": 4,
@@ -1178,7 +1178,7 @@
   {
     "name": "Old Cassette",
     "album": "Drink the Light",
-    "albumArt": "/album-art/drink-the-light.jpg",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
     "year": 2017,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1190,7 +1190,7 @@
   {
     "name": "Bulletproof",
     "album": "Drink the Light",
-    "albumArt": "/album-art/drink-the-light.jpg",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
     "year": 2017,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1202,7 +1202,7 @@
   {
     "name": "Gimme Your Love",
     "album": "Drink the Light",
-    "albumArt": "/album-art/drink-the-light.jpg",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
     "year": 2017,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1214,7 +1214,7 @@
   {
     "name": "Debris",
     "album": "86 Revolutions",
-    "albumArt": "/album-art/86-revolutions.jpg",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
     "year": 2013,
     "liveOnly": true,
     "timesPlayed": 69,
@@ -1226,7 +1226,7 @@
   {
     "name": "Expired Slang",
     "album": "86 Revolutions",
-    "albumArt": "/album-art/86-revolutions.jpg",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
     "year": 2006,
     "liveOnly": true,
     "timesPlayed": 155,
@@ -1238,7 +1238,7 @@
   {
     "name": "The Opus",
     "album": "86 Revolutions",
-    "albumArt": "/album-art/86-revolutions.jpg",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
     "year": 1999,
     "liveOnly": true,
     "timesPlayed": 30,
@@ -1250,7 +1250,7 @@
   {
     "name": "Cold Facts",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 68,
@@ -1262,7 +1262,7 @@
   {
     "name": "Gasoline",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 6,
@@ -1274,7 +1274,7 @@
   {
     "name": "Bug Love",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 25,
@@ -1286,7 +1286,7 @@
   {
     "name": "MacGuffin",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 28,
@@ -1298,7 +1298,7 @@
   {
     "name": "Aquamarine",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 21,
@@ -1310,7 +1310,7 @@
   {
     "name": "Stranger Danger",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 17,
@@ -1322,7 +1322,7 @@
   {
     "name": "Cosmosis",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 15,
@@ -1334,7 +1334,7 @@
   {
     "name": "Faceblind",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 21,
@@ -1346,7 +1346,7 @@
   {
     "name": "Forgotten Name",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 6,
@@ -1358,7 +1358,7 @@
   {
     "name": "Fortune Favors",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 13,
@@ -1370,7 +1370,7 @@
   {
     "name": "Giffard's Airship",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 9,
@@ -1382,7 +1382,7 @@
   {
     "name": "December Sun",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 7,
@@ -1394,7 +1394,7 @@
   {
     "name": "Cloak & Dagger",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 3,
@@ -1406,7 +1406,7 @@
   {
     "name": "Celluloid Swagger",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 1,
@@ -1418,7 +1418,7 @@
   {
     "name": "Gunk",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 6,
@@ -1430,7 +1430,7 @@
   {
     "name": "Jiggle",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 7,
@@ -1442,7 +1442,7 @@
   {
     "name": "Pachyderm",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 25,
@@ -1454,7 +1454,7 @@
   {
     "name": "Milk & Honey",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 2,
@@ -1466,7 +1466,7 @@
   {
     "name": "...And Yet They Fight",
     "album": "Frames Per Second",
-    "albumArt": "/album-art/frames-per-second.jpg",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
     "year": 2018,
     "liveOnly": false,
     "timesPlayed": 10,
@@ -1478,7 +1478,7 @@
   {
     "name": "Leave a Little Room for Jesus",
     "album": "Leave a Little Room for Jesus",
-    "albumArt": "/album-art/leave-a-little-room-for-jesus.jpg",
+    "albumArt": "/assets/album-art/leave-a-little-room-for-jesus.jpg",
     "year": 2019,
     "liveOnly": false,
     "timesPlayed": 1,
@@ -1490,7 +1490,7 @@
   {
     "name": "Catacombs",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 42,
@@ -1502,7 +1502,7 @@
   {
     "name": "Turtlehead",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 12,
@@ -1514,7 +1514,7 @@
   {
     "name": "Free Swim",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 5,
@@ -1526,7 +1526,7 @@
   {
     "name": "Sepia Rainbow",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 2,
@@ -1538,7 +1538,7 @@
   {
     "name": "One-Eyed Jones",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 1,
@@ -1550,7 +1550,7 @@
   {
     "name": "Bjorn Gets a Haircut",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 11,
@@ -1562,7 +1562,7 @@
   {
     "name": "Straight Blade",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -1574,7 +1574,7 @@
   {
     "name": "Earl of Grey",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 5,
@@ -1586,7 +1586,7 @@
   {
     "name": "Snake Island",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 7,
@@ -1598,7 +1598,7 @@
   {
     "name": "Land of the Lush",
     "album": "Free Swim",
-    "albumArt": "/album-art/free-swim.jpg",
+    "albumArt": "/assets/album-art/free-swim.jpg",
     "year": 2020,
     "liveOnly": false,
     "timesPlayed": 26,
@@ -1610,7 +1610,7 @@
   {
     "name": "Journey to Saturn",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 1,
@@ -1622,7 +1622,7 @@
   {
     "name": "Citrus",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 2,
@@ -1634,7 +1634,7 @@
   {
     "name": "Phantom Tooth",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 11,
@@ -1646,7 +1646,7 @@
   {
     "name": "Year of the Jaguar",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 2,
@@ -1658,7 +1658,7 @@
   {
     "name": "Condor",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 12,
@@ -1670,7 +1670,7 @@
   {
     "name": "Fields of Mint",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1682,7 +1682,7 @@
   {
     "name": "Drifting Away from Shore",
     "album": "Citrus",
-    "albumArt": "/album-art/citrus.jpg",
+    "albumArt": "/assets/album-art/citrus.jpg",
     "year": 2021,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1694,7 +1694,7 @@
   {
     "name": "Moss Shoes",
     "album": "Live Underground",
-    "albumArt": "/album-art/live-underground.jpg",
+    "albumArt": "/assets/album-art/live-underground.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 20,
@@ -1706,7 +1706,7 @@
   {
     "name": "Shimmer and Out",
     "album": "Live Underground",
-    "albumArt": "/album-art/live-underground.jpg",
+    "albumArt": "/assets/album-art/live-underground.jpg",
     "year": 2002,
     "liveOnly": true,
     "timesPlayed": 440,
@@ -1718,7 +1718,7 @@
   {
     "name": "Spaghetti",
     "album": "Live Underground",
-    "albumArt": "/album-art/live-underground.jpg",
+    "albumArt": "/assets/album-art/live-underground.jpg",
     "year": 2001,
     "liveOnly": true,
     "timesPlayed": 141,
@@ -1730,7 +1730,7 @@
   {
     "name": "Desert Blooms",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 27,
@@ -1742,7 +1742,7 @@
   {
     "name": "Pluck",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 30,
@@ -1754,7 +1754,7 @@
   {
     "name": "Tar Pits",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 28,
@@ -1766,7 +1766,7 @@
   {
     "name": "Pacific Glow",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 19,
@@ -1778,7 +1778,7 @@
   {
     "name": "Time Dilates",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 18,
@@ -1790,7 +1790,7 @@
   {
     "name": "Entangled",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 6,
@@ -1802,7 +1802,7 @@
   {
     "name": "Transfixed",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 8,
@@ -1814,7 +1814,7 @@
   {
     "name": "Golden Ratio",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1826,7 +1826,7 @@
   {
     "name": "Desert Recedes",
     "album": "Bloom & Recede",
-    "albumArt": "/album-art/bloom-and-recede.jpg",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
     "year": 2022,
     "liveOnly": false,
     "timesPlayed": 0,
@@ -1838,7 +1838,7 @@
   {
     "name": "Arupa",
     "album": "Live in Steel City",
-    "albumArt": "/album-art/live-in-steel-city.jpg",
+    "albumArt": "/assets/album-art/live-in-steel-city.jpg",
     "year": 2024,
     "liveOnly": true,
     "timesPlayed": 148,
@@ -1850,7 +1850,7 @@
   {
     "name": "How Do I Come Down",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 15,
@@ -1862,7 +1862,7 @@
   {
     "name": "Splinter",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 10,
@@ -1874,7 +1874,7 @@
   {
     "name": "Watching the Distant Storm",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 19,
@@ -1886,7 +1886,7 @@
   {
     "name": "On My Block",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 7,
@@ -1898,7 +1898,7 @@
   {
     "name": "Reed",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 24,
@@ -1910,7 +1910,7 @@
   {
     "name": "Can You Hear the Sound",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 13,
@@ -1922,7 +1922,7 @@
   {
     "name": "Electric Orange",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 16,
@@ -1934,7 +1934,7 @@
   {
     "name": "Bamboo Forest",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 12,
@@ -1946,7 +1946,7 @@
   {
     "name": "Glass",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 6,
@@ -1958,7 +1958,7 @@
   {
     "name": "In the Shadow of the Mountain",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 15,
@@ -1970,7 +1970,7 @@
   {
     "name": "Goodnight Supermoon",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 1,
@@ -1982,7 +1982,7 @@
   {
     "name": "Wavvvves",
     "album": "How to Dream in Color",
-    "albumArt": "/album-art/how-to-dream-in-color.jpg",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
     "year": 2024,
     "liveOnly": false,
     "timesPlayed": 3,
