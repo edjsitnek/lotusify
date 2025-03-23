@@ -9,6 +9,9 @@ import HintPanel from './components/HintPanel/HintPanel';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
 import { useEffect, useState, useRef } from 'react';
+import logo from './assets/lotusifyLogo.png';
+import statsIcon from './assets/statsIcon.png';
+import infoIcon from './assets/infoIcon.png';
 
 function App() {
   const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode
@@ -158,21 +161,21 @@ function App() {
     <>
       <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
         <header className="header">
-          <img src="/assets/lotusifyLogo.png" alt="Lotusify Logo" className="logo" />
+          <img src={logo} alt="Lotusify Logo" className="logo" />
           <div className="header-buttons">
             <button
               className="corner-button stats-button"
               aria-label="Statistics"
               onClick={() => handleStatsButton()}
             >
-              <img src="/assets/statsIcon.png" alt="Statistics Icon" />
+              <img src={statsIcon} alt="Statistics Icon" />
             </button>
             <button
               className="corner-button instructions-button"
               aria-label="Instructions"
               onClick={() => handleInfoButton()}
             >
-              <img src="/assets/infoIcon.png" alt="Instructions Icon" />
+              <img src={infoIcon} alt="Instructions Icon" />
             </button>
           </div>
         </header>
