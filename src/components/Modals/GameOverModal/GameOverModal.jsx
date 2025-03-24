@@ -11,6 +11,19 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
   const newContentRef = useRef(null);
   focusOnNewContent(showGameOverModal, newContentRef);
 
+  // Display album art on certain summary screens
+  const displayAlbumArt = () => {
+    return (
+      <img
+        src={randomSong.albumArt}
+        alt={randomSong.album}
+        className="album-cover"
+        loading="lazy"
+        onClick={() => handleImageClick(randomSong.albumArt)}
+      />
+    )
+  }
+
   // Display song info
   const displaySongInfo = () => {
     if (randomSong.liveOnly === false) {
@@ -19,12 +32,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <div className="song-info">
             <p><span className="label">Song: </span>{randomSong.name}</p>
             <p><span className="label">Album: </span>{randomSong.album} ({randomSong.year})</p>
-            <img
-              src={randomSong.albumArt}
-              alt={randomSong.album}
-              className="album-cover"
-              onClick={() => handleImageClick(randomSong.albumArt)}
-            />
+            {displayAlbumArt()}
             <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
           </div>
 
@@ -36,12 +44,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <div className="song-info">
             <p><span className="label">Song: </span>{randomSong.name}</p>
             <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.year})</p>
-            <img
-              src={randomSong.albumArt}
-              alt={randomSong.album}
-              className="album-cover"
-              onClick={() => handleImageClick(randomSong.albumArt)}
-            />
+            {displayAlbumArt()}
             <p><span className="label">First played: </span>{randomSong.year}</p>
             <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
           </div>

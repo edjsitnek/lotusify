@@ -8,10 +8,10 @@ import StatisticsModal from './components/Modals/StatisticsModal/StatisticsModal
 import HintPanel from './components/HintPanel/HintPanel';
 import useGameLogic from './hooks/useGameLogic'
 import useKeyboard from './hooks/useKeyboard';
-import { useEffect, useState, useRef } from 'react';
 import logo from './assets/lotusifyLogo.png';
 import statsIcon from './assets/statsIcon.png';
 import infoIcon from './assets/infoIcon.png';
+import { useEffect, useState, useRef } from 'react';
 
 function App() {
   const [gameMode, setGameMode] = useState("letter"); // Track if game is in letter guess or song guess mode

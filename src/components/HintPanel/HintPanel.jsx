@@ -104,6 +104,7 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
                           src={hint.value}
                           alt={`${randomSong.album} Album Art`}
                           className="album-cover"
+                          loading="lazy"
                           onClick={() => handleImageClick(hint.value)}
                         />
                       ) : (
