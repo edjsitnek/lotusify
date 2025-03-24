@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lotusify-worker",
+  "main": "src/index.js",
+  "compatibility_date": "2025-03-21",
+  "observability": {
+    "enabled": true
+  }
+}
