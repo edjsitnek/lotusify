@@ -1,0 +1,2366 @@
+[
+  {
+    "name": "L'immueble",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 167,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6286/limmeuble",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sunrain",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 409,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6385/sunrain",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Intro to a Cell",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 380,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6268/intro-to-a-cell",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Continuum",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 12,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6188/continuum",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "In the Bliss",
+    "album": "Vibes",
+    "albumArt": "/assets/album-art/vibes.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 40,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6266/in-the-bliss",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Umbilical Moonrise",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 1998,
+    "liveOnly": true,
+    "timesPlayed": 235,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6404/umbilical-moonrise",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Flower Sermon",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 466,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6227/flower-sermon",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Crescent",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 2,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6195/crescent",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Nematode",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 366,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6319/nematode",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Caywood",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 143,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6177/caywood",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Umbilical Moonset",
+    "album": "Germination",
+    "albumArt": "/assets/album-art/germination.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 182,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6405/umbilical-moonset",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Suitcases",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 403,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6384/suitcases-and-sandwiches",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Livingston Storm",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 353,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6294/livingston-storm",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Spiritualize",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 485,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6378/spiritualize",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Plant Your Root",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 302,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6343/plant-your-root",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Travel",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 178,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6400/travel",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Greet the Mind",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 454,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6245/greet-the-mind",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Ball of Energy",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 65,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6155/ball-of-energy",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Jump Off",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 406,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6279/jump-off",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Colorado",
+    "album": "Nomad",
+    "albumArt": "/assets/album-art/nomad.jpg",
+    "year": 2005,
+    "liveOnly": false,
+    "timesPlayed": 45,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6183/colorado",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Tip of the Tongue",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 350,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6398/tip-of-the-tongue",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Kesey Seed",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 153,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6283/kesey-seed",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bubonic Tonic",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 331,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6172/bubonic-tonic",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "When H Binds to O",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 84,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6415/when-h-binds-to-o",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Long Legged Stumble",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Drunken Giraffe",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 24,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6213/drunken-giraffe",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Epidemic",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 25,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6216/epidemic",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Blue Giant",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 139,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6167/blue-giant",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cirrus",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6179/cirrus",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sprout to Vine",
+    "album": "The Strength of Weak Ties",
+    "albumArt": "/assets/album-art/the-strength-of-weak-ties.jpg",
+    "year": 2006,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6379/sprout-to-vine",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Wax",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2005,
+    "liveOnly": true,
+    "timesPlayed": 403,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6418/wax",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Wooly Mammoth",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": 149,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6417/wooly-mammoth",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Slow Cookin'",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 189,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6368/slow-cookin",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Through the Mirror",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2007,
+    "liveOnly": true,
+    "timesPlayed": 26,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6397/through-the-mirror",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Mikesnack",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 204,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6309/mikesnack",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "It's All Clear to Me Now",
+    "album": "Escaping Sargasso Sea",
+    "albumArt": "/assets/album-art/escaping-sargasso-sea.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 370,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6271/its-all-clear-to-me-now",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Behind Midwest Storefronts",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 201,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6158/behind-midwest-storefronts",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Age of Inexperience",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 225,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6143/age-of-inexperience",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Hammerstrike",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 309,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6249/hammerstrike",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bellwether",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 292,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6159/bellwether",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Modicum",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 48,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6310/modicum",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Invincibility of Youth",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 93,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6269/invincibility-of-youth",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "One Last Hurrah",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 88,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6329/one-last-hurrah",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Alkaline",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 47,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6144/alkaline",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Turquoise",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 89,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6402/turquoise",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Disappear in a Blood-Red Sky",
+    "album": "Hammerstrike",
+    "albumArt": "/assets/album-art/hammerstrike.jpg",
+    "year": 2008,
+    "liveOnly": false,
+    "timesPlayed": 98,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6210/disappear-in-a-blood-red-sky",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Simian",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 57,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6365/simian",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Scrapple",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 109,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6357/scrapple",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Grayrigg",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 135,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6244/grayrigg",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Monochrome",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 10,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6313/monochrome",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Marisol",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 143,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6303/marisol",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "72 Hrs Awake",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 87,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6136/72-hours-awake",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Vancouver Island",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 11,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6408/vancouver-island",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cain & Abel",
+    "album": "Oil On Glass / Feather On Wood",
+    "albumArt": "/assets/album-art/oil-on-glass-feather-on-wood.jpg",
+    "year": 2009,
+    "liveOnly": false,
+    "timesPlayed": 38,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6175/cain-abel",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Golden Ghost",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 185,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6241/golden-ghost",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Blacklight Sunflare",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 184,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6162/blacklight-sunflare",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bush Pilot",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 186,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6174/bush-pilot",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Dowrn",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 141,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6211/dowrn",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "The Surf",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 122,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6394/the-surf",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "In an Outline",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 137,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6263/in-an-outline",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Molluskunk",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 60,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6311/molluskunk",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Harps",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 128,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6251/harps",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Lou Carcohl",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 50,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6299/lou-carcohl",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Evergreenary",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6218/evergreenary",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Orchids",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/lotus.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 10,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6332/orchids",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Destroyer",
+    "album": "Destroyer",
+    "albumArt": "/assets/album-art/destroyer.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 118,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6207/destroyer",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Ridalin",
+    "album": "Lotus",
+    "albumArt": "/assets/album-art/ridalin.jpg",
+    "year": 2011,
+    "liveOnly": false,
+    "timesPlayed": 4,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6351/ridalin",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Break Build Burn",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 77,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6169/break-build-burn",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Massif",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 82,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6304/massif",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "What Did I Do Wrong",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 112,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6414/what-did-i-do-wrong",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Uffi",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 53,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6403/uffi",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Middle Road",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 155,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6308/middle-road",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Kodiak",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 84,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6285/kodiak",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cutinuo",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 18,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6196/cutinuo",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Ashcon",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 60,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6151/ashcon",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Neon Tubes",
+    "album": "Build",
+    "albumArt": "/assets/album-art/build.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 104,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6320/neon-tubes",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cannon in the Heavens",
+    "album": "Monks",
+    "albumArt": "/assets/album-art/monks.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 39,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6176/cannon-in-the-heavens",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cloud 9",
+    "album": "Monks",
+    "albumArt": "/assets/album-art/monks.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 23,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6181/cloud-nine",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Malabarista",
+    "album": "Malabarista",
+    "albumArt": "/assets/album-art/malabarista.jpg",
+    "year": 2013,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6302/malabarista",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Let Me In",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": 18,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6291/let-me-in",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Gilded Age",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": 126,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6240/gilded-age",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "I Want It All (To Give It Away)",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": 2,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6767/i-want-it-all-to-give-it-away",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "The Oaks",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": 50,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6393/the-oaks",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Out of Focus",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6768/out-of-focus",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sunset of the Giant Dipper",
+    "album": "Gilded Age",
+    "albumArt": "/assets/album-art/gilded-age.jpg",
+    "year": 2014,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6761/sunset-of-the-giant-dipper",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Basin to Benin",
+    "album": "Basin to Benin/Tarot",
+    "albumArt": "/assets/album-art/basin-to-benin-tarot.jpg",
+    "year": 2015,
+    "liveOnly": false,
+    "timesPlayed": 34,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6901/basin-to-benin",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Tarot",
+    "album": "Basin to Benin/Tarot",
+    "albumArt": "/assets/album-art/basin-to-benin-tarot.jpg",
+    "year": 2015,
+    "liveOnly": false,
+    "timesPlayed": 27,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6899/tarot",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Fearless",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12709/fearless",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "I've Been a Fool (Toy Guns)",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 22,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12711/ive-been-a-fool-toy-guns",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Eats the Light",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 93,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/9813/eats-the-light",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Move Too Fast",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 36,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12708/move-too-fast",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sleep When We Are Dead",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 19,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12013/sleep-when-we-are-dead",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "White Light Fadeaway",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 20,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/13365/white-light-fadeaway",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Anti-Gravity",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 37,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12707/anti-gravity",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Suntan",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 7,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12706/suntan",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "When Our Nerves No Longer Twitch",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 15,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/12710/when-our-nerves-no-longer-twitch",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sodium Vapor",
+    "album": "Eat the Light",
+    "albumArt": "/assets/album-art/eat-the-light.jpg",
+    "year": 2016,
+    "liveOnly": false,
+    "timesPlayed": 33,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6369/sodium-vapor",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "For the Summertime",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": 4,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/16273/for-the-summertime",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Old Cassette",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bulletproof",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Gimme Your Love",
+    "album": "Drink the Light",
+    "albumArt": "/assets/album-art/drink-the-light.jpg",
+    "year": 2017,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Debris",
+    "album": "86 Revolutions",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
+    "year": 2013,
+    "liveOnly": true,
+    "timesPlayed": 69,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6204/debris",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Expired Slang",
+    "album": "86 Revolutions",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": 155,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6220/expired-slang",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "The Opus",
+    "album": "86 Revolutions",
+    "albumArt": "/assets/album-art/86-revolutions.jpg",
+    "year": 1999,
+    "liveOnly": true,
+    "timesPlayed": 30,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6331/the-opus",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cold Facts",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 68,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/9814/cold-facts",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Gasoline",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24958/gasoline",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bug Love",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 25,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/16272/bug-love",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "MacGuffin",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 28,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24801/macguffin",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Aquamarine",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 21,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24799/aquamarine",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Stranger Danger",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 17,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24956/stranger-danger",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cosmosis",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 15,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/22361/cosmosis",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Faceblind",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 21,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/16274/faceblind",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Forgotten Name",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/22360/forgotten-name",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Fortune Favors",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 13,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24803/fortune-favors",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Giffard's Airship",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 9,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/13532/giffards-airship",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "December Sun",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 7,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24800/december-sun",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Cloak & Dagger",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 3,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/25536/cloak-dagger",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Celluloid Swagger",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24802/celluloid-swagger",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Gunk",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24959/gunk",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Jiggle",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 7,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/22359/jiggle",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Pachyderm",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 25,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/9815/pachyderm",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Milk & Honey",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 2,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/24957/milk-honey",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "...And Yet They Fight",
+    "album": "Frames Per Second",
+    "albumArt": "/assets/album-art/frames-per-second.jpg",
+    "year": 2018,
+    "liveOnly": false,
+    "timesPlayed": 10,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/9821/and-yet-they-fight",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Leave a Little Room for Jesus",
+    "album": "Leave a Little Room for Jesus",
+    "albumArt": "/assets/album-art/leave-a-little-room-for-jesus.jpg",
+    "year": 2019,
+    "liveOnly": false,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/28221/leave-a-little-room-for-jesus",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Catacombs",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 42,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29180/catacombs",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Turtlehead",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 12,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29184/turtlehead",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Free Swim",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 5,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29343/free-swim",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sepia Rainbow",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 2,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29345/sepia-rainbow",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "One-Eyed Jones",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29866/one-eyed-jones",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bjorn Gets a Haircut",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 11,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29179/bjorn-gets-a-haircut",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Straight Blade",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29181/straight-blade",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Earl of Grey",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 5,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29178/earl-of-grey",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Snake Island",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 7,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29183/snake-island",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Land of the Lush",
+    "album": "Free Swim",
+    "albumArt": "/assets/album-art/free-swim.jpg",
+    "year": 2020,
+    "liveOnly": false,
+    "timesPlayed": 26,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29182/land-of-the-lush",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Journey to Saturn",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29514/journey-to-saturn",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Citrus",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 2,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29347/citrus",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Phantom Tooth",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 11,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29344/phantom-tooth",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Year of the Jaguar",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 2,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29348/year-of-the-jaguar",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Condor",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 12,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29346/condor",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Fields of Mint",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Drifting Away from Shore",
+    "album": "Citrus",
+    "albumArt": "/assets/album-art/citrus.jpg",
+    "year": 2021,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Moss Shoes",
+    "album": "Live Underground",
+    "albumArt": "/assets/album-art/live-underground.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 20,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6314/moss-shoes",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Shimmer and Out",
+    "album": "Live Underground",
+    "albumArt": "/assets/album-art/live-underground.jpg",
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 440,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6362/shimmer-and-out",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Spaghetti",
+    "album": "Live Underground",
+    "albumArt": "/assets/album-art/live-underground.jpg",
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 141,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6376/spaghetti",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Desert Blooms",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 27,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/30125/desert-blooms",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Pluck",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 30,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/27682/pluck",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Tar Pits",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 28,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/27685/tar-pits",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Pacific Glow",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 19,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/30128/pacific-glow",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Time Dilates",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 18,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/30080/time-dilates",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Entangled",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/30124/entangled",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Transfixed",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 8,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/30127/transfixed",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Golden Ratio",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Desert Recedes",
+    "album": "Bloom & Recede",
+    "albumArt": "/assets/album-art/bloom-and-recede.jpg",
+    "year": 2022,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Arupa",
+    "album": "Live in Steel City",
+    "albumArt": "/assets/album-art/live-in-steel-city.jpg",
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 148,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6150/arupa",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "How Do I Come Down",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 15,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31446/how-do-i-come-down",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Splinter",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 10,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31517/splinter",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Watching the Distant Storm",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 19,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31010/watching-the-distant-storm",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "On My Block",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 7,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31510/on-my-block",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Reed",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 24,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31006/reed",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Can You Hear the Sound",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 13,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31514/can-you-hear-the-sound",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Electric Orange",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 16,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31512/electric-orange",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bamboo Forest",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 12,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31515/bamboo-forest",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Glass",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31516/glass",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "In the Shadow of the Mountain",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 15,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31337/in-the-shadow-of-the-mountain",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Goodnight Supermoon",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31511/goodnight-supermoon",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Wavvvves",
+    "album": "How to Dream in Color",
+    "albumArt": "/assets/album-art/how-to-dream-in-color.jpg",
+    "year": 2025,
+    "liveOnly": false,
+    "timesPlayed": 3,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31513/wavvves",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "128",
+    "album": null,
+    "albumArt": null,
+    "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": 273,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6138/128",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "And I Don't",
+    "album": null,
+    "albumArt": null,
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31575/and-i-dont",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Blender",
+    "album": null,
+    "albumArt": null,
+    "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": 89,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6163/blender",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Bootless",
+    "album": null,
+    "albumArt": null,
+    "year": 2007,
+    "liveOnly": true,
+    "timesPlayed": 9,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6168/bootless",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Comptroller",
+    "album": null,
+    "albumArt": null,
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": 104,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6184/comptroller",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Contagion",
+    "album": null,
+    "albumArt": null,
+    "year": 2005,
+    "liveOnly": true,
+    "timesPlayed": 91,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6186/contagion",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Dark Brown Earth",
+    "album": null,
+    "albumArt": null,
+    "year": 2004,
+    "liveOnly": true,
+    "timesPlayed": 42,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6202/dark-brown-earth",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Did Fatt",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 247,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6208/did-fatt",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Dirt Underfoot",
+    "album": null,
+    "albumArt": null,
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 3,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31574/dirt-underfoot",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Floating Amidst",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 34,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6226/floating-amidst",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Footwork",
+    "album": null,
+    "albumArt": null,
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 1,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31576/footwork",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Futureworld",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 25,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6235/futureworld",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Juggernaut",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 296,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6277/juggernaut",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Kalea",
+    "album": null,
+    "albumArt": null,
+    "year": 2006,
+    "liveOnly": true,
+    "timesPlayed": 57,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6282/kalea",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Karo",
+    "album": null,
+    "albumArt": null,
+    "year": 2023,
+    "liveOnly": true,
+    "timesPlayed": 4,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31312/karo",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Lead Pipe",
+    "album": null,
+    "albumArt": null,
+    "year": 2010,
+    "liveOnly": true,
+    "timesPlayed": 157,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6289/lead-pipe",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Lucid Awakening",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 244,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6301/lucid-awakening",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "My Own Personal 3-Letter Word",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 28,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6317/my-own-personal-3-letter-word",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Nri",
+    "album": null,
+    "albumArt": null,
+    "year": 2009,
+    "liveOnly": true,
+    "timesPlayed": 61,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6325/nri",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Opo",
+    "album": null,
+    "albumArt": null,
+    "year": 2004,
+    "liveOnly": true,
+    "timesPlayed": 109,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6330/opo",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Philly Hit",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 79,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6440/philly-hit",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Resonance Experiments",
+    "album": null,
+    "albumArt": null,
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 4,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31571/resonance-experiments",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Seen From Out Here",
+    "album": null,
+    "albumArt": null,
+    "year": 2003,
+    "liveOnly": true,
+    "timesPlayed": 19,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6358/seen-from-out-here",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sid",
+    "album": null,
+    "albumArt": null,
+    "year": 1999,
+    "liveOnly": true,
+    "timesPlayed": 276,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6363/sid",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Sift",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 171,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6364/sift",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Soma",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 129,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6371/soma",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Space in Between",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 76,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6374/space-in-between",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Spiraling Line of Light",
+    "album": null,
+    "albumArt": null,
+    "year": 2001,
+    "liveOnly": true,
+    "timesPlayed": 28,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6377/spiraling-line-of-light",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Street Tough",
+    "album": null,
+    "albumArt": null,
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 4,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31579/street-tough",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Suspended Reason",
+    "album": null,
+    "albumArt": null,
+    "year": 2002,
+    "liveOnly": true,
+    "timesPlayed": 12,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/6386/suspended-reason",
+      "date": "2025-03-24"
+    }
+  },
+  {
+    "name": "Urbn Xplr",
+    "album": null,
+    "albumArt": null,
+    "year": 2025,
+    "liveOnly": true,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31573/urbn-xplr",
+      "date": "2025-03-24"
+    }
+  }
+]

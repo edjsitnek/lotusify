@@ -5,5 +5,11 @@
   "compatibility_date": "2025-03-21",
   "observability": {
     "enabled": true
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "SONG_CACHE",
+      "id": "6c461a992aee4e2dabe09e9bbf628d05"
+    }
+  ]
 }
