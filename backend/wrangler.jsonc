@@ -11,5 +11,10 @@
       "binding": "SONG_CACHE",
       "id": "6c461a992aee4e2dabe09e9bbf628d05"
     }
-  ]
+  ],
+  "triggers": {
+    "crons": [
+      "0 5 * * *" // midnight EST
+    ]
+  }
 }
