@@ -1,10 +1,32 @@
-/*
+export default {
+  // Cloudflare Worker fetch handler for frontend API access (/today endpoint)
+  async fetch(req, env, ctx) {
+    const url = new URL(req.url);
+
+    // Return today's song from KV
+    if (url.pathname === "/today") {
+      const history = await env.SONG_CACHE.get("song-history", "json");
+      const today = history?.[history.length - 1];
+
+      if (!today) {
+        return new Response("No song set for today", { status: 404 });
+      }
+
+      return new Response(JSON.stringify(today), {
+        headers: { "Content-Type": "application/json" },
+        status: 200
+      });
+    }
+
+    return new Response("404 Not Found", { status: 404 });
+  },
+
+  /*
   Cloudflare Worker scheduled cron job handler
   - Picks a new daily song 
   - Scrapes its "Times Played" from Phantasy Tour
   - Updates songs & history in KV (SONG_CACHE)
  */
-export default {
   async scheduled(controller, env, ctx) {
     const today = new Date().toISOString().split("T")[0];
 

@@ -21,7 +21,6 @@ export default function useGameLogic(setShowGameOverModal) {
     return savedStats ? JSON.parse(savedStats) : defaultStats;
   }
 
-  const [songs, setSongs] = useState([]); // List of songs to pull the answer from
   const [randomSong, setRandomSong] = useState(null); // Random song which is the answer to the current game
   const [songGuess, setSongGuess] = useState(""); // Temporarily hold user input for song title guess
   const [guessHistory, setGuessHistory] = useState([]); // History of all guesses in one game
@@ -32,20 +31,12 @@ export default function useGameLogic(setShowGameOverModal) {
   const [showHints, setShowHints] = useState(false); // Track if hints are shown
   const [stats, setStats] = useState(initializeStats); // Track statistics of previous games played
 
-  // Load list of songs
   useEffect(() => {
-    fetch("/songs.json")
-      .then((response) => response.json())
-      .then((data) => setSongs(data))
-      .catch((error) => console.error("Error loading songs:", error));
+    fetch("https://lotusify.pages.dev/today")
+      .then(res => res.json())
+      .then(data => setRandomSong(data))
+      .catch(err => console.error("Failed to load daily song:", err));
   }, []);
-
-  // Automatically pick a random song on page load
-  useEffect(() => {
-    if (songs.length > 0) {
-      pickRandomSong();
-    }
-  }, [songs]); // Run when songs file is loaded
 
   // Initialize songGuess with blanks, if applicable
   useEffect(() => {
@@ -77,20 +68,6 @@ export default function useGameLogic(setShowGameOverModal) {
   useEffect(() => {
     localStorage.setItem('stats', JSON.stringify(stats));
   }, [stats])
-
-  // Pick the song to be guessed from loaded song list
-  const pickRandomSong = () => {
-    if (songs.length > 0) {
-      const randomIndex = Math.floor(Math.random() * songs.length);
-      setRandomSong(songs[randomIndex]);
-      setGuessHistory([]); // Reset guesses when new song is picked
-      setKeyStatuses([]); // Reset key statuses
-      setGameOver(false); // Reset game over state
-      setIsWin(false); // Reset win state
-      setHints(initialHints); // Reset hints
-      setShowHints(false); // Reset show hints
-    }
-  };
 
   // Add guesses to history while handling duplicate guesses
   const addToHistory = (comparison, guessEntry, correct) => {
@@ -209,7 +186,6 @@ export default function useGameLogic(setShowGameOverModal) {
   };
 
   return {
-    pickRandomSong,
     randomSong,
     songGuess,
     setSongGuess,

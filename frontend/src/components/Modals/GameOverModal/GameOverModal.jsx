@@ -4,7 +4,7 @@ import { focusOnNewContent } from '../../../utils/focusOnNewContent';
 import { useState, useRef } from 'react'
 
 // A modal that pops up when game is over, with different content for a win or a loss
-export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, lastFocusedElement, summaryButtonRef, onClickX, onClickReset }) {
+export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, lastFocusedElement, summaryButtonRef, onClickX }) {
   const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
 
   // Focus on modal content when opened
@@ -105,7 +105,6 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <hr />
           <div className="footer">
             {displayStats()}
-            <button onClick={onClickReset} className="resetButton">Start New Game</button>
           </div>
         </>
       )
@@ -123,7 +122,6 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <hr />
           <div className="footer">
             {displayStats()}
-            <button onClick={onClickReset} className="resetButton">Start New Game</button>
           </div>
         </>
       )

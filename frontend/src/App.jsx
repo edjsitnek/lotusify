@@ -29,7 +29,6 @@ function App() {
   const summaryButtonRef = useRef(null); // Used to focus on the summary button after the game over modal is closed
 
   const {
-    pickRandomSong,
     randomSong,
     songGuess,
     setSongGuess,
@@ -150,13 +149,6 @@ function App() {
     setModalOrder((prevOrder) => prevOrder.filter((m) => m !== modalName));
   };
 
-  // Reset game state and modals on new game
-  const onReset = () => {
-    pickRandomSong();
-    if (showSongGuessModal) handleGuessSongButton(); // Keep song guess modal from reopening on new game
-    if (showHistoryModal) handleHistoryButton(); // Keep history modal from reopening on new game
-  }
-
   return (
     <>
       <div className="game-container" onClick={handleClickBackOnGame} onKeyDown={handleTypedLetterGuess} tabIndex={0}>
@@ -270,22 +262,17 @@ function App() {
             onClickX={() => setShowInstructionsModal(!showInstructionsModal)}
           />
         )}
-        {gameOver && (
-          showGameOverModal ? (
-            <GameOverModal
-              isWin={isWin}
-              numGuesses={guessHistory.length}
-              randomSong={randomSong}
-              stats={stats}
-              showGameOverModal={showGameOverModal}
-              lastFocusedElement={lastFocusedElement}
-              summaryButtonRef={summaryButtonRef}
-              onClickX={handleGameOverModalClose}
-              onClickReset={onReset}
-            />
-          ) : (
-            <button onClick={onReset}>Pick a Random Song</button>
-          )
+        {gameOver && showGameOverModal(
+          <GameOverModal
+            isWin={isWin}
+            numGuesses={guessHistory.length}
+            randomSong={randomSong}
+            stats={stats}
+            showGameOverModal={showGameOverModal}
+            lastFocusedElement={lastFocusedElement}
+            summaryButtonRef={summaryButtonRef}
+            onClickX={handleGameOverModalClose}
+          />
         )}
       </div>
     </>
