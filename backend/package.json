@@ -12,8 +12,8 @@
     "upload-songs": "node scripts/uploadSongsToKV.js"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.7.5",
+    "@cloudflare/vitest-pool-workers": "^0.8.6",
     "vitest": "~3.0.7",
-    "wrangler": "^4.4.0"
+    "wrangler": "^4.5.0"
   }
 }
