@@ -2,7 +2,7 @@ import { execSync } from "child_process";
 
 // Upload the songs.json to KV
 try {
-  execSync("npx wrangler kv key put --binding=SONG_CACHE songs --path=./songs.json", {
+  execSync("npx wrangler kv key put --binding=SONG_CACHE songs --path=./songs.json --remote", {
     stdio: "inherit"
   });
 } catch (err) {

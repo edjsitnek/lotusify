@@ -3,18 +3,32 @@ export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
 
+    // Manual cron trigger for testing
+    if (url.pathname === "/test") {
+      await this.scheduled(req, env, ctx);
+      return new Response("Ran scheduled cron logic manually");
+    }
+
     // Return today's song from KV
     if (url.pathname === "/today") {
       const history = await env.SONG_CACHE.get("song-history", "json");
       const today = history?.[history.length - 1];
 
       if (!today) {
-        return new Response("No song set for today", { status: 404 });
+        return new Response("No song set for today", {
+          status: 404,
+          headers: {
+            "Access-Control-Allow-Origin": "*"
+          }
+        });
       }
 
       return new Response(JSON.stringify(today), {
-        headers: { "Content-Type": "application/json" },
-        status: 200
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+        }
       });
     }
 
