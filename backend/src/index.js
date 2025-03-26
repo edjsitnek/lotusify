@@ -49,9 +49,15 @@ export default {
     const history = await env.SONG_CACHE.get("song-history", "json") || [];
 
     // Filter to unplayed songs
-    let availableSongs = songs.filter(song => !history.includes(song.name));
+    let availableSongs = songs.filter(song => !history.map(item => item.name).includes(song.name));
+    // Back up and reset history if all songs used
     if (availableSongs.length === 0) {
-      availableSongs = [...songs]; // Reset pool if all have been played
+      console.log("All songs used, archiving history and resetting");
+
+      const timestamp = new Date().toISOString().split("T")[0];
+      await env.SONG_CACHE.put(`song-history-${timestamp}`, JSON.stringify(history));
+
+      availableSongs = [...songs];
       history.length = 0;
     }
 

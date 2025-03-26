@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clear-history": "node scripts/clearSongHistory.js",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "download-songs": "node scripts/downloadSongsFromKV.js",
