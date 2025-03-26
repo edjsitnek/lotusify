@@ -262,7 +262,7 @@ function App() {
             onClickX={() => setShowInstructionsModal(!showInstructionsModal)}
           />
         )}
-        {gameOver && showGameOverModal(
+        {gameOver && showGameOverModal && (
           <GameOverModal
             isWin={isWin}
             numGuesses={guessHistory.length}

@@ -32,7 +32,11 @@ export default function useGameLogic(setShowGameOverModal) {
   const [stats, setStats] = useState(initializeStats); // Track statistics of previous games played
 
   useEffect(() => {
-    fetch("https://lotusify-game.com/today")
+    const baseUrl = import.meta.env.DEV
+      ? "http://localhost:8787"
+      : "https://lotusify-game.com";
+
+    fetch(`${baseUrl}/today`)
       .then(res => res.json())
       .then(data => setRandomSong(data))
       .catch(err => console.error("Failed to load daily song:", err));
