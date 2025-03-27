@@ -16,6 +16,7 @@
   --modal-bg: rgb(1, 71, 79);
   --back-modal-bg: rgba(0, 23, 26, 0.7);
   --answer-blue: 49, 141, 151;
+  --button-gray: rgb(99, 99, 99);
   --key-gray: rgb(70, 70, 70);
   --correct: rgb(183, 177, 155);
   --incorrect: rgb(195, 24, 41);
@@ -31,11 +32,25 @@ button {
   cursor: pointer;
   font-family: inherit;
   margin: .2rem;
-  padding: .2rem .2rem;
+  padding: .25rem .25rem;
+  background: none;
+  border-radius: 0.2rem;
+  background-color: var(--button-gray);
+  color: #fff;
+  border: 2px solid var(--button-gray);
+  text-align: center;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .active-button {
   background-color: var(--incorrect);
   border: 2px solid var(--incorrect);
   border-radius: .2rem;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+  border-color: transparent;
 }

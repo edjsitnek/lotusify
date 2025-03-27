@@ -12,22 +12,36 @@ export default function InstructionsModal({ showInstructionsModal, lastFocusedEl
   // Display game instructions
   const handleModalContent = () => {
     return (
-      <div className="body">
-        <ul>
-          <li>
-            You have 12 total guesses to figure out the Lotus song title.
-          </li>
-          <li>
-            Guess one letter/number at a time to reveal all instances of that character OR guess the full song title by pressing "Guess Song."
-          </li>
-          <li>
-            Hints unlock at 3, 6, and 9 guesses. Their type depends on whether the song is a studio release or live only.
-          </li>
-          <li>
-            Songs without a studio version or that appear only on live albums (e.g. Germination, Escaping Sargasso Sea) count as Live Only.
-          </li>
-        </ul>
-      </div>
+      <>
+        <div className="body">
+          <ul>
+            <li>
+              You have 12 total guesses to figure out the Lotus song title.
+            </li>
+            <li>
+              Guess one letter/number at a time to reveal all instances of that character OR guess the full song title by pressing "Guess Song."
+            </li>
+            <li>
+              Hints unlock at 3, 6, and 9 guesses. Their type depends on whether the song is a studio release or live only.
+            </li>
+            <li>
+              Songs without a studio version or that appear only on live albums (e.g. Germination, Escaping Sargasso Sea) count as Live Only.
+            </li>
+          </ul>
+        </div>
+        <div className="credits">
+          <p>
+            <strong>Credits:</strong><br />
+            Song titles, album names, and album artwork are copyright © Lotus. All rights reserved by the original artists and labels.
+          </p>
+          <p>
+            Play count data sourced from <a href="https://phantasytour.com" target="_blank" rel="noopener noreferrer">Phantasy Tour</a> and used for non-commercial, informational purposes.
+          </p>
+          <p>
+            Website created by Ethan Sitnek. This project is fan-made and not affiliated with Lotus or their management.
+          </p>
+        </div>
+      </>
     )
   }
 
