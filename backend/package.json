@@ -10,11 +10,16 @@
     "download-songs": "node scripts/downloadSongsFromKV.js",
     "start": "wrangler dev",
     "test": "vitest",
+    "test-scrape": "node scripts/testScrape.js",
     "upload-songs": "node scripts/uploadSongsToKV.js"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.6",
     "vitest": "~3.0.7",
     "wrangler": "^4.5.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.2"
   }
 }

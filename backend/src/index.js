@@ -1,3 +1,5 @@
+import * as cheerio from "cheerio";
+
 export default {
   // Cloudflare Worker fetch handler for frontend API access (/today endpoint)
   async fetch(req, env, ctx) {
@@ -90,7 +92,19 @@ export default {
 
 //Extract "Times Played" from Phantasy Tour HTML
 function extractPlayCount(html) {
-  const regex = /Play Count:\s*<dd>(\d+) times<\/dd>/;
-  const match = html.match(regex);
-  return match?.[1] ? parseInt(match[1]) : null;
+  const $ = cheerio.load(html);
+  let timesPlayed = null;
+
+  $("dt").each((_, el) => {
+    const label = $(el).text().trim();
+    if (label === "Play Count:") {
+      const value = $(el).next("dd").text().trim();
+      const match = value.match(/^(\d+)/);
+      if (match) {
+        timesPlayed = parseInt(match[1]);
+      }
+    }
+  });
+
+  return timesPlayed;
 }
