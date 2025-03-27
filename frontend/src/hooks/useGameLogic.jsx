@@ -114,6 +114,16 @@ export default function useGameLogic(setShowGameOverModal) {
     );
   }
 
+  // Posts to play-counter route to increment daily play counter
+  const playCounter = () => {
+    const baseUrl = import.meta.env.DEV
+      ? "http://localhost:8787"
+      : "https://lotusify-game.com";
+    fetch(`${baseUrl}/play-counter`, {
+      method: "POST",
+    });
+  }
+
   // Handle single letter guesses
   const handleGuessLetter = (letter) => {
     if (gameOver || !randomSong) return;
@@ -140,6 +150,7 @@ export default function useGameLogic(setShowGameOverModal) {
 
       setGameOver(true);
       setShowGameOverModal(true);
+      playCounter();
     }
   };
 
@@ -161,6 +172,7 @@ export default function useGameLogic(setShowGameOverModal) {
 
       setGameOver(true);
       setShowGameOverModal(true);
+      playCounter();
     }
   };
 

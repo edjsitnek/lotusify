@@ -34,6 +34,23 @@ export default {
       });
     }
 
+    // Record play count for the day 
+    if (url.pathname === "/play-counter" && req.method === "POST") {
+      const today = new Date().toISOString().split("T")[0];
+      const runningTotal = await env.SONG_CACHE.get("play-count", "json") || {};
+
+      runningTotal[today] = (runningTotal[today] || 0) + 1;
+
+      await env.SONG_CACHE.put("play-count", JSON.stringify(runningTotal));
+      return new Response("Play recorded", { status: 200 });
+    }
+
+    // Return play count for the day
+    if (url.pathname === "/play-count") {
+      const runningTotal = await env.SONG_CACHE.get("play-count", "json") || {};
+      return new Response(JSON.stringify(runningTotal), { status: 200 });
+    }
+
     return new Response("404 Not Found", { status: 404 });
   },
 
