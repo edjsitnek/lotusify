@@ -31,6 +31,7 @@ export default function useGameLogic(setShowGameOverModal) {
   const [showHints, setShowHints] = useState(false); // Track if hints are shown
   const [stats, setStats] = useState(initializeStats); // Track statistics of previous games played
 
+  // Load daily song from backend or locally if in development environment
   useEffect(() => {
     const baseUrl = import.meta.env.DEV
       ? "http://localhost:8787"
@@ -38,9 +39,42 @@ export default function useGameLogic(setShowGameOverModal) {
 
     fetch(`${baseUrl}/today`)
       .then(res => res.json())
-      .then(data => setRandomSong(data))
+      .then(data => {
+        setRandomSong(data);
+
+        // Clean up stale saved guesses from previous days
+        Object.keys(localStorage).forEach((key) => {
+          if (key.startsWith("lotusify-guess-data-") && !key.endsWith(data.name)) {
+            localStorage.removeItem(key);
+          }
+        });
+
+        // Load saved game data from localStorage
+        const key = `lotusify-guess-data-${data.name}`;
+        const saved = localStorage.getItem(key);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          setGuessHistory(parsed.guessHistory || []);
+          setIsWin(parsed.isWin || false);
+          setGameOver(parsed.gameOver || false);
+          setSongGuess(parsed.songGuess || "");
+        }
+      })
       .catch(err => console.error("Failed to load daily song:", err));
   }, []);
+
+  // Persist state to localStorage
+  useEffect(() => {
+    if (!randomSong) return;
+    const key = `lotusify-guess-data-${randomSong.name}`;
+    const save = {
+      guessHistory,
+      isWin,
+      gameOver,
+      songGuess,
+    };
+    localStorage.setItem(key, JSON.stringify(save));
+  }, [guessHistory, isWin, gameOver, songGuess, randomSong]);
 
   // Initialize songGuess with blanks, if applicable
   useEffect(() => {
