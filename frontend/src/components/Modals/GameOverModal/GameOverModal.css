@@ -1,7 +1,7 @@
 /* Base styles in ../Modal.css */
 
 .gameover.modal-container {
-  max-height: 70%;
+  max-height: 75%;
   padding: 0.5rem;
 }
 
@@ -35,4 +35,9 @@ hr {
 
 .statName {
   font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.countdown-timer {
+  font-size: 0.9rem;
+  color: #ccc;
 }

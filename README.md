@@ -1,6 +1,6 @@
 # Lotusify - The Lotus Song Title Guessing Game
 
-**Lotusify** is a daily word game for fans of the jam band **Lotus**, inspired by [Spellify](https://commandersherald.com/games/spellify). Guess the Lotus song title of the day in a Hangman-style format using your keyboard or on-screen keys. One puzzle is released every day at 4 am EDT.
+**Lotusify** is a daily word game for fans of the jam band **Lotus**, inspired by [Spellify](https://commandersherald.com/games/spellify). Guess the Lotus song title of the day in a Hangman-style format using your keyboard or on-screen keys. One puzzle is released every day at 5 am EST.
 
 **[Play the game here](https://www.lotusify-game.com)**
 

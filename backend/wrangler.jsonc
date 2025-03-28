@@ -14,7 +14,7 @@
   ],
   "triggers": {
     "crons": [
-      "0 9 * * *" // 4 AM EST
+      "0 10 * * *" // 5 AM EST
     ]
   }
 }

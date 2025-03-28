@@ -1,11 +1,43 @@
 import '../Modal.css'
 import './GameOverModal.css'
 import { focusOnNewContent } from '../../../utils/focusOnNewContent';
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 // A modal that pops up when game is over, with different content for a win or a loss
 export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, lastFocusedElement, summaryButtonRef, onClickX }) {
   const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
+  const [countdown, setCountdown] = useState(""); // Countdown to next game
+
+  // Update countdown to next game
+  useEffect(() => {
+    if (!randomSong?.date) return;
+
+    const updateCountdown = () => {
+      const now = new Date();
+
+      // Target: today at 10:00 UTC (5 am EST)
+      const target = new Date(`${randomSong.date}T10:00:00Z`);
+
+      // If 10:00 UTC today has passed, move to tomorrow
+      if (now > target) target.setUTCDate(target.getUTCDate() + 1);
+
+      const diff = target - now;
+      if (diff <= 0) {
+        setCountdown("Next game is live!");
+        return;
+      }
+
+      const hours = Math.floor(diff / 3600000);
+      const minutes = Math.floor((diff % 3600000) / 60000);
+      const seconds = Math.floor((diff % 60000) / 1000);
+
+      setCountdown(`Next game in ${hours}h ${minutes}m ${seconds}s`);
+    };
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+    return () => clearInterval(interval);
+  }, [randomSong]);
 
   // Focus on modal content when opened
   const newContentRef = useRef(null);
@@ -105,6 +137,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <hr />
           <div className="footer">
             {displayStats()}
+            <p className="countdown-timer">{countdown}</p>
           </div>
         </>
       )
@@ -122,6 +155,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           <hr />
           <div className="footer">
             {displayStats()}
+            <p className="countdown-timer">{countdown}</p>
           </div>
         </>
       )
