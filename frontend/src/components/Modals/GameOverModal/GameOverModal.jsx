@@ -118,6 +118,44 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
     )
   }
 
+  // Display a link to Bandcamp of a song, album, or Lotus' music page depending on shareType
+  const displayShareLink = () => {
+    if (randomSong.shareType === "band") {
+      return (
+        <a
+          href={randomSong.shareUrl}
+          className="share-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Listen to Lotus on Bandcamp!
+        </a>
+      )
+    } else if (randomSong.shareType === "song") {
+      return (
+        <a
+          href={randomSong.shareUrl}
+          className="share-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Listen to {randomSong.name} on Bandcamp!
+        </a>
+      )
+    } else if (randomSong.shareType === "album") {
+      return (
+        <a
+          href={randomSong.shareUrl}
+          className="share-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Listen to {randomSong.album} on Bandcamp!
+        </a>
+      )
+    }
+  }
+
   // Handle content based on win or loss
   const handleModalContent = () => {
     if (isWin === true) { // Content if the game was won
@@ -133,6 +171,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           </div>
           <div className="body">
             {displaySongInfo()}
+            {displayShareLink()}
           </div>
           <hr />
           <div className="footer">
@@ -151,6 +190,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
           </div>
           <div className="body">
             {displaySongInfo()}
+            {displayShareLink()}
           </div>
           <hr />
           <div className="footer">

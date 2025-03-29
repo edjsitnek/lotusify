@@ -1,7 +1,7 @@
 /* Base styles in ../Modal.css */
 
 .gameover.modal-container {
-  max-height: 75%;
+  max-height: 80%;
   padding: 0.5rem;
 }
 
@@ -40,4 +40,17 @@ hr {
 .countdown-timer {
   font-size: 0.9rem;
   color: #ccc;
+}
+
+.share-link {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--correct);
+  text-decoration: underline;
+}
+
+.share-link:hover {
+  color: #ffffff;
 }
