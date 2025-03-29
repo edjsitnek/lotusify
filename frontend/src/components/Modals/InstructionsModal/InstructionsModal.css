@@ -34,3 +34,12 @@
   opacity: 0.8;
   line-height: 1.2;
 }
+
+.credits a {
+  color: var(--correct);
+  text-decoration: underline;
+}
+
+.credits a:hover {
+  color: #ffffff;
+}
