@@ -32,7 +32,7 @@ export default function InstructionsModal({ showInstructionsModal, lastFocusedEl
         <div className="credits">
           <p>
             <strong>Credits:</strong><br />
-            Song titles, album names, and album artwork are copyright © Lotus. All rights reserved by the original artists and labels.
+            Song titles, album names, album artwork, and logo are copyright © <a href="https://www.lotusvibes.com/" target="_blank" rel="noopener noreferrer">Lotus</a>. All rights reserved by the original artists and labels.
           </p>
           <p>
             Play count data sourced from <a href="https://phantasytour.com" target="_blank" rel="noopener noreferrer">Phantasy Tour</a> and used for non-commercial, informational purposes.
@@ -40,7 +40,7 @@ export default function InstructionsModal({ showInstructionsModal, lastFocusedEl
           <p>
             Website created by Ethan Sitnek. This project is fan-made and not affiliated with Lotus or their management.
           </p>
-        </div>
+        </div >
       </>
     )
   }
