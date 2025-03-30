@@ -11,7 +11,7 @@
 }
 
 .key {
-  height: calc(16vw - 0.7rem);
+  height: calc(12vh - 0.7rem);
   max-height: 3.8rem;
   width: calc(10vw - 0.6rem);
   max-width: 4rem;

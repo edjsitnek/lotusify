@@ -50,7 +50,7 @@ export default function HintPanel({ randomSong, guessHistory, hints, setHints, s
     }
     else if (randomSong.liveOnly === true && !randomSong.album) {
       hintTitle = "Times Played";
-      hintValue = "TBD";
+      hintValue = randomSong.timesPlayed;
     }
 
     return {

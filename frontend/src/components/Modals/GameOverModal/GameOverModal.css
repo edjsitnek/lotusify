@@ -1,7 +1,7 @@
 /* Base styles in ../Modal.css */
 
 .gameover.modal-container {
-  max-height: 80%;
+  max-height: 95%;
   padding: 0.5rem;
 }
 
