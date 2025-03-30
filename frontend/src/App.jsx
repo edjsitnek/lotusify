@@ -44,7 +44,9 @@ function App() {
     showHints,
     setShowHints,
     stats,
-    resetStats
+    resetStats,
+    showIncompleteMessage,
+    buttonInvalid
   } = useGameLogic(setShowGameOverModal);
 
   const {
@@ -195,6 +197,8 @@ function App() {
               activeIndex={activeIndex}
               setActiveIndex={setActiveIndex}
               isSongGuessOpen={showSongGuessModal}
+              showIncompleteMessage={showIncompleteMessage}
+              buttonInvalid={buttonInvalid}
             />
           )}
           {!gameOver && !showSongGuessModal &&

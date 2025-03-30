@@ -30,6 +30,8 @@ export default function useGameLogic(setShowGameOverModal) {
   const [hints, setHints] = useState(initialHints); // List of hints to display
   const [showHints, setShowHints] = useState(false); // Track if hints are shown
   const [stats, setStats] = useState(initializeStats); // Track statistics of previous games played
+  const [showIncompleteMessage, setShowIncompleteMessage] = useState(false); // Track if the message for incomplete guesses is shown
+  const [buttonInvalid, setButtonInvalid] = useState(false); // Track if the button has been pressed for an incomplete guess
 
   // Load daily song from backend or locally if in development environment
   useEffect(() => {
@@ -159,12 +161,25 @@ export default function useGameLogic(setShowGameOverModal) {
     if (gameOver || !randomSong) return;
 
     const joinedSongGuess = songGuess.join(""); // Convert songGuess array to string
+
+    // Check if there are any blanks in the guess, prevent submission, and show message
+    const isIncomplete = randomSong.name.split("").some((char, i) => /[a-zA-Z0-9]/.test(char) && songGuess[i] === "");
+    if (isIncomplete) {
+      setShowIncompleteMessage(true);
+      setButtonInvalid(true);
+      setTimeout(() => {
+        setShowIncompleteMessage(false);
+        setButtonInvalid(false);
+      }, 2000);
+      return;
+    }
+
     const correct = joinedSongGuess.toLowerCase() === randomSong.name.toLowerCase();
     addToHistory(joinedSongGuess.toLowerCase(), joinedSongGuess, correct);
     setSongGuess(randomSong.name.split("").map((char) => (/[a-zA-Z0-9]/.test(char) ? "" : char))) // Reset input after submission
 
     // Check if game is over
-    if (correct || guessHistory.length + 1 >= 12) {
+    if (correct || guessHistory.length + 1 >= 12 && !isIncomplete) {
       if (correct) {
         setIsWin(true);
         handleStatistics(true);
@@ -251,6 +266,8 @@ export default function useGameLogic(setShowGameOverModal) {
     showHints,
     setShowHints,
     stats,
-    resetStats
+    resetStats,
+    showIncompleteMessage,
+    buttonInvalid
   };
 }

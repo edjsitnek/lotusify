@@ -3,7 +3,7 @@ import { isPunctuation as checkPunctuation } from '../../../utils/isPunctuation'
 import { useEffect } from 'react';
 
 // A modal that displays an active attempt at a full song title guess and pops up when the "Guess Song" button is pressed
-export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyClick, handleGuessSong, isOnTop, activeIndex, setActiveIndex }) {
+export default function SongGuessModal({ randomSong, songGuess, guessHistory, handleKeyDown, handleKeyClick, handleGuessSong, isOnTop, activeIndex, setActiveIndex, showIncompleteMessage, buttonInvalid }) {
   const findFirstValidIndex = () => {
     let firstValidIndex = 0;
     // Skip leading punctuation at the start of the song title
@@ -87,8 +87,18 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
   return (
     <div className="song-guess-modal-background" style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="song-guess-modal-content" onClick={e => e.stopPropagation()}>
-        {renderInteractiveBlanks()}
-        <button onClick={handleGuessButton}>Guess Song</button>
+        <div className="guess-input-wrapper">
+          {showIncompleteMessage && (
+            <div className="input-tooltip">Please fill in all spaces</div>
+          )}
+          {renderInteractiveBlanks()}
+        </div>
+        <button
+          className={`guess-button ${buttonInvalid ? "invalid" : ""}`}
+          onClick={handleGuessButton}
+        >
+          Guess Song
+        </button>
       </div>
     </div >
   )
