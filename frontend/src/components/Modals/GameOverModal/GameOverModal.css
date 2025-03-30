@@ -54,3 +54,30 @@ hr {
 .share-link:hover {
   color: #ffffff;
 }
+
+@media screen and (max-height: 515px) {
+  .song-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .album-cover {
+    width: 5.5rem;
+    height: auto;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
+  .song-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .song-text p {
+    margin: 0.1rem 0;
+  }
+}

@@ -7,6 +7,17 @@ import { useState, useRef, useEffect } from 'react'
 export default function GameOverModal({ isWin, numGuesses, randomSong, stats, showGameOverModal, lastFocusedElement, summaryButtonRef, onClickX }) {
   const [enlargedImage, setEnlargedImage] = useState(null); // Track enlarged album art state
   const [countdown, setCountdown] = useState(""); // Countdown to next game
+  const [isShortScreen, setIsShortScreen] = useState(window.innerHeight <= 515); // Track if the screen has a short height for conditional rendering
+
+  // Track if the screen has short height
+  useEffect(() => {
+    const handleResize = () => {
+      setIsShortScreen(window.innerHeight <= 515);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Update countdown to next game
   useEffect(() => {
@@ -52,6 +63,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
         className="album-cover"
         loading="lazy"
         onClick={() => handleImageClick(randomSong.albumArt)}
+        style={isShortScreen && randomSong.liveOnly === true ? { width: "8rem" } : undefined} // Adjust width for live albums on short screens
       />
     )
   }
@@ -61,25 +73,51 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
     if (randomSong.liveOnly === false) {
       return (
         <>
-          <div className="song-info">
-            <p><span className="label">Song: </span>{randomSong.name}</p>
-            <p><span className="label">Album: </span>{randomSong.album} ({randomSong.year})</p>
-            {displayAlbumArt()}
-            <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
-          </div>
-
+          {isShortScreen ? (
+            // If the screen is short, display album art on the left of the text
+            <div className="song-info">
+              {displayAlbumArt()}
+              <div className="song-text">
+                <p><span className="label">Song: </span>{randomSong.name}</p>
+                <p><span className="label">Album: </span>{randomSong.album} ({randomSong.year})</p>
+                <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
+              </div>
+            </div>
+          ) : (
+            // If the screen is not short, display album art in the center
+            <div className="song-info">
+              <p><span className="label">Song: </span>{randomSong.name}</p>
+              <p><span className="label">Album: </span>{randomSong.album} ({randomSong.year})</p>
+              {displayAlbumArt()}
+              <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
+            </div>
+          )}
         </>
       )
     } else if (randomSong.liveOnly === true && randomSong.album) {
       return (
         <>
-          <div className="song-info">
-            <p><span className="label">Song: </span>{randomSong.name}</p>
-            <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.year})</p>
-            {displayAlbumArt()}
-            <p><span className="label">First played: </span>{randomSong.year}</p>
-            <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
-          </div>
+          {isShortScreen ? (
+            // If the screen is short, display album art on the left of the text
+            <div className="song-info">
+              {displayAlbumArt()}
+              <div className="song-text">
+                <p><span className="label">Song: </span>{randomSong.name}</p>
+                <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.year})</p>
+                <p><span className="label">First played: </span>{randomSong.year}</p>
+                <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
+              </div>
+            </div>
+          ) : (
+            // If the screen is not short, display album art in the center
+            <div className="song-info">
+              <p><span className="label">Song: </span>{randomSong.name}</p>
+              <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.year})</p>
+              {displayAlbumArt()}
+              <p><span className="label">First played: </span>{randomSong.year}</p>
+              <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
+            </div>
+          )}
         </>
       )
     }
