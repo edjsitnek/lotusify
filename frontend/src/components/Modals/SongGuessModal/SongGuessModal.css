@@ -87,6 +87,14 @@
   white-space: nowrap;
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.input-tooltip.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @keyframes shake {

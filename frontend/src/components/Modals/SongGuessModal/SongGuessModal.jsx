@@ -88,9 +88,12 @@ export default function SongGuessModal({ randomSong, songGuess, guessHistory, ha
     <div className="song-guess-modal-background" style={{ zIndex: isOnTop ? 1001 : 1000 }}>
       <div className="song-guess-modal-content" onClick={e => e.stopPropagation()}>
         <div className="guess-input-wrapper">
-          {showIncompleteMessage && (
-            <div className="input-tooltip">Please fill in all spaces</div>
-          )}
+          <div
+            className={`input-tooltip ${showIncompleteMessage ? "show" : ""}`}
+            aria-live="polite"
+          >
+            Please fill in all spaces
+          </div>
           {renderInteractiveBlanks()}
         </div>
         <button
