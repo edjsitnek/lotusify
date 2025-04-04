@@ -140,16 +140,16 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
       <div className="stats">
         <ul>
           <li>
-            <div className="statNum">{stats.gamesPlayed}</div>
-            <div className="statName">Played</div>
+            <div className="gameover statNum">{stats.gamesPlayed}</div>
+            <div className="gameover statName">Played</div>
           </li>
           <li>
-            <div className="statNum">{stats.winPercentage}</div>
-            <div className="statName">Win%</div>
+            <div className="gameover statNum">{stats.winPercentage}</div>
+            <div className="gameover statName">Win%</div>
           </li>
           <li>
-            <div className="statNum">{stats.averageGuesses}</div>
-            <div className="statName">Average Guesses</div>
+            <div className="gameover statNum">{stats.averageGuesses}</div>
+            <div className="gameover statName">Average Guesses</div>
           </li>
         </ul>
       </div>

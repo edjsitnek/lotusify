@@ -29,15 +29,16 @@ hr {
   margin-top: 0.5rem;
 }
 
-.statNum {
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
+.gameover.statNum {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
-.statName {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+.gameover.statName {
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 
 .countdown-timer {
+  margin-top: -0.3rem;
   font-size: 0.9rem;
   color: #ccc;
 }

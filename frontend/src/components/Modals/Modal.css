@@ -25,7 +25,7 @@
 .modal-container .title {
   display: inline-block;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .modal-container .body {
@@ -78,7 +78,7 @@
 
 .stats li {
   width: 25%;
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .statNum {

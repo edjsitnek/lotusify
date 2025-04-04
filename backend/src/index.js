@@ -86,10 +86,20 @@ export default {
     console.log(`Picked daily song for ${new Date().toISOString()}`);
 
     // Scrape new timesPlayed from Phantasy Tour
-    const scraped = await fetch(dailySong.source.url);
-    const html = await scraped.text();
-    const timesPlayed = extractPlayCount(html);
-    console.log(`Scraped timesPlayed: ${timesPlayed}`);
+    let timesPlayed = null;
+
+    if (dailySong.source?.url) {
+      try {
+        const scraped = await fetch(dailySong.source.url);
+        const html = await scraped.text();
+        timesPlayed = extractPlayCount(html);
+        console.log(`Scraped timesPlayed: ${timesPlayed}`);
+      } catch (err) {
+        console.error(`Failed to scrape timesPlayed for ${dailySong.name}:`, err);
+      }
+    } else {
+      console.warn(`No source.url provided for ${dailySong.name}, skipping scrape.`);
+    }
 
     // Update song if value changed
     const match = songs.find(s => s.name === dailySong.name);
