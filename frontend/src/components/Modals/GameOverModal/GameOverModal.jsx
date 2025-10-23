@@ -103,7 +103,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
               {displayAlbumArt()}
               <div className="song-text">
                 <p><span className="label">Song: </span>{randomSong.name}</p>
-                <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.year})</p>
+                <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.albumYear})</p>
                 <p><span className="label">First played: </span>{randomSong.year}</p>
                 <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
               </div>
@@ -112,7 +112,7 @@ export default function GameOverModal({ isWin, numGuesses, randomSong, stats, sh
             // If the screen is not short, display album art in the center
             <div className="song-info">
               <p><span className="label">Song: </span>{randomSong.name}</p>
-              <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.year})</p>
+              <p><span className="label">Appears On: </span>{randomSong.album} ({randomSong.albumYear})</p>
               {displayAlbumArt()}
               <p><span className="label">First played: </span>{randomSong.year}</p>
               <p><span className="label">Times Played Live: </span>{randomSong.timesPlayed}</p>
