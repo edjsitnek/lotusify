@@ -2348,6 +2348,160 @@
     "shareType": "album"
   },
   {
+    "name": "And I Don't",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 12,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31575/and-i-dont",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "One Word",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 6,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/32370/one-word",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Angler",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 5,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29867/angler",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Oblong Shapes",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 7,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/32361/oblong-shapes",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Wild Card",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 5,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/29876/wild-card",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Coarse Notes",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 5,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/32404/coarse-notes",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Urbn Xplr",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 11,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31573/urbn-xplr",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Resonance Experiments",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 9,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/31571/resonance-experiments",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Lure",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 5,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/32405/lure",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Remedy",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 4,
+    "source": {
+      "url": "https://www.phantasytour.com/bands/lotus/songs/32403/remedy",
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
+    "name": "Sine Bubbles",
+    "album": "Rise of the Anglerfish",
+    "albumArt": "/assets/album-art/rise-of-the-anglerfish.jpg",
+    "year": 2026,
+    "liveOnly": false,
+    "timesPlayed": 0,
+    "source": {
+      "url": null,
+      "date": "2026-06-01"
+    },
+    "shareUrl": "https://lotusvibes.bandcamp.com/album/rise-of-the-anglerfish",
+    "shareType": "album"
+  },
+  {
     "name": "128",
     "album": null,
     "albumArt": null,
@@ -2359,20 +2513,6 @@
       "date": "2025-03-24"
     },
     "shareUrl": "https://lotusvibes.bandcamp.com/track/128-11",
-    "shareType": "song"
-  },
-  {
-    "name": "And I Don't",
-    "album": null,
-    "albumArt": null,
-    "year": 2024,
-    "liveOnly": true,
-    "timesPlayed": 6,
-    "source": {
-      "url": "https://www.phantasytour.com/bands/lotus/songs/31575/and-i-dont",
-      "date": "2025-03-24"
-    },
-    "shareUrl": "https://lotusvibes.bandcamp.com/track/and-i-dont",
     "shareType": "song"
   },
   {
@@ -2642,20 +2782,6 @@
     "shareType": "band"
   },
   {
-    "name": "Resonance Experiments",
-    "album": null,
-    "albumArt": null,
-    "year": 2024,
-    "liveOnly": true,
-    "timesPlayed": 4,
-    "source": {
-      "url": "https://www.phantasytour.com/bands/lotus/songs/31571/resonance-experiments",
-      "date": "2025-03-24"
-    },
-    "shareUrl": "https://lotusvibes.bandcamp.com/track/resonance-experiments",
-    "shareType": "song"
-  },
-  {
     "name": "Seen From Out Here",
     "album": null,
     "albumArt": null,
@@ -2766,19 +2892,5 @@
     },
     "shareUrl": "https://lotusvibes.bandcamp.com/music",
     "shareType": "band"
-  },
-  {
-    "name": "Urbn Xplr",
-    "album": null,
-    "albumArt": null,
-    "year": 2024,
-    "liveOnly": true,
-    "timesPlayed": 6,
-    "source": {
-      "url": "https://www.phantasytour.com/bands/lotus/songs/31573/urbn-xplr",
-      "date": "2025-03-24"
-    },
-    "shareUrl": "https://lotusvibes.bandcamp.com/track/urbn-xplr",
-    "shareType": "song"
   }
 ]
